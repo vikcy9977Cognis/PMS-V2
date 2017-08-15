@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Application context definition for RCL Web Application.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:context="http://www.springframework.org/schema/context" xmlns:jee="http://www.springframework.org/schema/jee"
+		xmlns:tx="http://www.springframework.org/schema/tx" 
+                xsi:schemaLocation="
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
+  <!-- ========================= RESOURCE DEFINITIONS ========================= -->
+	<!-- 
+            Simple local DataSource that works in any environment.
+            This uses the JDBC DriverManager to obtain connections, and does NOT perform connection
+            pooling. Connection pooling is essential to all real-world applications.
+            This definition is good for testing in local machine, as it introduces no dependencies beyond
+            the JDK, but DriverManagerDataSource is not intended for production usage.
+        -->
+        <!-- home port:1521, company port:1522 -->
+        
+            <!--<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+                <property name="jndiName" value="java:comp/env/jdbc/RCLJNDI"/>
+            </bean>--> 
+    
+        <!--bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="url" value="jdbc:oracle:thin:@//localhost:1521/XE"/>
+            <property name="username" value="sealiner"/>
+            <property name="password" value="sealinerdev"/>
+        </bean-->
+    
+    
+     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="url" value="jdbc:oracle:thin:@//10.0.3.46:1534/SGDDOL15.rclgroup.com"/>
+            <property name="username" value="sealiner"/>
+            <property name="password" value="sealinerdev"/>
+        </bean>
+     <bean id="dataSourceTsi" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="url" value="jdbc:oracle:thin:@//10.0.3.46:1534/SGDDOL15.rclgroup.com"/>
+            <property name="username" value="vasapps"/>
+            <property name="password" value="vasdevapps"/>
+        </bean>
+       
+       <!-- <bean id="dataSourceTsi" class="org.springframework.jndi.JndiObjectFactoryBean">
+            <property name="jndiName" value="java:comp/env/jdbc/vasconn"/>
+        </bean>
+  -->
+
+        <!--bean id="dataSourceTsi" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="url" value="jdbc:oracle:thin:@//localhost:1521/XE"/>
+            <property name="username" value="vasapps"/>
+            <property name="password" value="vasdevapps"/>
+        </bean-->
+
+        <bean id="camFscDao" class="com.rclgroup.dolphin.web.dao.cam.CamFscJdbcDao">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        
+        
+        <!-- RCM module -->
+        <bean id="rcmAttributeSessionDao" class="com.rclgroup.dolphin.web.dao.rcm.RcmAttributeSessionJdbcDao">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        
+        <bean id="rcmConstantDao" class="com.rclgroup.dolphin.web.dao.rcm.RcmConstantJdbcDao">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        
+        <bean id="rcmDefaultHelpDao" class="com.rclgroup.dolphin.web.dao.rcm.RcmDefaultHelpJdbcDao">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        
+        <bean id="rcmUserDao" class="com.rclgroup.dolphin.web.dao.rcm.RcmUserJdbcDao">
+            <property name="dataSource" ref="dataSource"/>
+        </bean> 
+    	<!-- 
+            Simple local DataSource that works in any environment.
+            This uses the JDBC DriverManager to obtain connections, and does NOT perform connection
+            pooling. Connection pooling is essential to all real-world applications.
+            This definition is good for testing in local machine, as it introduces no dependencies beyond
+            the JDK, but DriverManagerDataSource is not intended for production usage.
+        -->
+        <!-- home port:1521, company port:1522 -->
+        <!--
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="url" value="jdbc:oracle:thin:@//localhost:1521/XE"/>
+            <property name="username" value="sealiner"/>
+            <property name="password" value="sealiner"/>
+        </bean>
+  -->
+
+    
+	
+   
+	<!-- Transaction manager for a single JDBC DataSource (alternative to JTA) -->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        
+	<!-- Transaction manager for a single JDBC DataSource (alternative to JTA) -->
+        <bean id="transactionManager2" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSourceTsi"/>
+        </bean>
+        <bean id="pmsCommonDao"
+             class="com.rclgroup.dolphin.web.dao.pms.PmsCommonJdbcDao">
+            <property name="dataSource" ref="dataSourceTsi"/>
+       </bean>
+        <bean id="pmsPMFormDao"
+             class="com.rclgroup.dolphin.web.dao.pms.PmsPMFormJdbcDao">
+            <property name="dataSource" ref="dataSourceTsi"/>
+       </bean>
+       
+       <bean id="pmsCommon2Dao"
+             class="com.rclgroup.dolphin.web.dao.pms.PmsCommon2JdbcDao">
+            <property name="dataSource" ref="dataSourceTsi"/>
+       </bean>
+        <bean id="pmsPMForm2Dao"
+             class="com.rclgroup.dolphin.web.dao.pms.PmsPMForm2JdbcDao">
+            <property name="dataSource" ref="dataSourceTsi"/>
+       </bean>
+       <bean id="pmsReportDao"
+             class="com.rclgroup.dolphin.web.dao.pms.PmsReportJdbcDao">
+            <property name="dataSource" ref="dataSourceTsi"/>
+       </bean>
+	<!-- Transactional advice, and AOP config for making transaction for all business objects. -->
+        <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+            <tx:attributes>
+                <tx:method name="find*" read-only="true"/>
+                <tx:method name="*" propagation="REQUIRED" rollback-for="Throwable"/>
+            </tx:attributes>
+        </tx:advice>
+        <aop:config>
+            <aop:advisor pointcut="execution(public * com.rclgroup.dolphin.web.dao.*.*Dao.*(..))" advice-ref="transactionAdvice"/>
+        </aop:config>
+        
+        <tx:advice id="transactionAdvice2" transaction-manager="transactionManager2">
+            <tx:attributes>
+                <tx:method name="find*" read-only="true"/>
+                <tx:method name="*" propagation="REQUIRED" rollback-for="Throwable"/>
+            </tx:attributes>
+        </tx:advice>
+        <aop:config>
+            <aop:advisor pointcut="execution(public * com.rclgroup.dolphin.web.dao.*.*Dao.*(..))" advice-ref="transactionAdvice2"/>
+        </aop:config>        
+        <!--
+        <aop:config>
+            <aop:pointcut id="BusinessOperation" expression="execution(* com.rclgroup.dolphin.web.business.*Mgr.*(..))"/>
+            <aop:advisor advice-ref="transactionAdvice" pointcut-ref="BusinessOperation"/>
+        </aop:config>
+        -->
+        
+        <!-- Still on testing about throwing advice -->
+        <!--
+        <bean id="rcmBusinessHandleExceptionThrowsAdvice" class="com.trivadis.aop.BusinessHandleExceptionThrowsAdvice">
+        </bean>
+        <bean id="accountManagerBeanNameProxyCreator" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+            <property name="beanNames"><value>*Mgr</value></property>
+            <property name="interceptorNames">
+                <list>
+                    <value>businessHandleExceptionThrowsAdvice</value>
+                </list>
+            </property>
+        </bean>
+        --> 
+</beans>

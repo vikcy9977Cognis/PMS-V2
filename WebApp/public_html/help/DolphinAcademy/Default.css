@@ -1,0 +1,516 @@
+﻿p { 
+   margin:0in; 
+   margin-bottom:.0001pt; 
+   font-size:10.0pt; 
+   font-family:Arial, sans-serif;  }
+LI.p { 
+      font-size:10.0pt; 
+      font-family:Arial, sans-serif;  }
+h1 { 
+    margin-top:12.0pt; 
+    margin-right:0in; 
+    margin-bottom:3.0pt; 
+    margin-left:0in; 
+    font-size:16.0pt; 
+    font-family:Arial, sans-serif; 
+    font-weight:bold;  }
+LI.h1 { 
+       font-size:16.0pt; 
+       font-family:Arial, sans-serif; 
+       font-weight:bold;  }
+h2 { 
+    margin-top:12.0pt; 
+    margin-right:0in; 
+    margin-bottom:3.0pt; 
+    margin-left:0in; 
+    font-size:14.0pt; 
+    font-family:Arial, sans-serif; 
+    font-weight:bold;  }
+LI.h2 { 
+       font-size:14.0pt; 
+       font-family:Arial, sans-serif; 
+       font-weight:bold;  }
+h3 { 
+    margin-top:12.0pt; 
+    margin-right:0in; 
+    margin-bottom:3.0pt; 
+    margin-left:0in; 
+    font-size:12.0pt; 
+    font-family:Arial, sans-serif; 
+    font-weight:bold;  }
+LI.h3 { 
+       font-size:12.0pt; 
+       font-family:Arial, sans-serif; 
+       font-weight:bold;  }
+h4 { 
+    margin-top:6.0pt; 
+    margin-right:0in; 
+    margin-bottom:6.0pt; 
+    margin-left:0in; 
+    font-size:10.0pt; 
+    font-family:Arial, sans-serif; 
+    font-weight:bold; 
+    font-style:italic;  }
+LI.h4 { 
+       font-size:10.0pt; 
+       font-family:Arial, sans-serif; 
+       font-weight:bold; 
+       font-style:italic;  }
+h5 { 
+    margin-top:12.0pt; 
+    margin-right:0in; 
+    margin-bottom:6.0pt; 
+    margin-left:0in; 
+    font-size:10.0pt; 
+    font-family:Arial, sans-serif; 
+    font-weight:bold; 
+    text-underline:thick; 
+    text-decoration:underline;  }
+LI.h5 { 
+       font-size:10.0pt; 
+       font-family:Arial, sans-serif; 
+       font-weight:bold; 
+       text-underline:thick; 
+       text-decoration:underline;  }
+h6 { 
+    margin:0in; 
+    margin-bottom:.0001pt; 
+    text-align:center; 
+    font-size:10.0pt; 
+    font-family:Arial, sans-serif; 
+    font-weight:bold;  }
+LI.h6 { 
+       text-align:center; 
+       font-size:10.0pt; 
+       font-family:Arial, sans-serif; 
+       font-weight:bold;  }
+p.Heading7 { 
+            margin:0in; 
+            margin-bottom:.0001pt; 
+            font-size:10.0pt; 
+            font-family:Arial, sans-serif; 
+            color:#008000; 
+            font-weight:bold;  }
+LI.p-Heading7 { 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif; 
+               color:#008000; 
+               font-weight:bold;  }
+p.Heading8 { 
+            margin:0in; 
+            margin-bottom:.0001pt; 
+            font-size:10.0pt; 
+            font-family:Arial, sans-serif; 
+            font-weight:bold;  }
+LI.p-Heading8 { 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif; 
+               font-weight:bold;  }
+p.Heading9 { 
+            margin-top:6.0pt; 
+            margin-right:0in; 
+            margin-bottom:6.0pt; 
+            margin-left:0in; 
+            text-align:justify; 
+            font-size:10.0pt; 
+            font-family:Arial, sans-serif; 
+            font-weight:bold; 
+            text-underline:single; 
+            text-decoration:underline;  }
+LI.p-Heading9 { 
+               text-align:justify; 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif; 
+               font-weight:bold; 
+               text-underline:single; 
+               text-decoration:underline;  }
+p.Index1 { 
+          margin-top:0in; 
+          margin-right:0in; 
+          margin-bottom:.0001pt; 
+          margin-left:10.0pt; 
+          text-indent:-10.0pt; 
+          font-size:10.0pt; 
+          font-family:Arial, sans-serif;  }
+LI.p-Index1 { 
+             text-indent:-10.0pt; 
+             font-size:10.0pt; 
+             font-family:Arial, sans-serif;  }
+p.Index2 { 
+          margin-top:0in; 
+          margin-right:0in; 
+          margin-bottom:.0001pt; 
+          margin-left:24.0pt; 
+          text-indent:-12.0pt; 
+          font-size:10.0pt; 
+          font-family:Arial, sans-serif;  }
+LI.p-Index2 { 
+             text-indent:-12.0pt; 
+             font-size:10.0pt; 
+             font-family:Arial, sans-serif;  }
+p.Toc1 { 
+        margin-top:6.0pt; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:0in; 
+        font-size:16.0pt; 
+        font-family:Arial, sans-serif; 
+        font-variant:small-caps; 
+        text-transform:uppercase; 
+        font-weight:bold;  }
+LI.p-Toc1 { 
+           font-size:16.0pt; 
+           font-family:Arial, sans-serif; 
+           font-variant:small-caps; 
+           text-transform:uppercase; 
+           font-weight:bold;  }
+p.Toc2 { 
+        margin-top:6.0pt; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:0in; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif; 
+        font-weight:bold;  }
+LI.p-Toc2 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif; 
+           font-weight:bold;  }
+p.Toc3 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:12.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc3 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.Toc4 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:24.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc4 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.Toc5 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:.5in; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc5 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.Toc6 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:48.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc6 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.Toc7 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:60.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc7 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.Toc8 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:1.0in; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc8 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.Toc9 { 
+        margin-top:0in; 
+        margin-right:0in; 
+        margin-bottom:.0001pt; 
+        margin-left:84.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial, sans-serif;  }
+LI.p-Toc9 { 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+p.CommentText { 
+               margin:0in; 
+               margin-bottom:.0001pt; 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif;  }
+LI.p-CommentText { 
+                  font-size:10.0pt; 
+                  font-family:Arial, sans-serif;  }
+p.Header { 
+          margin:0in; 
+          margin-bottom:.0001pt; 
+          font-size:10.0pt; 
+          font-family:Arial, sans-serif;  }
+LI.p-Header { 
+             font-size:10.0pt; 
+             font-family:Arial, sans-serif;  }
+p.Footer { 
+          margin:0in; 
+          margin-bottom:.0001pt; 
+          font-size:10.0pt; 
+          font-family:Arial, sans-serif;  }
+LI.p-Footer { 
+             font-size:10.0pt; 
+             font-family:Arial, sans-serif;  }
+p.Caption { 
+           margin-top:6.0pt; 
+           margin-right:0in; 
+           margin-bottom:.25in; 
+           margin-left:0in; 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif; 
+           font-weight:bold;  }
+LI.p-Caption { 
+              font-size:10.0pt; 
+              font-family:Arial, sans-serif; 
+              font-weight:bold;  }
+p.Tof { 
+       margin:0in; 
+       margin-bottom:.0001pt; 
+       font-size:10.0pt; 
+       font-family:Arial, sans-serif;  }
+LI.p-Tof { 
+          font-size:10.0pt; 
+          font-family:Arial, sans-serif;  }
+span.CommentReference {  }
+span.PageNumber { 
+                 font-family:Arial, sans-serif;  }
+p.Toa { 
+       margin-top:0in; 
+       margin-right:0in; 
+       margin-bottom:.0001pt; 
+       margin-left:12.0pt; 
+       text-indent:-12.0pt; 
+       font-size:10.0pt; 
+       font-family:Arial, sans-serif;  }
+LI.p-Toa { 
+          text-indent:-12.0pt; 
+          font-size:10.0pt; 
+          font-family:Arial, sans-serif;  }
+p.ToaHeading { 
+              margin-top:6.0pt; 
+              margin-right:0in; 
+              margin-bottom:.0001pt; 
+              margin-left:0in; 
+              font-size:10.0pt; 
+              font-family:Arial, sans-serif; 
+              font-weight:bold;  }
+LI.p-ToaHeading { 
+                 font-size:10.0pt; 
+                 font-family:Arial, sans-serif; 
+                 font-weight:bold;  }
+p.ListBullet { 
+              margin-top:0in; 
+              margin-right:0in; 
+              margin-bottom:.0001pt; 
+              margin-left:.25in; 
+              text-indent:-.25in; 
+              font-size:10.0pt; 
+              font-family:Arial, sans-serif;  }
+LI.p-ListBullet { 
+                 text-indent:-.25in; 
+                 font-size:10.0pt; 
+                 font-family:Arial, sans-serif;  }
+p.ListNumber { 
+              margin-top:3.0pt; 
+              margin-right:0in; 
+              margin-bottom:3.0pt; 
+              margin-left:.25in; 
+              text-indent:-.25in; 
+              font-size:10.0pt; 
+              font-family:Arial, sans-serif;  }
+LI.p-ListNumber { 
+                 text-indent:-.25in; 
+                 font-size:10.0pt; 
+                 font-family:Arial, sans-serif;  }
+p.ListBullet2 { 
+               margin-top:0in; 
+               margin-right:0in; 
+               margin-bottom:.0001pt; 
+               margin-left:32.15pt; 
+               text-indent:-.25in; 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif;  }
+LI.p-ListBullet2 { 
+                  text-indent:-.25in; 
+                  font-size:10.0pt; 
+                  font-family:Arial, sans-serif;  }
+p.ListNumber2 { 
+               margin-top:3.0pt; 
+               margin-right:0in; 
+               margin-bottom:.0001pt; 
+               margin-left:32.2pt; 
+               text-indent:-.25in; 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif;  }
+LI.p-ListNumber2 { 
+                  text-indent:-.25in; 
+                  font-size:10.0pt; 
+                  font-family:Arial, sans-serif;  }
+p.ListNumber3 { 
+               margin-top:0in; 
+               margin-right:0in; 
+               margin-bottom:.0001pt; 
+               margin-left:46.3pt; 
+               text-indent:-.25in; 
+               font-size:10.0pt; 
+               font-family:Arial, sans-serif;  }
+LI.p-ListNumber3 { 
+                  text-indent:-.25in; 
+                  font-size:10.0pt; 
+                  font-family:Arial, sans-serif;  }
+p.BodyText2 { 
+             margin:0in; 
+             margin-bottom:.0001pt; 
+             font-size:10.0pt; 
+             font-family:"Times New Roman" , serif;  }
+LI.p-BodyText2 { 
+                font-size:10.0pt; 
+                font-family:"Times New Roman" , serif;  }
+p.BodyTextIndent2 { 
+                   margin-top:0in; 
+                   margin-right:0in; 
+                   margin-bottom:6.0pt; 
+                   margin-left:.25in; 
+                   line-height:200%; 
+                   font-size:10.0pt; 
+                   font-family:Arial, sans-serif;  }
+LI.p-BodyTextIndent2 { 
+                      line-height:200%; 
+                      font-size:10.0pt; 
+                      font-family:Arial, sans-serif;  }
+a:link { 
+        font-family:Arial, sans-serif; 
+        color:#0000ff; 
+        text-underline:single; 
+        text-decoration:underline;  }
+span.Hyperlink { 
+                font-family:Arial, sans-serif; 
+                color:#0000ff; 
+                text-underline:single; 
+                text-decoration:underline;  }
+a:visited { 
+           font-family:Arial, sans-serif; 
+           color:#800000; 
+           text-underline:single; 
+           text-decoration:underline;  }
+span.HyperlinkFollowed { 
+                        font-family:Arial, sans-serif; 
+                        color:#800000; 
+                        text-underline:single; 
+                        text-decoration:underline;  }
+p.DocumentMap { 
+               margin:0in; 
+               margin-bottom:.0001pt; 
+               background:#000080; 
+               font-size:10.0pt; 
+               font-family:Tahoma, sans-serif;  }
+LI.p-DocumentMap { 
+                  font-size:10.0pt; 
+                  font-family:Tahoma, sans-serif;  }
+p.WordNormalWeb { 
+                 margin-right:0in; 
+                 margin-left:0in; 
+                 font-size:12.0pt; 
+                 font-family:Tahoma, sans-serif;  }
+LI.p-WordNormalWeb { 
+                    font-size:12.0pt; 
+                    font-family:Tahoma, sans-serif;  }
+p.Bullet1 { 
+           margin-top:0in; 
+           margin-right:0in; 
+           margin-bottom:.0001pt; 
+           margin-left:135.0pt; 
+           text-align:justify; 
+           text-indent:-27.0pt; 
+           font-size:10.0pt; 
+           font-family:Arial, sans-serif;  }
+LI.p-Bullet1 { 
+              text-align:justify; 
+              text-indent:-27.0pt; 
+              font-size:10.0pt; 
+              font-family:Arial, sans-serif;  }
+span.Bullet1 {  }
+p.FormatvorlageBeschriftungNichtFett { 
+                                      margin-top:6.0pt; 
+                                      margin-right:0in; 
+                                      margin-bottom:.25in; 
+                                      margin-left:0in; 
+                                      font-size:10.0pt; 
+                                      font-family:Arial, sans-serif; 
+                                      color:#008000; 
+                                      font-weight:bold;  }
+LI.p-FormatvorlageBeschriftungNichtFett { 
+                                         font-size:10.0pt; 
+                                         font-family:Arial, sans-serif; 
+                                         color:#008000; 
+                                         font-weight:bold;  }
+p.CommentSubject1 { 
+                   margin:0in; 
+                   margin-bottom:.0001pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial, sans-serif; 
+                   font-weight:bold;  }
+LI.p-CommentSubject1 { 
+                      font-size:10.0pt; 
+                      font-family:Arial, sans-serif; 
+                      font-weight:bold;  }
+p.BalloonText1 { 
+                margin:0in; 
+                margin-bottom:.0001pt; 
+                font-size:8.0pt; 
+                font-family:Tahoma, sans-serif;  }
+LI.p-BalloonText1 { 
+                   font-size:8.0pt; 
+                   font-family:Tahoma, sans-serif;  }
+p.TitleSmall { 
+              margin:0in; 
+              margin-bottom:.0001pt; 
+              text-align:justify; 
+              font-size:14.0pt; 
+              font-family:"Bookman Old Style" , serif;  }
+LI.p-TitleSmall { 
+                 text-align:justify; 
+                 font-size:14.0pt; 
+                 font-family:"Bookman Old Style" , serif;  }
+p.TableHeade { 
+              margin-top:3.0pt; 
+              margin-right:0in; 
+              margin-bottom:3.0pt; 
+              margin-left:0in; 
+              font-size:10.0pt; 
+              font-family:"Times New Roman" , serif; 
+              font-weight:bold;  }
+LI.p-TableHeade { 
+                 font-size:10.0pt; 
+                 font-family:"Times New Roman" , serif; 
+                 font-weight:bold;  }
+span.CommentText { 
+                  font-family:Arial, sans-serif;  }
+.ChpDefault {  }
+OL { 
+    margin-top:0px; 
+    margin-bottom:0px;  }
+UL { 
+    margin-top:0px; 
+    margin-bottom:0px;  }
+SPAN.glosstext { 
+                color:#800000;  }

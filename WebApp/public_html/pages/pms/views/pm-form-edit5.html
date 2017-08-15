@@ -1,0 +1,222 @@
+<!-- Overall Performance -->
+
+<div class="pmform-content-body">
+    <div class="panel" ng-cloak>
+        <div class="panel-heading">
+            <div class="panel-control">
+                <button type="button" name="button" class="btn btn-default" data-target="#af-panel-collapse-5" data-toggle="collapse" aria-expanded="true">
+          <i class="fa fa-chevron-down"></i>
+        </button>
+            </div>
+            <h4 class="panel-title">Overall Performance</h4>
+        </div>
+        <div id="af-panel-collapse-5" class="collapse in" aria-expanded="true">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span>Comments on appraisee's overall performance (Competency &amp;
+                  Individual KPIs) by Immediate Supervisor</span>
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <div class="form-group">
+                                    <textarea name="name" rows="3" cols="50" class="form-control" style="width:80%" ng-readonly="authorize.approveLv1Flag == 'N'" ng-model="formData.appraiseeDetail.part4Comment1"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>The appraisee has worked under my direct supervision for</span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <input type="text" name="" ng-model="formData.appraiseeDetail.joinYear" readonly="readonly" class="form-control input-sm"></input>
+                            </div>
+                            <label for="" class="control-label col-sm-1">years</label>
+                            <div class="col-sm-2">
+                                <input type="text" name="" ng-model="formData.appraiseeDetail.joinPeriod" readonly="readonly" class="form-control input-sm"></input>
+                            </div>
+                            <label for="" class="control-label col-sm-1">months</label>
+                        </div>
+                    </div>
+                    <!-- ./form-group -->
+                </div>
+                <!-- ./row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="bold-text">
+                  <i class="fa fa-caret-right"/> Part I</span>
+                            </div>
+                            <div class="col-md-9">
+                                <table id="overallPerformance" class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th width="45%" colspan="2">
+                                                Weightage (%) each Part
+                                            </th>
+                                            <th class="separate"></th>
+                                            <th>1H Y{{formData.overallPerformance.currentPmYear}}</th>
+                                            <th>2H Y{{formData.overallPerformance.currentPmYear}}</th>
+                                            <th>FY {{formData.overallPerformance.currentPmYear}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Competency</td>
+                                            <td class="text-right">{{ formData.overallPerformance.jobWeightage.comWeightage |number:2 | percentage}}</td>
+                                            <td class="separate"></td>
+                                            <td class="text-right">{{formData.overallPerformance.overall.period1.comRatingPercent|number:2 | percentage }}</td>
+                                            <td class="text-right">{{formData.overallPerformance.overall.period2.comRatingPercent|number:2 | percentage}}</td>
+                                            <td class="text-right">{{formData.overallPerformance.overall.comRatingPercentY|number:2 | percentage}}</td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td colspan="2" class="text-center">Competency Result</td>
+                                            <td class="separate"></td>
+                                            <td class="text-right">{{checkStatus(formData.overallPerformance.overall.period1.comRatingPercent )}}</td>
+                                            <td class="text-right">{{checkStatus( formData.overallPerformance.overall.period2.comRatingPercent )}}</td>
+                                            <td class="text-right">{{checkStatus(formData.overallPerformance.overall.comRatingPercentY )}}</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        <!-- ./row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <span class="bold-text">
+                      <i class="fa fa-caret-right"/> Part II</span>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <table id="overallPerformance" class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <th width="45%" colspan="2">
+                                                        Weightage (%) each Part
+                                                    </th>
+                                                    <th class="separate"></th>
+                                                    <th>1H Y{{formData.overallPerformance.currentPmYear}}</th>
+                                                    <th>2H Y{{formData.overallPerformance.currentPmYear}}</th>
+                                                    <th>FY {{formData.overallPerformance.currentPmYear}}</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>President Directive</td>
+                                                    <td class="text-right">{{formData.overallPerformance.jobWeightage.pdWeightage |number:2 | percentage}}</td>
+                                                    <td class="separate"></td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.period1.presidentRatingPercent|number:2 | percentage }}</td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.period2.presidentRatingPercent|number:2 | percentage }}</td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.presidentRatingPercentY |number:2 | percentage }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Individual KPIs</td>
+                                                    <td class="text-right">{{formData.overallPerformance.jobWeightage.indKPIWeightage |number:2 | percentage}}</td>
+
+                                                    <td class="separate"></td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.period1.individualRatingPercent|number:2 | percentage }}</td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.period2.individualRatingPercent|number:2 | percentage }}</td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.individualRatingPercentY |number:2 | percentage }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Overall Performance</td>
+                                                    <td class="text-right">{{(formData.overallPerformance.jobWeightage.pdWeightage + formData.overallPerformance.jobWeightage.indKPIWeightage) |number:2 | percentage}}</td>
+
+                                                    <td class="separate"></td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.period1.overallRatingPercent |number:2 | percentage }}</td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.period2.overallRatingPercent |number:2 | percentage }}</td>
+                                                    <td class="text-right">{{formData.overallPerformance.overall.overallRatingPercentY |number:2 | percentage }}</td>
+                                                </tr>
+                                                <tr class="info">
+                                                    <td colspan="2" class="text-center">Individual Performance Result</td>
+
+                                                    <td class="separate"></td>
+                                                    <td class="text-right">{{checkStatus(formData.overallPerformance.overall.period1.overallRatingPercent)}}</td>
+                                                    <td class="text-right">{{checkStatus(formData.overallPerformance.overall.period2.overallRatingPercent)}}</td>
+                                                    <td class="text-right">{{checkStatus(formData.overallPerformance.overall.overallRatingPercentY)}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                                <!-- ./row -->
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-1">
+
+                                                <a href="javascript:void(0)" class="bold-text" data-target="#af-panel-collapse-5b" data-toggle="collapse" aria-expanded="true">
+                                                    <i class="fa fa-caret-right"></i> Details
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 collapse" id="af-panel-collapse-5b" aria-expanded="true">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="45%">
+                                                                Individual Performance Scale
+                                                            </th>
+                                                            <th>Definition</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr ng-repeat="item in performanceScaleDef">
+                                                            <td>{{item.title}}</td>
+                                                            <td>{{item.definition}}</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                        <!-- ./row -->
+                                    </div>
+
+                                </div>
+                                <!-- ./row -->
+
+                                <div class="row" ng-show="isSupervisorLevel1Approve()">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <p>
+
+                                            Comfirm by Suppervisor
+                                        </p>
+                                        <strong>Wutiporn K.</strong>
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <p>Position Title:</p>
+                                        <span class="bold-text">Project Manager</span>
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <p>Date:</p>
+                                        <span class="bold-text">01/01/2016</span>
+                                    </div>
+                                </div>
+
+                                <!-- ./row -->
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-8" ng-hide="authorize.approveLv1Flag == 'N'">
+                                        <button type="button" class="btn btn-primary" ng-hide="isWizardMode()" ng-click="approveRejectClick(1,'A');">Approve</button>
+                                        <button type="button" class="btn btn-danger" ng-hide="isWizardMode()" ng-click="approveRejectClick(1,'R');">Reject</button>
+                                    </div>
+                                </div>
+                                <!-- ./row -->
+                            </div>
+                            <!-- ./panel-body -->
+                        </div>
+                        <!-- ./collapse -->
+                    </div>
+                    <!-- ./panel -->
+                </div>

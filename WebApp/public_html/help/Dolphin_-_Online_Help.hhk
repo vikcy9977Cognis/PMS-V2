@@ -1,0 +1,1952 @@
+﻿<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="index">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Code Setup">
+    <param name="Name" value="Activity Code Setup">
+    <param name="Local" value="HLP/EMS/Activity_Code_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Group List">
+    <param name="Name" value="Activity Group List">
+    <param name="Local" value="HLP/EMS/Activity_Group_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Group Maintenance">
+    <param name="Name" value="Activity Group Maintenance">
+    <param name="Local" value="HLP/EMS/Activity_Group_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Group Setup">
+    <param name="Name" value="Activity Group Setup">
+    <param name="Local" value="HLP/EMS/Activity_Group_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Pair Maintenance">
+    <param name="Name" value="Activity Pair Maintenance">
+    <param name="Local" value="HLP/EMS/Activity_Pair_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Pair Setup">
+    <param name="Name" value="Activity Pair Setup">
+    <param name="Local" value="HLP/EMS/Activity_Pair_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Activity Reporting Group Maintenance">
+    <param name="Name" value="Activity Reporting Group Maintenance">
+    <param name="Local" value="HLP/EMS/Activity_Reporting_Group_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Additional Free Days Tab">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Adobe Flash Player">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Agency Commission">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Agent List Maintenance">
+    <param name="Name" value="Agent List Maintenance">
+    <param name="Local" value="HLP/CA/Agent_List_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Approval Details">
+    <param name="Name" value="Maintenance Tab – Approval Details">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab_–_Approval_Details.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Approval Details Screen">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalRate/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Area">
+    <param name="Name" value="How to Create an Area">
+    <param name="Local" value="BIZ/CA/How_to_Create_an_Area.htm">
+    <param name="Name" value="Area">
+    <param name="Local" value="SOP/CA/Area.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Area Maintenance">
+    <param name="Name" value="Area Maintenance">
+    <param name="Local" value="HLP/CA/Area_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Arrival Messages">
+    <param name="Name" value="Arrival Messages">
+    <param name="Local" value="HLP/CA/Arrival_Messages.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Auto Discharge List">
+    <param name="Name" value="Auto Discharge List">
+    <param name="Local" value="HLP/EMS/Auto_Discharge_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Auto Load List">
+    <param name="Name" value="Auto Load List">
+    <param name="Local" value="HLP/EMS/Auto_Load_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Availability Details">
+    <param name="Name" value="Availability Details - By Port/Point">
+    <param name="Local" value="HLP/EMS/Availability_Details_By_Port_Point.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Availability Details - By Port/Point">
+    <param name="Name" value="Availability Details - By Port/Point">
+    <param name="Local" value="HLP/EMS/Availability_Details_By_Port_Point.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Available Forecast/Booked">
+    <param name="Name" value="Available Forecast/Booked">
+    <param name="Local" value="HLP/EMS/Available_Forecast_Booked.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Available Unconfirmed/Confirmed">
+    <param name="Name" value="Available Unconfirmed/Confirmed">
+    <param name="Local" value="HLP/EMS/Available_Unconfirmed_Confirmed.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="BBK Approved By">
+    <param name="Name" value="Maintenance Tab – Approval Details">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab_–_Approval_Details.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Billing Frequency by">
+    <param name="Name" value="Customer Profile - Maintenance">
+    <param name="Local" value="HLP/CRM/Customer_Profile_Maintenance1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="BL Preparation">
+    <param name="Name" value="How to Create a Package Kind for Booking and BL Preparation">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Package_Kind_for_Booking_and_BL_Preparation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Booking">
+    <param name="Name" value="How to Create a Package Kind for Booking and BL Preparation">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Package_Kind_for_Booking_and_BL_Preparation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Bulk Move Correction">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Bulk Move Correction Search">
+    <param name="Name" value="Bulk Move Correction Search">
+    <param name="Local" value="HLP/EMS/Bulk_Move_Correction_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Business Restriction Exemption Approval Maintenance">
+    <param name="Name" value="Business Restriction Exemption Approval Maintenance">
+    <param name="Local" value="HLP/EMS/Business_Restriction_Exemption_Approval_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Business Restriction Exemption Request Maintenance">
+    <param name="Name" value="Business Restriction Exemption Request Maintenance">
+    <param name="Local" value="HLP/EMS/Business_Restriction_Exemption_Request_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Business Restrictions">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Cabotage">
+    <param name="Name" value="Cabotage">
+    <param name="Local" value="SOP/SBL/Cabotage.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Calculation Details">
+    <param name="Name" value="Storage Charges (Calculation) Maintenance">
+    <param name="Local" value="HLP/STR/Storage_Charges_Calculation_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Cargo Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Charge Code Link Setup">
+    <param name="Name" value="Charge Code Link Setup">
+    <param name="Local" value="HLP/EMS/Charge_Code_Link_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Charge Code Maintenance">
+    <param name="Name" value="Charge Code Maintenance">
+    <param name="Local" value="HLP/EMS/Charge_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Charges Tab">
+    <param name="Name" value="Charges Tab">
+    <param name="Local" value="HLP/QTN/Entry/Charges_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+    <param name="Name" value="Charges Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Charges_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Charges Tab Screen">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Clause Details">
+    <param name="Name" value="Quotation Print Tab">
+    <param name="Local" value="HLP/QTN/Entry/Quotation_Print_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Comment Category">
+    <param name="Name" value="How to create a Comment Category">
+    <param name="Local" value="BIZ/CA/How_to_create_a_Comment_Category.htm">
+    <param name="Name" value="Comment Category">
+    <param name="Local" value="SOP/CA/Comment_Category.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Comment Category Maintenance">
+    <param name="Name" value="Comment Category Maintenance">
+    <param name="Local" value="HLP/CA/Comment_Category_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Comments Tab">
+    <param name="Name" value="Comments Tab">
+    <param name="Local" value="HLP/QTN/Entry/Comments_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity">
+    <param name="Name" value="How to Create a Commodity">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Commodity.htm">
+    <param name="Name" value="Commodity">
+    <param name="Local" value="SOP/CA/Commodity.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity Details">
+    <param name="Name" value="Commodity Details">
+    <param name="Local" value="HLP/EMS/Commodity_Details.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity Group">
+    <param name="Name" value="How to Create a Commodity Group">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Commodity_Group.htm">
+    <param name="Name" value="Commodity Group">
+    <param name="Local" value="SOP/CA/Commodity_Group.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity Group Local Language">
+    <param name="Name" value="Commodity Group Local Language">
+    <param name="Local" value="HLP/CA/Commodity_Group_Local_Language.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity Group Maintenance">
+    <param name="Name" value="Commodity Group Maintenance">
+    <param name="Local" value="HLP/CA/Commodity_Group_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity History">
+    <param name="Name" value="Commodity History">
+    <param name="Local" value="HLP/EMS/Commodity_History.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity List">
+    <param name="Name" value="Commodity">
+    <param name="Local" value="HLP/CA/Commodity.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Commodity Maintenance">
+    <param name="Name" value="Commodity Maintenance">
+    <param name="Local" value="HLP/CA/Commodity_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Consortium Code">
+    <param name="Name" value="How to Create a Consortium Code">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Consortium_Code.htm">
+    <param name="Name" value="Consortium Code">
+    <param name="Local" value="SOP/CA/Consortium_Code.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Consortium Code Maintenance">
+    <param name="Name" value="Consortium Code Maintenance">
+    <param name="Local" value="HLP/CA/Consortium_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contacts">
+    <param name="Name" value="Customer Profile - Contacts">
+    <param name="Local" value="HLP/CRM/Customer_Profile_Contacts.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Container Damaged">
+    <param name="Name" value="How to Handle Container Damaged and Rework">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Container_Damaged_and_Rework.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Container Damaged and Rework">
+    <param name="Name" value="How to Handle Container Damaged and Rework">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Container_Damaged_and_Rework.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Container Disposal">
+    <param name="Name" value="How to Handle Container Disposal">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Container_Disposal.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Container Equipment Activities">
+    <param name="Name" value="How to Update Container Equipment Activities">
+    <param name="Local" value="BIZ/EMS/How_to_Update_Container_Equipment_Activities.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Container Repair">
+    <param name="Name" value="How to Handle Container Repair">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Container_Repair.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Container/Commodity Tab">
+    <param name="Name" value="Container/Commodity Tab">
+    <param name="Local" value="HLP/QTN/Entry/Container_Commodity_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Content Type Maintenance">
+    <param name="Name" value="Content Type Maintenance">
+    <param name="Local" value="HLP/CA/Content_Type_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contract Upload">
+    <param name="Name" value="Contract Upload">
+    <param name="Local" value="HLP/ELS/Contract_Upload.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contribution Margin 1">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contribution Margin 2">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contribution Tab">
+    <param name="Name" value="Contribution Tab">
+    <param name="Local" value="HLP/QTN/Entry/Contribution_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Control Zone">
+    <param name="Name" value="How to Create a Control Zone">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Control_Zone.htm">
+    <param name="Name" value="Control Zone">
+    <param name="Local" value="SOP/CA/Control_Zone.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Control Zone Maintenance">
+    <param name="Name" value="Control Zone Maintenance">
+    <param name="Local" value="HLP/CA/Control_Zone_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Convert Long Term to Purchase Maintenance">
+    <param name="Name" value="Convert Long Term to Purchase Maintenance">
+    <param name="Local" value="HLP/ELS/Convert_Long_Term_to_Purchase_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Copy Quotation">
+    <param name="Name" value="Quotation Entry">
+    <param name="Local" value="HLP/QTN/Quotation_Entry.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Counter Proposal">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Country">
+    <param name="Name" value="Country">
+    <param name="Local" value="HLP/CA/Country.htm">
+    <param name="Name" value="How to Create a Country">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Country.htm">
+    <param name="Name" value="Country">
+    <param name="Local" value="SOP/CA/Country.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Country Maintenance">
+    <param name="Name" value="Country Maintenance">
+    <param name="Local" value="HLP/CA/Country_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Country Restrictions Maintenance">
+    <param name="Name" value="Country Restrictions Maintenance">
+    <param name="Local" value="HLP/CA/Country_Restrictions_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Country Search">
+    <param name="Name" value="Country">
+    <param name="Local" value="HLP/CA/Country.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Custom Detained Container">
+    <param name="Name" value="How to Handle Custom Detained Container">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Custom_Detained_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Customer Multi-Language">
+    <param name="Name" value="New Account Multi-Language">
+    <param name="Local" value="HLP/CRM/New_Account_Multi_Language.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Customer Profile">
+    <param name="Name" value="Customer Profile">
+    <param name="Local" value="SOP/CRM/Customer_Profile.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Customer Profile - Maintenance">
+    <param name="Name" value="Customer Profile - Maintenance">
+    <param name="Local" value="HLP/CRM/Customer_Profile_Maintenance.htm">
+    <param name="Name" value="Customer Profile - Maintenance">
+    <param name="Local" value="HLP/CRM/Customer_Profile_Maintenance1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Customer Profile - Multi-Language">
+    <param name="Name" value="Customer Profile - Multi-Language">
+    <param name="Local" value="HLP/CRM/Customer_Profile_Multi_Language.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Customer Search">
+    <param name="Name" value="Customer Search">
+    <param name="Local" value="HLP/CRM/Customer_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Customers Tab">
+    <param name="Name" value="Customers Tab">
+    <param name="Local" value="HLP/QTN/Entry/Customers_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Delete Voyage Search and Maintenance">
+    <param name="Name" value="Delete Voyage">
+    <param name="Local" value="HLP/VSS/Delete_Voyage.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Department Maintenance">
+    <param name="Name" value="Department Maintenance">
+    <param name="Local" value="HLP/CA/Department_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot">
+    <param name="Name" value="How to Create a Depot">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Depot.htm">
+    <param name="Name" value="Depot">
+    <param name="Local" value="SOP/CA/Depot.htm">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Contract">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Maintenance">
+    <param name="Name" value="Depot Maintenance">
+    <param name="Local" value="HLP/CA/Depot_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Move Maintenance">
+    <param name="Name" value="Depot Move Maintenance">
+    <param name="Local" value="HLP/STR/Depot_Move_Maintenance1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Name Multi Language">
+    <param name="Name" value="Depot Name Multi Language">
+    <param name="Local" value="HLP/CA/Depot_Name_Multi_Language.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Contract">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Invoice Dispute">
+    <param name="Name" value="Depot Storage Invoice Dispute">
+    <param name="Local" value="SOP/STR/Depot_Storage_Invoice_Dispute.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Purchase Order (PO) Generation">
+    <param name="Name" value="Depot Storage Purchase Order (PO) Generation">
+    <param name="Local" value="SOP/STR/Depot_Storage_Purchase_Order_PO_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Rate Charges">
+    <param name="Name" value="Depot Storage Rate Setup - Charges">
+    <param name="Local" value="HLP/STR/Depot_Storage_Rate_Setup_Charges.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Rate Maintenance">
+    <param name="Name" value="Depot Storage Rate Setup - Maintenance">
+    <param name="Local" value="HLP/STR/Depot_Storage_Rate_Setup_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Depot Storage Rate Setup">
+    <param name="Name" value="Depot Storage Rate Setup">
+    <param name="Local" value="HLP/STR/Depot_Storage_Rate_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/ApprovalDnd/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Direct Entry Proforma Maintenance">
+    <param name="Name" value="Direct Entry Proforma Maintenance">
+    <param name="Local" value="HLP/VSS/Direct_Entry_Proforma_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Direct Interchange">
+    <param name="Name" value="Direct Interchange">
+    <param name="Local" value="SOP/ELS/Direct_Interchange.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Division Master">
+    <param name="Name" value="How to Create a Code for Division Master">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Code_for_Division_Master.htm">
+    <param name="Name" value="Division Master">
+    <param name="Local" value="SOP/CA/Division_Master.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Division Master Maintenance">
+    <param name="Name" value="Division Master Maintenance">
+    <param name="Local" value="HLP/CA/Division_Master_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="DND Approved By">
+    <param name="Name" value="Maintenance Tab – Approval Details">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab_–_Approval_Details.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Document Master">
+    <param name="Name" value="Document Master">
+    <param name="Local" value="SOP/CRM/Document_Master.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Document Master Maintenance">
+    <param name="Name" value="Document Master Maintenance">
+    <param name="Local" value="HLP/CRM/Document_Master_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Dunning Message Maintenance">
+    <param name="Name" value="Dunning Message Maintenance">
+    <param name="Local" value="HLP/CA/Dunning_Message_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="E-Mail &amp; Disclaimer">
+    <param name="Name" value="Terms &amp; Conditions - E-Mail &amp; Disclaimer">
+    <param name="Local" value="HLP/CA/Terms_Conditions_E_Mail_Disclaimer.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="E-Mail Expression">
+    <param name="Name" value="E-Mail Expression">
+    <param name="Local" value="HLP/CA/E_Mail_Expression.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="E-Mail ID">
+    <param name="Name" value="How to Create an E-Mail ID">
+    <param name="Local" value="BIZ/CA/How_to_Create_an_E_Mail_ID.htm">
+    <param name="Name" value="E-Mail ID">
+    <param name="Local" value="SOP/CA/E_Mail_ID.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="E-Mail ID Maintenance">
+    <param name="Name" value="E-Mail ID Maintenance">
+    <param name="Local" value="HLP/CA/E_Mail_ID_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="E-Mail Message  Disclaimer &amp; Notification">
+    <param name="Name" value="E-Mail Message, Disclaimer &amp; Notification">
+    <param name="Local" value="HLP/CA/E_Mail_Message_Disclaimer_Notification.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="EDI Equipment Enquiry">
+    <param name="Name" value="EDI Equipment Enquiry">
+    <param name="Local" value="SOP/EDI/EDI_Equipment_Enquiry.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="EDI Hard Errors">
+    <param name="Name" value="How to Modify EDI Hard Errors">
+    <param name="Local" value="BIZ/EMS/How_to_Modify_EDI_Hard_Errors.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="EDI Message Tracking">
+    <param name="Name" value="EDI Message Tracking">
+    <param name="Local" value="SOP/EDI/EDI_Message_Tracking.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="EDI Soft Errors">
+    <param name="Name" value="How to Modify EDI Soft Errors">
+    <param name="Local" value="BIZ/EMS/How_to_Modify_EDI_Soft_Errors.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="EE Approved By">
+    <param name="Name" value="Maintenance Tab – Approval Details">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab_–_Approval_Details.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Email Expression">
+    <param name="Name" value="Email Expression">
+    <param name="Local" value="HLP/CA/Email_Expression.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Empty Storage Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="EQPR">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+    <param name="Name" value="Depot Storage Purchase Order (PO) Generation">
+    <param name="Local" value="SOP/STR/Depot_Storage_Purchase_Order_PO_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Activity Code List">
+    <param name="Name" value="Equipment Activity Code List">
+    <param name="Local" value="HLP/EMS/Equipment_Activity_Code_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Activity Code Maintenance">
+    <param name="Name" value="Equipment Activity Code Maintenance">
+    <param name="Local" value="HLP/EMS/Equipment_Activity_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Availability">
+    <param name="Name" value="Equipment Availability">
+    <param name="Local" value="HLP/EMS/Equipment_Availability.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Browser">
+    <param name="Name" value="Equipment Browser">
+    <param name="Local" value="HLP/EMS/Equipment_Browser123.htm">
+    <param name="Name" value="Equipment Browser">
+    <param name="Local" value="HLP/EMS/Equipment_Browser12.htm">
+    <param name="Name" value="Equipment Browser">
+    <param name="Local" value="HLP/EMS/Equipment_Browser.htm">
+    <param name="Name" value="Equipment Browser">
+    <param name="Local" value="HLP/EMS/Equipment_Browser1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Business Restriction Maintenance">
+    <param name="Name" value="Equipment Business Restriction Maintenance">
+    <param name="Local" value="HLP/EMS/Equipment_Business_Restriction_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Business Restriction Setup">
+    <param name="Name" value="Equipment Business Restriction Setup">
+    <param name="Local" value="HLP/EMS/Equipment_Business_Restriction_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Category">
+    <param name="Name" value="Equipment Category">
+    <param name="Local" value="SOP/CA/Equipment_Category.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Category Code">
+    <param name="Name" value="Equipment Category Code Maintenance">
+    <param name="Local" value="HLP/CA/Equipment_Category_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Category Code Maintenance">
+    <param name="Name" value="Equipment Category Code Maintenance">
+    <param name="Local" value="HLP/CA/Equipment_Category_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Exception Inquiry">
+    <param name="Name" value="Equipment Exception Inquiry">
+    <param name="Local" value="HLP/EMS/Equipment_Exception_Inquiry.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Exception Inquiry Search List">
+    <param name="Name" value="Equipment Exception Inquiry Search List">
+    <param name="Local" value="HLP/EMS/Equipment_Exception_Inquiry_Search_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Exception Report">
+    <param name="Name" value="Equipment Exception Report">
+    <param name="Local" value="HLP/EMS/Equipment_Exception_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Grade">
+    <param name="Name" value="Equipment Grade">
+    <param name="Local" value="HLP/EMS/Equipment_Grade.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Grade Maintenance">
+    <param name="Name" value="Equipment Grade Maintenance">
+    <param name="Local" value="HLP/EMS/Equipment_Grade_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment History">
+    <param name="Name" value="Equipment Move History Report">
+    <param name="Local" value="HLP/EMS/Equipment_Move_History_Report.htm">
+    <param name="Name" value="Equipment History">
+    <param name="Local" value="HLP/EMS/Equipment_History123.htm">
+    <param name="Name" value="Equipment History">
+    <param name="Local" value="HLP/EMS/Equipment_History12.htm">
+    <param name="Name" value="Equipment History">
+    <param name="Local" value="HLP/EMS/Equipment_History.htm">
+    <param name="Name" value="Equipment History">
+    <param name="Local" value="HLP/EMS/Equipment_History1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment History Report">
+    <param name="Name" value="Equipment History Report">
+    <param name="Local" value="HLP/EMS/Equipment_History_Report.htm">
+    <param name="Name" value="Equipment History Report">
+    <param name="Local" value="HLP/EMS/Equipment_History_Report1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Master List">
+    <param name="Name" value="Equipment Master List">
+    <param name="Local" value="HLP/EMS/Equipment_Master_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Master Maintenance">
+    <param name="Name" value="Equipment Master Maintenance (For GP Container)">
+    <param name="Local" value="HLP/EMS/Equipment_Master_Maintenance_For_GP_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Master Maintenance (For Chassis)">
+    <param name="Name" value="Equipment Master Maintenance (For Chassis)">
+    <param name="Local" value="HLP/EMS/Equipment_Master_Maintenance_For_Chassis.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Master Maintenance (For GP Container)">
+    <param name="Name" value="Equipment Master Maintenance (For GP Container)">
+    <param name="Local" value="HLP/EMS/Equipment_Master_Maintenance_For_GP_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Master Maintenance (For Reefer Container)">
+    <param name="Name" value="Equipment Master Maintenance (For Reefer Container)">
+    <param name="Local" value="HLP/EMS/Equipment_Master_Maintenance_For_Reefer_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Master Setup">
+    <param name="Name" value="Equipment Master Setup">
+    <param name="Local" value="HLP/EMS/Equipment_Master_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Move">
+    <param name="Name" value="How to Look Up Equipment Moves in EDI">
+    <param name="Local" value="BIZ/EDI/How_to_Look_Up_Equipment_Moves_in_EDI.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Move Correction">
+    <param name="Name" value="Equipment Move Correction">
+    <param name="Local" value="HLP/EMS/Equipment_Move_Correction.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Move History Report">
+    <param name="Name" value="Equipment Move History Report">
+    <param name="Local" value="HLP/EMS/Equipment_Move_History_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Moves in EDI">
+    <param name="Name" value="How to Look Up Equipment Moves in EDI">
+    <param name="Local" value="BIZ/EDI/How_to_Look_Up_Equipment_Moves_in_EDI.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Off-Hire Inquiry">
+    <param name="Name" value="EDI Equipment Enquiry">
+    <param name="Local" value="HLP/EDI/EDI_Equipment_Enquiry.htm">
+    <param name="Name" value="EDI Message Tracking">
+    <param name="Local" value="HLP/EDI/EDI_Message_Tracking.htm">
+    <param name="Name" value="EDI Hard and Soft Error Handling">
+    <param name="Local" value="HLP/EMS/EDI_Hard_and_Soft_Error_Handling.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Off-Hire Inquiry History">
+    <param name="Name" value="Equipment Off-Hire Inquiry History">
+    <param name="Local" value="HLP/EMS/Equipment_Off_Hire_Inquiry_History.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Overdue Search">
+    <param name="Name" value="Equipment Overdue Search">
+    <param name="Local" value="HLP/EMS/Equipment_Overdue_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Provision">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+    <param name="Name" value="Depot Storage Purchase Order (PO) Generation">
+    <param name="Local" value="SOP/STR/Depot_Storage_Purchase_Order_PO_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Recap By Owner">
+    <param name="Name" value="Equipment Recap By Owner">
+    <param name="Local" value="HLP/EMS/Equipment_Recap_By_Owner.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Remarks History">
+    <param name="Name" value="Equipment Remarks History">
+    <param name="Local" value="HLP/EMS/Equipment_Remarks_History.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment System Validation Maintenance">
+    <param name="Name" value="Equipment System Validation Maintenance">
+    <param name="Local" value="HLP/EMS/Equipment_System_Validation_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment System Validation Search">
+    <param name="Name" value="Equipment System Validation Search">
+    <param name="Local" value="HLP/EMS/Equipment_System_Validation_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Tracking">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Type">
+    <param name="Name" value="Equipment Type">
+    <param name="Local" value="SOP/CA/Equipment_Type.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Equipment Type Code Maintenance">
+    <param name="Name" value="Equipment Type Code Maintenance">
+    <param name="Local" value="HLP/CA/Equipment_Type_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Error">
+    <param name="Name" value="Error">
+    <param name="Local" value="HLP/EMS/Error1.htm">
+    <param name="Name" value="Error">
+    <param name="Local" value="HLP/EMS/Error123.htm">
+    <param name="Name" value="Error">
+    <param name="Local" value="HLP/EMS/Error12.htm">
+    <param name="Name" value="Error">
+    <param name="Local" value="HLP/EMS/Error.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Estimated Rental Charges Report">
+    <param name="Name" value="Estimated Rental Charges Report">
+    <param name="Local" value="HLP/ELS/Estimated_Rental_Charges_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Estimated Rental Charges Search">
+    <param name="Name" value="Estimated Rental Charges Search">
+    <param name="Local" value="HLP/ELS/Estimated_Rental_Charges_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Exp. Date">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Export Demurrage Tab">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Export Detention Tab">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Extend Quotation">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Extended Expiry (EE)">
+    <param name="Name" value="Quotation EE Approval">
+    <param name="Local" value="HLP/QTN/Quotation_EE_Approval.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="FAC Applicable">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="FIAP">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+    <param name="Name" value="Depot Storage Purchase Order (PO) Generation">
+    <param name="Local" value="SOP/STR/Depot_Storage_Purchase_Order_PO_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Filter Name">
+    <param name="Name" value="Filter Name">
+    <param name="Local" value="SOP/CRM/Filter_Name.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Follow Up Date">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Forecast Booking">
+    <param name="Name" value="Forecast Booking (FOBO) SOP">
+    <param name="Local" value="SOP/CSPU/Forecast_Booking_FOBO_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Forecast Booking (FOBO)">
+    <param name="Name" value="Forecast Booking (FOBO) SOP">
+    <param name="Local" value="SOP/CSPU/Forecast_Booking_FOBO_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="FSC">
+    <param name="Name" value="How to Setup an FSC">
+    <param name="Local" value="BIZ/CA/How_to_Setup_an_FSC.htm">
+    <param name="Name" value="Function Support Centre (FSC)">
+    <param name="Local" value="SOP/CA/Function_Support_Centre_FSC.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="FSC Maintenance">
+    <param name="Name" value="FSC Maintenance">
+    <param name="Local" value="HLP/CA/FSC_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Function Support Centre">
+    <param name="Name" value="Function Support Centre (FSC)">
+    <param name="Local" value="SOP/CA/Function_Support_Centre_FSC.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Maintenance – Affected Quotation">
+    <param name="Name" value="Maintenance – Affected Quotation">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Maintenance_–_Affected_Quotation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Maintenance – Expire/Extend Port Surcharge Rates">
+    <param name="Name" value="Maintenance – Expire/Extend Port Surcharge Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Maintenance_–_Expire_Extend_Port_Surcharge_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Maintenance – Modify Guideline Rates">
+    <param name="Name" value="Maintenance – Modify Guideline Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Maintenance_–_Modify_Guideline_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Maintenance – Modify Port Surcharge Rates">
+    <param name="Name" value="Maintenance – Modify Port Surcharge Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Maintenance_–_Modify_Port_Surcharge_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Search &amp; List– Modify Open Guideline Rates">
+    <param name="Name" value="Search &amp; List – Modify Open Guideline Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Search_List_–_Modify_Open_Guideline_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Search – Expire Port Surcharge Rates">
+    <param name="Name" value="Expire Port Surcharge Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Expire_Port_Surcharge_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Search – Extend Port Surcharge Rates">
+    <param name="Name" value="Extend Port Surcharge Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Extend_Port_Surcharge_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Search – Modify Final Guideline Rates">
+    <param name="Name" value="Modify Final Guideline Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Modify_Final_Guideline_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Global Rate Changes Search – Modify Port Surcharge Rates">
+    <param name="Name" value="Modify Port Surcharge Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffGlobalRateChangesHlp/Modify_Port_Surcharge_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Guide Line Rate Deviation">
+    <param name="Name" value="Service Maintenance">
+    <param name="Local" value="HLP/CA/Service_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Guideline Rates Maintenance">
+    <param name="Name" value="Maintenance">
+    <param name="Local" value="HLP/CTF/CtfTariffGuidelineRatesHlp/Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Guideline Rates Search &amp; List">
+    <param name="Name" value="Search &amp; List">
+    <param name="Local" value="HLP/CTF/CtfTariffGuidelineRatesHlp/Search_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Haulage Location">
+    <param name="Name" value="Haulage Location">
+    <param name="Local" value="SOP/IJS/Haulage_Location.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="How to Create a Slot Exchange Partner as Vendor">
+    <param name="Name" value="How to Create a Slot Exchange Partner as Vendor">
+    <param name="Local" value="BIZ/VMS/How_to_Create_a_Slot_Exchange_Partner_as_Vendor.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Import Demurrage Tab">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Import Detention Tab">
+    <param name="Name" value="Detention and Demurrage Tab">
+    <param name="Local" value="HLP/QTN/Entry/Detention_and_Demurrage_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="In-land Movement">
+    <param name="Name" value="How to Handle In-land Movement">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_In_land_Movement.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Industry Master">
+    <param name="Name" value="Industry Master">
+    <param name="Local" value="SOP/CRM/Industry_Master.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Industry Master Maintenance">
+    <param name="Name" value="Industry Master Maintenance">
+    <param name="Local" value="HLP/CRM/Industry_Master_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Inland Point">
+    <param name="Name" value="How to Create an Inland Point">
+    <param name="Local" value="BIZ/CA/How_to_Create_an_Inland_Point.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Inland Point Maintenance">
+    <param name="Name" value="Inland Point Maintenance">
+    <param name="Local" value="HLP/CA/Inland_Point_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Interim Quotation">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Authorization Maintenance">
+    <param name="Name" value="Lease Authorization Maintenance">
+    <param name="Local" value="HLP/ELS/Lease_Authorization_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Charges (Calculation)">
+    <param name="Name" value="Lease Charges (Calculation)">
+    <param name="Local" value="HLP/ELS/Lease_Charges_Calculation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Charges By Period Report">
+    <param name="Name" value="Lease Charges By Period Report">
+    <param name="Local" value="HLP/ELS/Lease_Charges_By_Period_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Contract Comparison Inquiry">
+    <param name="Name" value="Lease Contract Comparison Inquiry">
+    <param name="Local" value="HLP/ELS/Lease_Contract_Comparison_Inquiry.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Contract Inquiry Report">
+    <param name="Name" value="Lease Contract Inquiry Report">
+    <param name="Local" value="HLP/ELS/Lease_Contract_Inquiry_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Contract Maintenance">
+    <param name="Name" value="Lease Contract Maintenance (By Volume)">
+    <param name="Local" value="HLP/ELS/Lease_Contract_Maintenance_By_Volume.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Contract Preview">
+    <param name="Name" value="Lease Contract Preview">
+    <param name="Local" value="HLP/ELS/Lease_Contract_Preview.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Contract Rate Maintenance">
+    <param name="Name" value="Lease Contract Rate Maintenance">
+    <param name="Local" value="HLP/ELS/Lease_Contract_Rate_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Pro-Forma">
+    <param name="Name" value="Lease Pro-Forma Extraction">
+    <param name="Local" value="HLP/ELS/Lease_Pro_Forma_Extraction.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lease Pro-Forma Extraction">
+    <param name="Name" value="Lease Pro-Forma Extraction">
+    <param name="Local" value="HLP/ELS/Lease_Pro_Forma_Extraction.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Leased Equipment Browser List">
+    <param name="Name" value="Leased Equipment Browser List">
+    <param name="Local" value="HLP/ELS/Leased_Equipment_Browser_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Leasing Proforma SOP">
+    <param name="Name" value="Leasing Proforma">
+    <param name="Local" value="SOP/ELS/Leasing_Proforma.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lessor/Lessee Code Maintenance">
+    <param name="Name" value="Lessor/Lessee Code Maintenance">
+    <param name="Local" value="HLP/ELS/Lessor_Lessee_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="LiftOff">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="LiftOn">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Local Language Setting">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting123.htm">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting1.htm">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting.htm">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting1234.htm">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting123456.htm">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting12.htm">
+    <param name="Name" value="Local Language Setting">
+    <param name="Local" value="HLP/CA/Local_Language_Setting12345.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Location Code">
+    <param name="Name" value="Location Code">
+    <param name="Local" value="SOP/IJS/Location_Code.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Location Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Location Restrictions Maintenance">
+    <param name="Name" value="Maintenance">
+    <param name="Local" value="HLP/CTF/CtfSetupLocationRestrictionMaintenance/Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Location Restrictions Maintenance – Other Restrictions">
+    <param name="Name" value="Maintenance – Other Restrictions">
+    <param name="Local" value="HLP/CTF/CtfSetupLocationRestrictionMaintenance/Maintenance_–_Other_Restrictions.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Location Restrictions Maintenance – Other Restrictions by Location Pair">
+    <param name="Name" value="Maintenance – Other Restrictions by Location Pair">
+    <param name="Local" value="HLP/CTF/CtfSetupLocationRestrictionMaintenance/Maintenance_–_Other_Restrictions_by_Location_Pair.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Location Restrictions Search &amp; List">
+    <param name="Name" value="Location Restrictions">
+    <param name="Local" value="HLP/CTF/Location_Restrictions.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logic Grid Maintenance">
+    <param name="Name" value="Logic Grid Maintenance">
+    <param name="Local" value="HLP/EMS/Logic_Grid_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logic Grid Search">
+    <param name="Name" value="Logic Grid Search">
+    <param name="Local" value="HLP/EMS/Logic_Grid_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logistic Flag">
+    <param name="Name" value="Logistic Flag">
+    <param name="Local" value="HLP/EMS/Logistic_Flag.htm">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logistic Flag (Attach-Detach) List Maintenance">
+    <param name="Name" value="Logistic Flag (Attach-Detach) List Maintenance">
+    <param name="Local" value="HLP/EMS/Logistic_Flag_Attach_Detach_List_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logistic Flag (Attach-Detach) Search">
+    <param name="Name" value="Logistic Flag (Attach-Detach) Search">
+    <param name="Local" value="HLP/EMS/Logistic_Flag_Attach_Detach_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logistic Flag Maintenance">
+    <param name="Name" value="Logistic Flag Maintenance">
+    <param name="Local" value="HLP/EMS/Logistic_Flag_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logistic Flag Search">
+    <param name="Name" value="Logistic Flag Search">
+    <param name="Local" value="HLP/EMS/Logistic_Flag_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Logistic Flags">
+    <param name="Name" value="Logistic Flags">
+    <param name="Local" value="HLP/EMS/Logistic_Flags.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Mail for Equipment Off-Hire Inquiry Report">
+    <param name="Name" value="Mail for Equipment Off-Hire Inquiry Report">
+    <param name="Local" value="HLP/EMS/Mail_for_Equipment_Off_Hire_Inquiry_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalDnd/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Maintenance Tab – Approval Details">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalDnd/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Monthly Leasing Activity Report">
+    <param name="Name" value="Monthly Leasing Activity Report - PDF Report Screen">
+    <param name="Local" value="HLP/ELS/Monthly_Leasing_Activity_Report_PDF_Report_Screen.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Move Correction">
+    <param name="Name" value="Move Correction">
+    <param name="Local" value="HLP/EMS/Move_Correction1.htm">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Move Entry">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Move Entry Maintenance">
+    <param name="Name" value="Move Entry Maintenance">
+    <param name="Local" value="HLP/EMS/Move_Entry_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Multi-Language Address">
+    <param name="Name" value="Multi-Language Address Input">
+    <param name="Local" value="HLP/VMS/Multi_Language_Address_Input.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Multi-Language Address Input">
+    <param name="Name" value="Multi-Language Address Input">
+    <param name="Local" value="HLP/VMS/Multi_Language_Address_Input.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="New Account">
+    <param name="Name" value="How to create a New Account">
+    <param name="Local" value="BIZ/CRM/How_to_create_a_New_Account.htm">
+    <param name="Name" value="New Account">
+    <param name="Local" value="SOP/CRM/New_Account.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="New Account Maintenance">
+    <param name="Name" value="New Account Maintenance">
+    <param name="Local" value="HLP/CRM/New_Account_Maintenance1.htm">
+    <param name="Name" value="New Account Maintenance">
+    <param name="Local" value="HLP/CRM/New_Account_Maintenance.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalRate/Maintenance_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalEe/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="New-built Container">
+    <param name="Name" value="How to Deploy the New-built Container into the RCL Fleet">
+    <param name="Local" value="BIZ/EMS/How_to_Deploy_the_New_built_Container_into_the_RCL_Fleet.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Notify Users Maintenance">
+    <param name="Name" value="Notify Users Maintenance">
+    <param name="Local" value="HLP/CA/Notify_Users_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Ocean Port">
+    <param name="Name" value="How to Create an Ocean Port and Related River Ports">
+    <param name="Local" value="BIZ/CA/How_to_Create_an_Ocean_Port_and_Related_River_Ports.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Off Hire">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Off Hire / Direct Interchange Out Maintenance">
+    <param name="Name" value="Off Hire / Direct Interchange Out Maintenance">
+    <param name="Local" value="HLP/EMS/Off_Hire_Direct_Interchange_Out_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Off-Hire Move">
+    <param name="Name" value="Off-Hire Move">
+    <param name="Local" value="HLP/EMS/Off_Hire_Move.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Off-hiring Containers">
+    <param name="Name" value="How to Off-hiring Containers Back to Lessor">
+    <param name="Local" value="BIZ/EMS/How_to_Off_hiring_Containers_Back_to_Lessor.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="On/Off Hired Units">
+    <param name="Name" value="On/Off Hired Units">
+    <param name="Local" value="HLP/ELS/On_Off_Hired_Units.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="One-Off Quotation">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Online Training Movies">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Operator Code">
+    <param name="Name" value="Operator Code">
+    <param name="Local" value="SOP/CRM/Operator_Code.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Operator Code Maintenance">
+    <param name="Name" value="Operator Code Maintenance">
+    <param name="Local" value="HLP/CRM/Operator_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Organization Type">
+    <param name="Name" value="Organization Type">
+    <param name="Local" value="SOP/CRM/Organization_Type.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Organization Type Maintenance">
+    <param name="Name" value="Organization Type Maintenance">
+    <param name="Local" value="HLP/CRM/Organization_Type_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Package Kind">
+    <param name="Name" value="How to Create a Package Kind for Booking and BL Preparation">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Package_Kind_for_Booking_and_BL_Preparation.htm">
+    <param name="Name" value="Package Kind">
+    <param name="Local" value="SOP/CA/Package_Kind.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Package Kind Maintenance">
+    <param name="Name" value="Package Kind Maintenance">
+    <param name="Local" value="HLP/CA/Package_Kind_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Package Material">
+    <param name="Name" value="How to Create a Package Material">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Package_Material.htm">
+    <param name="Name" value="Package Material">
+    <param name="Local" value="SOP/CA/Package_Material.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Package Material Maintenance">
+    <param name="Name" value="Package Material Maintenance">
+    <param name="Local" value="HLP/CA/Package_Material_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Pending Authorization Off Hired">
+    <param name="Name" value="Pending Authorization Off Hired">
+    <param name="Local" value="HLP/EMS/Pending_Authorization_Off_Hired.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Pending Authorization On Hired">
+    <param name="Name" value="Pending Authorization On Hired">
+    <param name="Local" value="HLP/EMS/Pending_Authorization_On_Hired.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Pick Up Container">
+    <param name="Name" value="Pick Up Container">
+    <param name="Local" value="SOP/ELS/Pick_Up_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port">
+    <param name="Name" value="Port">
+    <param name="Local" value="SOP/CA/Port.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Group Maintenance">
+    <param name="Name" value="Port Group Maintenance">
+    <param name="Local" value="HLP/CTF/CtfSetupPortGroupHlp/Port_Group_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Group Search &amp; List">
+    <param name="Name" value="Port Group">
+    <param name="Local" value="HLP/CTF/Port_Group.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Maintenance">
+    <param name="Name" value="Port Maintenance">
+    <param name="Local" value="HLP/CA/Port_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Surcharge Rates Maintenance - Export">
+    <param name="Name" value="Maintenance - Export">
+    <param name="Local" value="HLP/CTF/CtfTariffPortSurchargeRatesHlp/Maintenance_Export.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Surcharge Rates Maintenance - Import">
+    <param name="Name" value="Maintenance - Import">
+    <param name="Local" value="HLP/CTF/CtfTariffPortSurchargeRatesHlp/Maintenance_Import.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Surcharge Rates Maintenance – Import Surcharge Rates">
+    <param name="Name" value="Maintenance – Import Surcharge Rates">
+    <param name="Local" value="HLP/CTF/CtfTariffPortSurchargeRatesHlp/Maintenance_–_Import_Surcharge_Rates.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Surcharge Rates Maintenance – Transshipment">
+    <param name="Name" value="Maintenance – Transshipment">
+    <param name="Local" value="HLP/CTF/CtfTariffPortSurchargeRatesHlp/Maintenance_–_Transshipment.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Port Surcharge Rates Search &amp; List">
+    <param name="Name" value="Port Surcharge Rates Search &amp; List">
+    <param name="Local" value="HLP/CTF/CtfTariffPortSurchargeRatesHlp/Port_Surcharge_Rates_Search_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Print Clauses">
+    <param name="Name" value="Quotation Print Tab">
+    <param name="Local" value="HLP/QTN/Entry/Quotation_Print_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Print New Customer">
+    <param name="Name" value="Print New Customer">
+    <param name="Local" value="SOP/CRM/Print_New_Customer.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Print New Customer Inquiry Report">
+    <param name="Name" value="Print New Customer Inquiry Report">
+    <param name="Local" value="HLP/CRM/Print_New_Customer_Inquiry_Report.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Proforma Detail">
+    <param name="Name" value="Proforma Detail">
+    <param name="Local" value="HLP/ELS/Proforma_Detail.htm">
+    <param name="Name" value="Proforma Detail">
+    <param name="Local" value="HLP/STR/Proforma_Detail.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Proforma Generation">
+    <param name="Name" value="Proforma Generation">
+    <param name="Local" value="HLP/ELS/Proforma_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Proforma List">
+    <param name="Name" value="Proforma List">
+    <param name="Local" value="HLP/STR/Proforma_List.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Proforma Summary">
+    <param name="Name" value="Proforma Summary">
+    <param name="Local" value="HLP/ELS/Proforma_Summary.htm">
+    <param name="Name" value="Proforma Summary">
+    <param name="Local" value="HLP/STR/Proforma_Summary.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Provinces">
+    <param name="Name" value="How to Create a Provinces in China">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Provinces_in_China.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Purchase Order (PO)">
+    <param name="Name" value="Depot Storage Purchase Order (PO) Generation">
+    <param name="Local" value="SOP/STR/Depot_Storage_Purchase_Order_PO_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="QtdBy">
+    <param name="Name" value="Customers Tab">
+    <param name="Local" value="HLP/QTN/Entry/Customers_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="quotation effective date">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="quotation expiry date">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quotation Extended Expiry (EE) Approval">
+    <param name="Name" value="Quotation EE Approval">
+    <param name="Local" value="HLP/QTN/Quotation_EE_Approval.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quotation List">
+    <param name="Name" value="Quotation Entry">
+    <param name="Local" value="HLP/QTN/Quotation_Entry.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quotation Number Format">
+    <param name="Name" value="Quotation Entry">
+    <param name="Local" value="HLP/QTN/Quotation_Entry.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quotation Print Tab">
+    <param name="Name" value="Quotation Print Tab">
+    <param name="Local" value="HLP/QTN/Entry/Quotation_Print_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quotation Rate Approval Flow of Events">
+    <param name="Name" value="Quotation Rate Approval">
+    <param name="Local" value="HLP/QTN/Quotation_Rate_Approval.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quotation#">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Quoted By">
+    <param name="Name" value="Quotation EE Approval">
+    <param name="Local" value="HLP/QTN/Quotation_EE_Approval.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="RCL Owned Vessel">
+    <param name="Name" value="How to Create RCL Owned Vessel Deployed In Particular Service">
+    <param name="Local" value="BIZ/CA/How_to_Create_RCL_Owned_Vessel_Deployed_In_Particular_Service.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Re-export Container">
+    <param name="Name" value="How to Handle Re-export Container">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Re_export_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Region">
+    <param name="Name" value="How to Create a Region">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Region.htm">
+    <param name="Name" value="Region">
+    <param name="Local" value="SOP/CA/Region.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Region List">
+    <param name="Name" value="Region">
+    <param name="Local" value="HLP/CA/Region.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Region Maintenance">
+    <param name="Name" value="Region Maintenance">
+    <param name="Local" value="HLP/CA/Region_Maintenance.htm">
+    <param name="Name" value="Region Maintenance">
+    <param name="Local" value="HLP/CA/Region_Maintenance1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Releasing Container to Shipper Pool">
+    <param name="Name" value="How to Handle Releasing Container to Shipper Pool">
+    <param name="Local" value="BIZ/STR/How_to_Handle_Releasing_Container_to_Shipper_Pool.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Remarks">
+    <param name="Name" value="Remarks">
+    <param name="Local" value="HLP/EMS/Remarks.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Repositioning Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Revenue">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="River Ports">
+    <param name="Name" value="How to Create an Ocean Port and Related River Ports">
+    <param name="Local" value="BIZ/CA/How_to_Create_an_Ocean_Port_and_Related_River_Ports.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="ROE Table">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="ROE Table Maintenance">
+    <param name="Name" value="ROE Table Maintenance">
+    <param name="Local" value="HLP/CA/ROE_Table_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Routing List">
+    <param name="Name" value="Customers Tab">
+    <param name="Local" value="HLP/QTN/Entry/Customers_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Routing Tab">
+    <param name="Name" value="Routing Tab">
+    <param name="Local" value="HLP/QTN/Entry/Routing_Tab.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Salesman">
+    <param name="Name" value="Salesman">
+    <param name="Local" value="SOP/CA/Salesman.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Salesman Code">
+    <param name="Name" value="How to Create a Salesman Code">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Salesman_Code.htm">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Salesman Maintenance">
+    <param name="Name" value="Salesman Maintenance">
+    <param name="Local" value="HLP/CA/Salesman_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Serial Master Search">
+    <param name="Name" value="Serial Master Search">
+    <param name="Local" value="HLP/EMS/Serial_Master_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Service">
+    <param name="Name" value="Service">
+    <param name="Local" value="SOP/CA/Service1.htm">
+    <param name="Name" value="Service">
+    <param name="Local" value="SOP/CA/Service.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Service Code">
+    <param name="Name" value="How to Create a Service Code">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Service_Code.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Service Group Code">
+    <param name="Name" value="How to Create a Service Group Code">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Service_Group_Code.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Service Group Code Maintenance">
+    <param name="Name" value="Service Group Code Maintenance">
+    <param name="Local" value="HLP/CA/Service_Group_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Service Maintenance">
+    <param name="Name" value="Service Maintenance">
+    <param name="Local" value="HLP/CA/Service_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Shipment Term">
+    <param name="Name" value="How to Create a Code for Shipment Term">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Code_for_Shipment_Term.htm">
+    <param name="Name" value="Shipment Term">
+    <param name="Local" value="SOP/CA/Shipment_Term.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Shipment Term Maintenance">
+    <param name="Name" value="Shipment Term Maintenance">
+    <param name="Local" value="HLP/CA/Shipment_Term_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Show History">
+    <param name="Name" value="Show History">
+    <param name="Local" value="HLP/EMS/Show_History.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Slm#">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Slot Exchange Partner">
+    <param name="Name" value="How to Create a Slot Exchange Partner as Vendor">
+    <param name="Local" value="BIZ/VMS/How_to_Create_a_Slot_Exchange_Partner_as_Vendor.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="State">
+    <param name="Name" value="State">
+    <param name="Local" value="SOP/CA/State.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="State Maintenance">
+    <param name="Name" value="State Maintenance">
+    <param name="Local" value="HLP/CA/State_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Storage Agreement">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Storage Charges">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Storage Charges (Calculation)">
+    <param name="Name" value="Storage Charges (Calculation)">
+    <param name="Local" value="HLP/STR/Storage_Charges_Calculation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Storage Charges (Calculation) Maintenance">
+    <param name="Name" value="Storage Charges (Calculation) Maintenance">
+    <param name="Local" value="HLP/STR/Storage_Charges_Calculation_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Storage Proforma Generation">
+    <param name="Name" value="Storage Proforma Generation">
+    <param name="Local" value="HLP/STR/Storage_Proforma_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sublease Authorization Maintenance">
+    <param name="Name" value="Sublease Authorization Maintenance">
+    <param name="Local" value="HLP/ELS/Sublease_Authorization_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sublease Billing (Invoice Generation)">
+    <param name="Name" value="Sublease Billing (Invoice Generation)">
+    <param name="Local" value="HLP/ELS/Sublease_Billing_Invoice_Generation.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sublease Billing History (Equipment Wise)">
+    <param name="Name" value="Sublease Billing History (Equipment Wise)">
+    <param name="Local" value="HLP/ELS/Sublease_Billing_History_Equipment_Wise.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sublease Contract Maintenance">
+    <param name="Name" value="Sublease Contract Maintenance">
+    <param name="Local" value="HLP/ELS/Sublease_Contract_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sublease Move Entry">
+    <param name="Name" value="Online Training Movies">
+    <param name="Local" value="DolphinAcademy/Online_Training_Movies.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sublease Move Entry Maintenance">
+    <param name="Name" value="Sublease Move Entry Maintenance">
+    <param name="Local" value="HLP/EMS/Sublease_Move_Entry_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Summary">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Supersede Quotation">
+    <param name="Name" value="Maintenance Tab">
+    <param name="Local" value="HLP/QTN/Entry/Maintenance_Tab.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="System Level">
+    <param name="Name" value="How to Create a System Level">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_System_Level.htm">
+    <param name="Name" value="System Level">
+    <param name="Local" value="SOP/CA/System_Level.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="System Levels Maintenance">
+    <param name="Name" value="System Levels Maintenance">
+    <param name="Local" value="HLP/CA/System_Levels_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terminal">
+    <param name="Name" value="How to Create a Terminal">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Terminal.htm">
+    <param name="Name" value="Terminal">
+    <param name="Local" value="SOP/CA/Terminal.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terminal Cut-off Time Maintenance">
+    <param name="Name" value="Terminal Cut-off Time Maintenance">
+    <param name="Local" value="HLP/VSS/Terminal_Cut_off_Time_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terminal Name Multi-Language">
+    <param name="Name" value="Terminal Name Multi-Language">
+    <param name="Local" value="HLP/CA/Terminal_Name_Multi_Language.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terminal Operator">
+    <param name="Name" value="Terminal Operator Popup Screen">
+    <param name="Local" value="HLP/CA/Terminal_Operator_Popup_Screen.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terminal Setup">
+    <param name="Name" value="Terminal Setup">
+    <param name="Local" value="HLP/CA/Terminal_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terms &amp; Conditions Details">
+    <param name="Name" value="Terms &amp; Conditions - Details">
+    <param name="Local" value="HLP/CA/Terms_Conditions_Details.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Terms and Conditions">
+    <param name="Name" value="How to Create a Code for Terms and Conditions">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Code_for_Terms_and_Conditions.htm">
+    <param name="Name" value="Terms and Conditions">
+    <param name="Local" value="SOP/CA/Terms_and_Conditions.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Total Lost Container">
+    <param name="Name" value="How to Handle Total Lost Container">
+    <param name="Local" value="BIZ/EMS/How_to_Handle_Total_Lost_Container.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Transportation Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Turn Around Time Activity Maintenance">
+    <param name="Name" value="Turn Around Time Activity Maintenance">
+    <param name="Local" value="HLP/EMS/Turn_Around_Time_Activity_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Turn Around Time Activity Search">
+    <param name="Name" value="Turn Around Time Activity Search">
+    <param name="Local" value="HLP/EMS/Turn_Around_Time_Activity_Search.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Turn Time">
+    <param name="Name" value="Turn Time">
+    <param name="Local" value="HLP/CA/Turn_Time.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Variance Cost">
+    <param name="Name" value="Contribution Tabs">
+    <param name="Local" value="HLP/QTN/ApprovalBbk/Contribution_Tabs.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor">
+    <param name="Name" value="Depot Storage Contract Creation &amp; Amendment SOP">
+    <param name="Local" value="SOP/STR/Depot_Storage_Contract_Creation_Amendment_SOP.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor Bank">
+    <param name="Name" value="Vendor Bank Maintenance">
+    <param name="Local" value="HLP/VMS/Vendor_Bank_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor Bank Maintenance">
+    <param name="Name" value="Vendor Bank Maintenance">
+    <param name="Local" value="HLP/VMS/Vendor_Bank_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor Category">
+    <param name="Name" value="Vendor Category Maintenance">
+    <param name="Local" value="HLP/VMS/Vendor_Category_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor Category Maintenance">
+    <param name="Name" value="Vendor Category Maintenance">
+    <param name="Local" value="HLP/VMS/Vendor_Category_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor Code Authorization">
+    <param name="Name" value="Vendor Code Authorization">
+    <param name="Local" value="HLP/VMS/Vendor_Code_Authorization.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vendor Code Maintenance">
+    <param name="Name" value="Vendor Code Maintenance">
+    <param name="Local" value="HLP/VMS/Vendor_Code_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vessel">
+    <param name="Name" value="Vessel">
+    <param name="Local" value="SOP/CA/Vessel.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vessel Assignment">
+    <param name="Name" value="Vessel Assignment">
+    <param name="Local" value="HLP/VSS/Vessel_Assignment1.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vessel Capacity">
+    <param name="Name" value="Vessel Capacity">
+    <param name="Local" value="HLP/CA/Vessel_Capacity.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vessel History">
+    <param name="Name" value="Vessel History">
+    <param name="Local" value="HLP/CA/Vessel_History.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vessel Local Language Setting">
+    <param name="Name" value="Vessel Local Language Setting">
+    <param name="Local" value="HLP/CA/Vessel_Local_Language_Setting.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Vessel Maintenance">
+    <param name="Name" value="Vessel Maintenance">
+    <param name="Local" value="HLP/CA/Vessel_Maintenance1.htm">
+    <param name="Name" value="Vessel Maintenance">
+    <param name="Local" value="HLP/CA/Vessel_Maintenance.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Voyage Formula">
+    <param name="Name" value="Voyage Formula Setup">
+    <param name="Local" value="HLP/VSS/Voyage_Formula_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Voyage Formula Setup">
+    <param name="Name" value="Voyage Formula Setup">
+    <param name="Local" value="HLP/VSS/Voyage_Formula_Setup.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Voyage Schedule by Date">
+    <param name="Name" value="Voyage Schedule">
+    <param name="Local" value="HLP/VSS/Voyage_Schedule.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Voyage Schedule Inquiry">
+    <param name="Name" value="Voyage Schedule">
+    <param name="Local" value="HLP/VSS/Voyage_Schedule.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Zone">
+    <param name="Name" value="How to Create a Zone (Laem chabang)">
+    <param name="Local" value="BIZ/CA/How_to_Create_a_Zone_Laem_chabang.htm">
+    <param name="Name" value="Zone">
+    <param name="Local" value="SOP/CA/Zone.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Zone Maintenance">
+    <param name="Name" value="Zone Maintenance">
+    <param name="Local" value="HLP/CA/Zone_Maintenance.htm">
+  </object>
+</ul>
+</html>

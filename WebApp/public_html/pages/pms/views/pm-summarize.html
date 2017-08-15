@@ -1,0 +1,856 @@
+<div class="pm-page-header">Summary PM Information
+</div>
+<div class="pm-form-detail">
+<!-- Apprisee Detail -->
+<div ng-controller="pmformsummarizeController" class="pmform-content-body" >
+<div class="panel"> 
+ <div class="panel-heading">
+ 
+   
+    <h4 class="panel-title">Appraisee's Detail</h4>
+  
+    
+    </div>
+
+  <div id="ad-panel-collapse-1a" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="form-horizontal col-sm-9">
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Performance Appraisals </label>
+          <div class="col-sm-8">
+          <input type="text" name="" value="{{formData.appraiseeDetail.performance_appraisal}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Name</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.name}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Employee ID</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.employee_id}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Designation/Department</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.position_title}}/{{formData.appraiseeDetail.department}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Job Grade</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.grade}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Job Band</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.completency_behavior_level}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Date Joined</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.date_joined}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Supervisor</label>
+          <div class="col-sm-8">
+            <input type="text" name="" value="{{formData.appraiseeDetail.supervisor}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+        <div class="form-group">
+          <label for="" class="col-sm-4 control-label">Counter-signing Supervisor</label>
+          <div class="col-sm-8">
+            <input type="text" name=""value="{{formData.appraiseeDetail.counter_siging_supervisor}}" class="form-control input-sm" disabled="disabled"></input>
+          </div>
+        </div>
+        <!-- ./form-group -->
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Apprisee Focus -->
+<div class="panel">
+  <div class="panel-heading">
+    
+    <h4 class="panel-title">Appraisal's Focus</h4>
+  </div>
+  <div id="af-panel-collapse-1b" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="left-content-title clearfix">
+          <div class="col-md-12 left-content-body">
+            <span class="bold-text">Weightage (%) by Job Band</span>
+          </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th rowspan="2" >Job Band</th>
+                  <th colspan="1" rowspan="1">Part I</th>
+                  <th colspan="2" rowspan="1">Part II</th>
+                </tr>
+                <tr>
+                    <th class="border-right">Competency</th>
+                    <th>PD</th>
+                    <th>Ind.KPIs</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr ng-class-odd="'odd'" ng-repeat="item in formData.weightageByJobBand">
+                  <td>{{item.job_band}}</td>
+                  <td class="text-right">{{item.completency || "-"}}</td>
+                  <td class="text-right">{{item.pd || "-"}}</td>
+                  <td class="text-right">{{item.individual_kpis || "-"}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-content-title clearfix">
+
+            <div class="col-md-12 left-content-body" style="padding-top:35px">
+            <span class="bold-text">Rating Scale</span>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Rating</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  ng-class-odd="'odd'" ng-repeat="rate in formData.ratingScale">
+                    <td class="text-center">{{rate.rating | number:1}}</td>
+                    <td>{{rate.definition}}</td>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Competency Profile -->
+<div class="panel">
+  <div class="panel-heading">
+   
+    <h4 class="panel-title">Competency Profile</h4>
+  </div>
+  <div id="af-panel-collapse-2a" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="row">
+        
+
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                    <th width="3%">No.</th>
+                    <th width="20%">Company Core Value</th>
+                    <th>Supervisor's Appraisals Comment</th>
+                    <th width="10%">Weightage<br/>{{formData.completecyProfile.total_company_weightage}}%</th>
+                    <th width="8%">Self Rating</th>
+                    <th width="8%">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-class-odd="'odd'" ng-repeat="item in formData.completecyProfile.companyCoreValue">
+                  <td>{{$index + 1}}</td>
+                  <td class="text-left">{{item.core_value}}
+                  </td>
+                  <td class="text-left">{{item.supervisor_comment}}</td>
+                  <td class="text-right">{{item.weightage}}%</td>
+                  <td class="text-right">
+                     {{item.self_rating | number:1}}                     
+                  </td>
+                  <td class="text-right">                  
+                   {{item.total_rating | number:1}}                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table">
+              <thead>
+                <tr>
+                    <th width="3%">No.</th>
+                    <th width="20%">Department Core Value</th>
+                    <th>Supervisor's Appraisals Comment</th>
+                    <th width="10%">Weightage<br/>{{formData.completecyProfile.total_department_weightage}}%</th>
+                    <th width="8%">Self Rating</th>
+                    <th width="8%">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-class-odd="'odd'" ng-repeat="item in formData.completecyProfile.departmentCoreValue">
+                  <td>{{$index + 1}}</td>
+                  <td class="text-left">                    
+                      {{getDepartmentCoreValueDesc(item.core_value)}}                                        
+                  </td>
+                  <td class="text-left">{{item.supervisor_comment}}</td>
+                  <td class="text-right">{{item.weightage}}%</td>
+                  <td class="text-right">
+                    {{item.self_rating | number:1}}                     
+                  </td>
+                  <td class="text-right">
+                   {{item.total_rating | number:1}}
+                      
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="text-right"></td>
+                  <td class="text-right"><span class="label label-success label-summary">{{formData.completecyProfile.total_weightage | number:2}}%</span></td>
+                  <td class="text-right"><strong>Weighted Rating</strong></td>
+                  <td class="text-right"><span class="label label-success label-summary">{{formData.completecyProfile.total_rate | number:1}}</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="summaryCompetency" class="pull-right clearfix">
+                <strong>Part I : "Competency Profile" Overall Weighted Rating = (Weighted Rating x 100%) / 5  = 
+                <span class="label label-success label-summary"> {{(formData.completecyProfile.total_rate*100)/5 | number:2}}%</span></strong>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+</div>
+
+</div>
+<!-- President Directive -->
+<div class="panel">
+  <div class="panel-heading">
+    
+    <h4 class="panel-title">President Directive</h4>
+  </div>
+  <div id="af-panel-collapse-3a" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="row">
+
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                    <th rowspan="2" width="3%">No.</th>
+                    <th rowspan="2" width="5%">BSC Perspective</th>
+                    <th rowspan="2" width="15%">President Directive (Company Goal)</th>
+                    <!--<th colspan="6" rowspan="1">Target &amp; Rating </th>-->
+                    <th>Target</th>
+                    <th rowspan="2">Description</th>
+                    <th rowspan="2" width="8%">Weightage (%)</th>
+                    <th rowspan="2" width="8%">Result</th>
+                    <th rowspan="2"  width="8%">Rating</th>
+                </tr>
+                <tr>
+                    <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody ng-repeat="item in formData.presidentDirective.presidentDirective">
+                <tr ng-class-odd="'odd'">
+                  <td rowspan="7">{{$index + 1}}</td>
+                  <td rowspan="7" class="text-left">{{item.bsc_perspective}}</td>
+                  <td rowspan="7" class="text-left">{{item.company_goal}}</td>
+                  <td>Target</td>
+                  <td class="text-right"></td>
+                  <td rowspan="7" class="text-right">{{item.weightage}}%</td>
+                   <td rowspan="7" class="text-right">{{item.result}}</td>
+                  <td rowspan="7" class="text-right">{{item.rating| number: 1}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 0</td>
+                  <td>{{item.rating_0}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 1</td>
+                  <td>{{item.rating_1}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 2</td>
+                  <td>{{item.rating_2}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 3</td>
+                  <td>{{item.rating_3}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 4</td>
+                  <td>{{item.rating_4}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 5</td>
+                  <td>{{item.rating_5}}</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                    <td  class="text-right" colspan="5"><strong>Total Weight</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">{{formData.presidentDirective.total_president_weightage | number:2}}%</span></td>
+                    <td  class="text-right"><strong>Weighted Rating</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">{{formData.presidentDirective.total_president_rate | number:1}}</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div id="summaryCompetency" class="pull-right clearfix">
+                <strong>Part II : "President Directive" Overall Weighted Rating = (Weighted Rating x 100%) / 5  =  
+                <span class="label label-success label-summary"> {{(formData.presidentDirective.total_president_rate*100)/5 | number:2}}%</span></strong>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- Individual KPIs -->
+<div class="panel">
+  <div class="panel-heading">   
+    <h4 class="panel-title">Individual KPIs</h4>
+  </div>
+  <div id="af-panel-collapse-3b" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="row">
+
+
+          <div class="col-md-12">
+            
+            <table class="table" width="100%">
+              <thead>
+                <tr>
+                    <th rowspan="2" width="3%">No.</th>
+                    <th rowspan="2" width="15%">BSC Perspective</th>
+                    <th rowspan="2" width="25%">KPIs ( Individual Goal)</th>
+                    <!--<th colspan="6" rowspan="1">Target &amp; Rating</th>-->
+                    <th>Target</th>
+                    <th rowspan="2">Description</th>
+                    <th rowspan="2" width="5%">Weightage (%)</th>
+                    <th rowspan="2" width="3%">Result</th>
+                    <th rowspan="2"  width="7%">Rating</th>
+                     <th rowspan="2"  width="4%"></th>
+                </tr>
+                <tr>
+                    <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody ng-repeat="item in formData.presidentDirective.individualKPIs">
+                <tr ng-class-odd="'odd'">
+                  <td>{{$index + 1}}</td>
+                  <td class="text-left">
+                    {{item.bsc_perspective}}                       
+                  </td>
+                  <td class="text-left">
+                    {{item.individual_goal}}
+                  </td>
+                  <td class="text-right">
+                    Target
+                  </td>
+                  <td class="text-right">
+                    
+                  </td>
+                  <td class="text-right">{{item.weightage}}%</td>
+                   <td class="text-right">
+                    {{item.result}}
+                   </td>
+                  <td class="text-right">
+                    {{item.rating | number: 1}}                      
+                    </select>
+                  </td>
+                  <td>                            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rating 0</td>
+                  <td>
+                    {{item.rating_0}}
+                  </td>
+                 </tr>
+                <tr>
+                  <td>Rating 1</td>
+                  <td>
+                    {{item.rating_1}}
+                  </td>
+                 </tr>
+                <tr>
+                  <td>Rating 2</td>
+                  <td>
+                    {{item.rating_2}}
+                  </td>
+                 </tr>
+                <tr>
+                  <td>Rating 3</td>
+                  <td>
+                    {{item.rating_3}}
+                  </td>
+                 </tr>
+                <tr>
+                  <td>Rating 4</td>
+                  <td>
+                    {{item.rating_4}}
+                  </td>
+                 </tr>
+                <tr>
+                  <td>Rating 5</td>
+                  <td>
+                    {{item.rating_5}}
+                  </td> 
+                 </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                    <td  class="text-right" colspan="5"><strong>Total Weight</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">{{formData.presidentDirective.total_individual_weightage | number:2}}%</span></td>
+                    <td  class="text-right"><strong>Total Rating</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">{{formData.presidentDirective.total_individual_rate | number:1}}</span></td>
+                    <td></td>
+                </tr>
+              </tbody>
+            </table>
+            
+<!--<table class="table" width="100%" ng-hide="showAllRate">
+              <thead>
+                <tr>
+                    <th rowspan="2" width="3%">No.</th>
+                    <th rowspan="2" width="15%">BSC Perspective</th>
+                    <th rowspan="2" >KPIs ( Individual Goal)</th>
+                    <th colspan="1" rowspan="1"  width="8%">Target &amp; Rating</th>
+                    <th rowspan="2" width="5%">Weightage (%)</th>
+                    <th rowspan="2" width="3%">Result</th>
+                    <th rowspan="2"  width="7%">Rating</th>
+                     <th rowspan="2"  width="4%"></th>
+                </tr>
+                <tr>
+                   
+                    <th>Rating&nbsp;3</th>
+                   
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-class-odd="'odd'" ng-repeat="item in formData.presidentDirective.individualKPIs">
+                  <td>{{$index + 1}}</td>
+                  <td class="text-left">
+                    {{getBSCValueDesc(item.bsc_perspective)}}                    
+                  </td>
+                  <td class="text-left">
+                    {{item.individual_goal}}
+                  </td>
+                  
+                  <td class="text-right">
+                    {{item.rating_3}}
+                  </td>
+                  
+                  <td class="text-right">{{item.weightage}}%</td>
+                   <td class="text-right">
+                    {{item.result}}
+                   </td>
+                  <td class="text-right">
+                   {{item.rating | number: 1}}                      
+                  </td>
+                  <td>                            
+                  </td>
+                </tr>
+                <tr>
+                    <td  class="text-right" colspan="4"><strong>Total Weight</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">{{formData.presidentDirective.total_individual_weightage | number:2}}%</span></td>
+                    <td  class="text-right"><strong>Total Rating</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">{{formData.presidentDirective.total_individual_rate | number:1}}</span></td>
+                    <td></td>
+                </tr>
+              </tbody>
+            </table>-->
+            <div id="summaryCompetency" class="pull-right clearfix">
+                <strong>Part II : Individual KPIs" Overall Weighted Rating = (Weighted Rating x 100%) / 5  = 
+                <span class="label label-success label-summary"> {{(formData.presidentDirective.total_individual_rate*100)/5 | number:2}}%</span></strong>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!--Performance Progress Review  -->
+<div class="panel">
+    <div class="panel-heading">
+     
+      <h4 class="panel-title">Performance Progress Review ONLY</h4>
+    </div>
+    <div id="af-panel-collapse-4a" class="collapse in" aria-expanded="true">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <span>Review the objectives that you set earlier in the year. To
+                  what extent have you achieved them? Are there barriers or
+                  obstacles in the way of reaching your goals. </span><br/>
+
+            <span> If so, what must be done to enable you to reach your goals?
+                  Is there any need to revise the goals because of such
+                  constraints? </span>
+          </div>
+        </div>
+        <!-- ./row -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <label class="control-label">1. Please state reason(s) if
+                                               objective(s) set earlier in the
+                                               year is/are not met</label>
+
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" readonly="readonly" ng-model="formData.performanceProgress.reason"></textarea>
+                </div>
+              </li>
+ 
+              <li>
+                <div class="form-group">
+                  <label class="control-label">2. Barriers and steps/resources
+                                               needed to overcome barriers</label>
+
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" readonly="readonly" ng-model="formData.performanceProgress.barriers"></textarea>
+                </div>
+              </li>
+
+              <li>
+                <div class="form-group">
+                  <label class="control-label">3. Please indicate learning &amp;
+                                               support plan for the next 6-month
+                                               to help in achieving in your
+                                               objectives</label>
+
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" readonly="readonly" ng-model="formData.performanceProgress.indicate_learning"></textarea>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./row -->
+        <div class="row">
+          <div class="col-md-12">
+            <span class="bold-text">Appraisee's Comments</span><br/>
+
+            <span>After appraisal is completed, the appraisee may state his/her
+                  comments in terms of how constructive the appraisal was done ;
+                  and any disagreements ,<br/>
+               if any in the space below.</span>
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" readonly="readonly" ng-model="formData.performanceProgress.appraisee_comment"></textarea>
+                </div>
+              </li>
+
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./row -->                   
+
+      <!-- ./panel-body -->
+    </div>
+    <!-- ./collapse -->
+  </div>
+  <!-- ./panel -->
+  <!-- Overall Performance -->
+  <div class="panel">
+    <div class="panel-heading">
+     
+      <h4 class="panel-title">Overall Performance</h4>
+    </div>
+    <div id="af-panel-collapse-5" class="collapse in" aria-expanded="true">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <span>Comments on appraisee's overall performance (Competency &amp;
+                  Individual KPIs) by Immediate Supervisor</span>
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" readonly="readonly"></textarea>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>
+        <!-- ./row -->
+        <div class="row" style="margin-bottom:2px">
+          <div class="col-md-6">
+            <span>The appraisee has worked under my direct supervision for</span>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="col-sm-2">
+                <input type="text" name="" value="3" readonly="readonly"
+                       class="form-control input-sm" ng-model="formData.overallPerformance.year"></input>
+              </div>
+              <label  class="control-label col-sm-1">years</label>
+              <div class="col-sm-2">
+                <input type="text" name="" value="6" readonly="readonly"
+                       class="form-control input-sm" ng-model="formData.overallPerformance.month"></input>
+              </div>
+              <label  class="control-label col-sm-1">months</label>
+            </div>
+          </div>
+          <!-- ./form-group -->
+        </div>   <!-- ./row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+            <div class="col-md-1">
+                <span class="bold-text">
+                  <i class="fa fa-caret-right"/> Part I</span>
+              </div>
+              <div class="col-md-9">
+                <table id="overallPerformance" class="table table-condensed">
+                <thead>
+                    <tr>
+                    <th width="45%" colspan="2">
+                        Weightage (%) each Part
+                    </th>
+                    <th class="separate"></th>
+                    <th>1H Y{{formData.overallPerformance.fullYear}}</th>
+                     <th>2H Y{{formData.overallPerformance.fullYear}}</th>
+                     <th>FY {{formData.overallPerformance.fullYear}}</th>
+                    </tr>
+                </thead>
+                  <tbody>
+                    <tr>
+                      <td>Competency</td>
+                      <td class="text-right">{{formData.overallPerformance.jobWeightage.comWeightage | number: 2}}%</td>
+                      <td  class="separate"></td>
+                      <td  class="text-right">{{showMsg(formData.overallPerformance.competency.period1)}}</td>
+                      <td  class="text-right">{{showMsg(formData.overallPerformance.competency.period2)}}</td>
+                      <td  class="text-right">{{showMsg(formData.overallPerformance.competency.overall)}}</td>
+                    </tr>
+                    <tr class="info">
+                      <td colspan="2" class="text-center">Competency Result</td>
+                       <td  class="separate"></td>
+                      <td  class="text-right">{{checkStatus(formData.overallPerformance.competency.period1)}}</td>
+                      <td  class="text-right">{{checkStatus(formData.overallPerformance.competency.period2)}}</td>
+                      <td  class="text-right">{{checkStatus(formData.overallPerformance.competency.overall)}}</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>   <!-- ./row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                <div class="col-md-1">
+                    <span class="bold-text">
+                      <i class="fa fa-caret-right"/> Part II</span>
+                  </div>
+                  <div class="col-md-9">
+                    <table id="overallPerformance" class="table table-condensed">
+                    <thead>
+                        <tr>
+                        <th width="45%" colspan="2">
+                            Weightage (%) each Part
+                        </th>
+                        <th class="separate"></th>
+                        <th>1H Y{{formData.overallPerformance.fullYear}}</th>
+                         <th>2H Y{{formData.overallPerformance.fullYear}}</th>
+                         <th>FY {{formData.overallPerformance.fullYear}}</th>
+                    </tr>
+                        </thead>
+                      <tbody>
+                        <tr>
+                          <td>President Directive</td>
+                          <td class="text-right">{{formData.overallPerformance.jobWeightage.pdWeightage | number: 2}}%</td>
+                          <td  class="separate"></td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.president.period1)}}</td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.president.period2)}}</td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.president.overall)}}</td>
+                        </tr>
+                        <tr>
+                          <td >Individual KPIs</td>
+                          <td class="text-right">{{formData.overallPerformance.jobWeightage.indKPIWeightage | number: 2}}%</td>
+
+                          <td  class="separate"></td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.individual.period1)}}</td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.individual.period2)}}</td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.individual.overall)}}</td>
+                        </tr>
+                        <tr>
+                          <td>Overall Performance</td>
+                          <td class="text-right">{{formData.overallPerformance.jobWeightage.overallWeightage | number: 2}}%</td>
+
+                          <td  class="separate"></td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.overall.period1)}}</td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.overall.period2)}}</td>
+                          <td  class="text-right">{{showMsg(formData.overallPerformance.overall.overall)}}</td>
+                        </tr>
+                        <tr class="info">
+                          <td colspan="2" class="text-center">Individual Performance Result</td>
+
+                           <td  class="separate"></td>
+                          <td  class="text-right">{{checkStatus(formData.overallPerformance.overall.period1)}}</td>
+                          <td  class="text-right">{{checkStatus(formData.overallPerformance.overall.period2)}}</td>
+                          <td  class="text-right">{{checkStatus(formData.overallPerformance.overall.overall)}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                  </div>
+                </div>   <!-- ./row -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                    <div class="col-md-1">
+                       
+                            <span class="bold-text">
+                            <i class="fa fa-caret-right"></i>
+                            Details
+                          </span>
+                      </div>
+                      <div class="col-md-9 collapse in" id="af-panel-collapse-5b"  aria-expanded="true">
+                        <table  class="table table-striped">
+                        <thead> 
+                            <tr>
+                              <th width="45%">
+                                  Individual Performance Scale
+                              </th>
+                              <th>Definition</th>
+                            </tr>
+                            </thead>
+                          <tbody>
+                            <tr ng-repeat="item in formData.performanceScaleDef">
+                              <td>{{item.title}}</td>
+                              <td>{{item.definition}}</td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                        <hr/>
+                      </div>
+                    </div>   <!-- ./row -->
+          </div>
+
+        </div>
+        <!-- ./row -->
+        
+        <!--<div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <p>
+              
+               Comfirm by Suppervisor
+            </p>
+            <strong>Wutiporn K.</strong>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <p>Position Title:</p>
+            <span class="bold-text">Project Manager</span>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <p>Date:</p>
+            <span class="bold-text">01/01/2016</span>
+          </div>
+        </div>-->
+        
+        <!-- ./row -->
+          
+      </div>
+      <!-- ./panel-body -->
+    </div>
+    <!-- ./collapse -->
+  </div>
+  </div>
+  <!-- ./panel -->
+  <!-- Counter-Signing Supervisor's Comments -->
+   <div class="panel">
+    <div class="panel-heading">
+      
+      <h4 class="panel-title">Counter-Signing Supervisor's Comments</h4>
+    </div>
+    <div id="af-panel-collapse-6" class="collapse in" aria-expanded="true">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <span>After appraisal is completed , the counter-signing supervisor may state his/her comments, if any in the space below.</span>
+            <!--
+           <div class="col-md-8 col-md-offset-2">
+            <table id="approveReject">
+            <tbody>
+                <tr>
+                    <td>  <button class="btn btn-primary" ng-disabled="isWizardMode()">Approve</button></td>
+                    <td> <span>I agree with the supervisor's comments & recommendations.</span></td>
+                </tr>
+                <tr>
+                     <td> <button class="btn btn-danger" ng-disabled="isWizardMode()">Reject</button></td>
+                    <td> <span>I disagree with the supervisor's comments & recommendations.</span></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+            -->
+         </div> <!-- ./row -->
+        </div> <!-- ./row -->
+        <p/>
+         <div class="row">
+          <div class="col-md-12">
+            <span>Other comments :</span>
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" readonly="readonly" ng-model="formData.counterSigning.comment"></textarea>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>
+           
+        <!-- ./row -->
+        
+        <!--<div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <p>
+              Name of Supervisor:
+            </p>
+            <strong>{{formDate.appraiseeDetail.supervisor}}</strong>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <p>Position Title:</p>
+            <span class="bold-text">Project Manager</span>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <p>Date:</p>
+            <span class="bold-text">{{new Date() | date:"dd/MM/yyyy"}}</span>
+          </div>
+        </div>-->        
+      </div>
+      <!-- ./panel-body -->
+    </div>
+    <!-- ./collapse -->
+  </div>
+  <!-- ./panel -->
+ <!-- Footer buttons -->
+			<div ng-controller = "pmWizardController" class="pull-right pad-all" style="margin-right:4%">				
+				<button type="button" class="finish btn btn-success"  ng-click="confirmSubmitPMForm()">Confirm</button>
+                                <button type="button" class="finish btn btn-purple" ng-click="cancelClick()">Cancel</button>
+			</div>
+
+
+
+</div> <!-- ./pm-form-detail -->

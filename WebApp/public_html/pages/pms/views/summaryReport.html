@@ -1,0 +1,126 @@
+ 
+<div class=""  ng-controller="summaryReportController">
+ 
+   <div class="panel">
+    <div class="panel-heading">
+     <h3 class="panel-title">Summary Employee PMS Status</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-lg-10 col-md-12 col-sm-12">
+        <form class="form-horizontal">
+          <div class="row" style="padding-top: 1px;">
+            <div id="demo-dp-component">
+                 <label for="" class="col-md-2">
+                      <strong> Data date </strong>
+                 </label>  
+                 <div class="col-md-3">
+                      <div class="input-group date">
+                        <input type="text" class="form-control" ng-model="formData.dataDate">
+                        <span class="input-group-addon"><i class="fa fa-calendar fa-lg"></i></span>
+                      </div>
+                      <small class="text-muted"> </small>
+                  </div>           
+              </div>
+          </div>
+         <div class="row" style="padding-top: 1px;">
+             <label for="" class="col-md-2">
+              <strong>Year</strong>
+            </label>
+             <div class="col-md-3">
+            <select class="form-control" name="" ng-model="formData.pmYear">
+            <option  ng-repeat="option  in formData.yearList" ng-selected="{{option == formData.pmYear}}" value="{{option}}">{{option}}</option>              
+            </select>
+           </div>
+         </div>
+         <div class="row" style="padding-top: 1px;">
+             <label for="" class="col-md-2">
+              <strong>Period</strong>
+            </label>
+             <div class="col-md-3">
+            <select class="form-control" name="" ng-model="formData.pmPeriod">
+             <option  ng-repeat="option  in formData.periodList" ng-selected="{{option == formData.pmPeriod}}" value="{{option}}">{{option}}</option>              
+            </select>
+           </div>
+         </div>
+          <div class="row" style="padding-top: 1px;">
+             <label for="" class="col-md-2">
+              <strong>Company</strong>
+            </label>
+             <div class="col-md-3">
+            <select class="form-control" name="" ng-model="formData.comSeqNo">
+              <option value="">All</option>
+              <option  ng-repeat="option  in formData.companyList" ng-selected="{{option.comSeqNo == formData.comSeqNo}}" value="{{option.comSeqNo}}">{{option.description}}</option>
+            </select>
+           </div>
+         </div>
+         <div class="row" style="padding-top: 1px;">
+           <button class="btn btn-primary" ng-click="searchReport()" type="submit">Search</button>
+            <button type="button" name="button"  class="btn btn-default" autocomplete="off" ng-click="refreshStatusList()">
+            <i class="fa fa-refresh"></i>
+            </button>
+         </div>
+         
+        </form>
+      </div>
+     
+    </div>
+    <div class="panel panel-custom" >
+        <div class="panel-body">
+        <div class="row" style="padding-top: 1px;align:center">
+          <label for="" class="col-md-12"> </label>
+        </div>
+       
+        <div id="reportTable_Wrapper">
+        <table class="table toggle-circle pm-list-table" data-paging="false" data-sorting="false">
+          <thead>
+           <tr> 
+          <th colspan="1">&nbsp;</th> 
+          <th colspan="6"><strong>No.of Employee</strong></th>
+          </tr>
+   
+            <tr>
+              <th data-toggle="true">Department</th>
+              <th>New</th>
+              <th>In progress</th>
+              <th >Waitlisted1</th>
+              <th >Waitlisted2</th>
+              <th>Completed</th>
+              <th>Grand Total</th>
+              
+            </tr> 
+            </thead>
+           <tbody>
+              <tr ng-repeat="item in tableData ">
+                <td>{{item.dep_name}}</td>
+                <td>{{item.pm_new}}</td>
+                <td>{{item.pm_inprogress}}</td>
+                <td>{{item.pm_waitlisted1}}</td>
+                <td>{{item.pm_waitlisted2}}</td>
+                <td>{{item.pm_completed}}</td>
+                <td>{{item.pm_total}}</td>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Grand Total</td>
+                  <td>{{sumTotalColumn("pm_new")}}</td>
+                <td>{{sumTotalColumn("pm_inprogress")}}</td>
+                <td>{{sumTotalColumn("pm_waitlisted1")}}</td>
+                <td>{{sumTotalColumn("pm_waitlisted2")}}</td>
+                <td>{{sumTotalColumn("pm_completed")}}</td>
+                <td>{{sumTotalColumn("pm_total")}}</td>
+                </td>
+              </tr>
+            </tfoot>
+        </table>
+        </div> <!--./reportTable_wrapper -->
+      </div>
+    </div> 
+    
+     </div>
+ 
+ 
+  
+  </div>
+  

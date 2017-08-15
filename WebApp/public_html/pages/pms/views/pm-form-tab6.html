@@ -1,0 +1,84 @@
+<!-- Counter-Signing Supervisor's Comments -->
+
+<div ng-controller="pmformTab6Controller" class="pmform-content-body">
+  <div class="panel">
+    <div class="panel-heading">
+      <div class="panel-control">
+      
+        <button type="button" name="button" class="btn btn-default"
+                data-target="#af-panel-collapse-6" data-toggle="collapse"
+                aria-expanded="true">
+          <i class="fa fa-chevron-down"></i>
+        </button>
+      </div>
+      <h4 class="panel-title">Counter-Signing Supervisor's Comments</h4>
+    </div>
+    <div id="af-panel-collapse-6" class="collapse in" aria-expanded="true">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <span>After appraisal is completed , the counter-signing supervisor may state his/her comments, if any in the space below.</span>
+            <!--
+           <div class="col-md-8 col-md-offset-2">
+            <table id="approveReject">
+            <tbody>
+                <tr>
+                    <td>  <button class="btn btn-primary" ng-disabled="isWizardMode()">Approve</button></td>
+                    <td> <span>I agree with the supervisor's comments & recommendations.</span></td>
+                </tr>
+                <tr>
+                     <td> <button class="btn btn-danger" ng-disabled="isWizardMode()">Reject</button></td>
+                    <td> <span>I disagree with the supervisor's comments & recommendations.</span></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+            -->
+         </div> <!-- ./row -->
+        </div> <!-- ./row -->
+        <p/>
+         <div class="row">
+          <div class="col-md-12">
+            <span>Other comments :</span>
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <textarea name="name" rows="3" cols="50" class="form-control" readonly="readonly"
+                            style="width:80%" ng-model="formData.counterSigning.comment"></textarea>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>
+           <div class="row">
+         <div class="col-md-3 col-md-offset-8">
+            <button class="btn btn-primary" ng-hide="isWizardMode()">Approve</button>
+            <button class="btn btn-danger" ng-hide="isWizardMode()">Reject</button>
+         </div>
+        </div> <!-- ./row -->
+        <!-- ./row -->
+        
+        <div class="row" ng-show="isSupervisorLevel2Approve()">
+          <div class="col-md-3 col-md-offset-1">
+            <p>
+              Name of Supervisor:
+            </p>
+            <strong>Wutiporn K.</strong>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <p>Position Title:</p>
+            <span class="bold-text">Project Manager</span>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <p>Date:</p>
+            <span class="bold-text">01/01/2016</span>
+          </div>
+        </div>
+      
+      </div>
+      <!-- ./panel-body -->
+    </div>
+    <!-- ./collapse -->
+  </div>
+  <!-- ./panel -->
+</div>

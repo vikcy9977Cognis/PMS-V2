@@ -1,0 +1,29 @@
+<div class="panel  text-left">
+      <div class="panel-body pad5">
+        <div class="clearfix box-title">
+          <span class="icon-wrap icon-wrap-sm icon-circle bg-info pull-left">
+									<i class="fa fa-user fa-2x"></i>
+					</span>
+          
+        <h5> 
+         <a ng-hide="{{item.pmstatus !='N'}} " href="">&nbsp;{{item.empname}}  </a>
+         <a ng-hide="{{item.pmstatus =='N'}} " href="#/editPMForm?emp_seqno={{item.fkempseqno}}&pmhdr_seqno={{item.pkhdrseqno}}">&nbsp;{{item.empname}}  </a>
+        &nbsp;<a href="" ng-click="loadChangeTabSubMystaff(item.fkempseqno,item.empname,$event,true)" ng-show="item.mystaffcount > 0"><span class="badge badge-purple">{{item.mystaffcount}}</span></a>
+        </h5>  
+        </div>
+         <p><span class="bold-text">Designation:</span>&nbsp;{{item.designation}}</p>
+          <p><span class="bold-text">Job Grade:</span>&nbsp;{{item.jobgradename}}</p>
+           <p><span class="bold-text">Job Band:</span>&nbsp;{{item.jobbrandname}}</p>
+        <p><span class="bold-text">Department:</span>&nbsp;{{item.comname}} / {{item.divname}} / {{item.depname}} / {{item.secname}} </p>
+      
+        <p><span class="bold-text">Year:</span>&nbsp;{{item.pmYear}}</p>
+        <p><span class="bold-text">Status:</span>&nbsp;{{getStausShow(item.pmstatus)}}</p>
+      </div>
+      <div>
+
+        <!--<div class="pad-btm text-center">
+          <button type="button" name="button" class="btn btn-primary">Action1</button>
+            <button type="button" name="button" class="btn btn-success">Action2</button>
+        </div>-->
+      </div>
+    </div>   <!-- ./panel -->

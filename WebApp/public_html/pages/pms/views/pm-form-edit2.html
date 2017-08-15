@@ -1,0 +1,137 @@
+<!-- Competency Profile -->
+<div class="pmform-content-body">
+    <div class="panel">
+        <div class="panel-heading">
+            <div class="panel-control">
+                <button type="button" name="button" class="btn btn-default" data-target="#af-panel-collapse-2a" data-toggle="collapse" aria-expanded="true">
+        <i class="fa fa-chevron-down"></i>
+      </button>
+            </div>
+            <h4 class="panel-title">Competency Profile</h4>
+        </div>
+        <div id="af-panel-collapse-2a" class="collapse in" aria-expanded="true">
+            <div ng-form="competencyProfileForm" class="panel-body">
+                <div class="row">
+
+
+                    <div class="col-md-12">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th width="3%">No.</th>
+                                    <th width="35%">Company Core Value</th>
+                                    <th>Supervisor's Appraisals Comment</th>
+                                    <th width="10%" ng-init="formData.totalCompanyWeightage = 0">Weightage<br/>{{formData.totalCompanyWeightage}}%</th>
+                                    <th width="8%">Self Rating</th>
+                                    <th width="8%">Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-class-odd="'odd'" ng-repeat="item in formData.companyCoreList" ng-init=" formData.totalCompanyWeightage = formData.totalCompanyWeightage + (item.indWeightPercentage-0)">
+                                    <td>{{$index + 1}}</td>
+                                    <td class="text-left">{{item.indName}}
+
+                                        <a href="javascript:void(0)" ng-click="showCoreValueInfo(item.indName,item.indSeqNo);">
+                                            <i class="fa fa-info-circle icon-info" />
+                                        </a>
+                                    </td>
+                                    <td class="text-left">
+                                        <!--<input type="text" name="" value="" class="form-control input-sm" ng-change="coreValueRatingChg();" ng-model="item.remark" ng-readonly="authorize.approveLv1Flag == 'N'">-->
+                                        <textarea cols="5" rows="3" class="form-control input-sm" ng-change="coreValueRatingChg();" ng-model="item.remark" ng-readonly="authorize.approveLv1Flag == 'N'"></textarea>
+                                    </td>
+                                    <td class="text-right">{{item.indWeightPercentage | percentage}}</td>
+                                    <td>
+                                        <select class="form-control input-sm" name="" ng-model="item.indSelfRating" ng-change="coreValueRatingChg();" ng-disabled="authorize.editFlag == 'N'">
+                      <option ng-repeat="o in ratingValues" ng-selected="{{o == item.indSelfRating}}" value="{{o}}">
+                        {{o | number: 1}}
+                      </option>
+                    </select>
+                                    </td>
+                                    <td class="text-right">
+                                        <select class="form-control input-sm" name="" ng-model="item.indRating" ng-change="coreValueRatingChg();coreValueRatingChg();" ng-disabled="authorize.approveLv1Flag == 'N'">
+                      <option ng-repeat="o in ratingValues" ng-selected="{{o == item.indRating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-purple btn-labeled fa fa-plus" ng-hide="authorize.editFlag == 'N'" ng-disabled="overallCoreValueWeightage() >= 100 || formData.departmentCoreList.length >= 3" ng-click="addDepartMentCoreValue()" style="margin-bottom:3px">Add Department Core Value</button>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th width="3%">No.</th>
+                                    <th width="32%">Department Core Value</th>
+                                    <th>Supervisor's Appraisals Comment</th>
+                                    <th width="10%">Weightage<br/>{{totalDepartmentWeightage() | percentage}}</th>
+                                    <th width="8%">Self Rating</th>
+                                    <th width="8%">Rating</th>
+                                    <th width="3%" ng-hide="authorize.editFlag == 'N'"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-class-odd="'odd'" ng-repeat="item in formData.departmentCoreList">
+                                    <td>{{$index + 1}}</td>
+                                    <td class="text-left">
+                                        <div class="col-md-12">
+                                            <div class="col-md-10">
+                                                <!--{{item.indName}}-->
+                                                <select class="form-control" name="" ng-model="item.indSeqNo" ng-change="item.indName = getIndNameBySeqno(item.indSeqNo);" ng-disabled="authorize.editFlag == 'N'">
+                        <option value="" disabled>--Please select Department Core Value--</option>
+                        <option  ng-repeat="option  in formData.departmentCoreValues" ng-selected="{{option.seqNo == item.indSeqNo}}" value="{{option.seqNo}}">{{option.name}}</option>
+                      </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="javascript:void(0)" ng-click="showCoreValueInfo(item.indName,item.indSeqNo)">
+                                                    <i class="fa fa-info-circle icon-info" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-left">
+                                        <!--<input type="text" name="" value="" class="form-control input-sm" ng-readonly="authorize.approveLv1Flag == 'N'" ng-model="item.remark">-->
+                                        <textarea cols="5" rows="3" class="form-control input-sm" ng-readonly="authorize.approveLv1Flag == 'N'" ng-model="item.remark"></textarea>
+                                    </td>
+                                    <td class="text-right input-group" style="white-space: nowrap;">
+                                        <input type="text" name="" value="" class="form-control input-sm" ng-readonly="authorize.editFlag == 'N'" ng-change="chgDepartCoreValue($index);coreValueRatingChg();" ng-model="item.indWeightPercentage" numuriconly>%
+                                        <!--<span class="input-group-addon">%</span>-->
+                                        <!--<td class="text-right">{{item.indWeightPercentage}}%</td>-->
+                                        <td>
+                                            <select class="form-control input-sm" name="" ng-model="item.indSelfRating" ng-change="coreValueRatingChg();" ng-disabled="authorize.editFlag == 'N'">
+                      <option ng-repeat="o in ratingValues" ng-selected="{{o == item.indSelfRating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                                        </td>
+                                        <td class="text-right">
+                                            <select class="form-control input-sm" name="" ng-model="item.indRating" ng-change="coreValueRatingChg();" ng-disabled="authorize.approveLv1Flag == 'N'">
+                      <option ng-repeat="o in ratingValues" ng-selected="{{o == item.indRating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                                        </td>
+                                        <td ng-hide="authorize.editFlag == 'N'">
+                                            <a class="label label-icon" href="javascript:void(0)" ng-click="removeDepartMentCoreValue($index)"><i class="fa fa-trash fa-1x"></i><!--IE fix--></a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-right"></td>
+                                    <td class="text-right"><span class="label label-success label-summary">{{overallCoreValueWeightage() | percentage }}</span></td>
+                                    <td class="text-right"><strong>Weighted Rating</strong></td>
+                                    <td class="text-right"><span class="label label-success label-summary">{{formData.appraiseeDetail.comRating | number: 1 }}</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="summaryCompetency" class="pull-right clearfix">
+                            <strong>Part I : "Competency Profile" Overall Weighted Rating = (Weighted Rating x 100%) / 5  = <span class="label label-success label-summary">{{formData.appraiseeDetail.comRatingPercent | number:2 | percentage}} </span></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>

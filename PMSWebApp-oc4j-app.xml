@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd">
+    <web-module id="PMSWebApp" path="file:/G:/PMS For Cognis/Source Code/PMSWebApp/PMSWebApp/WebApp/public_html/"/>
+    <jazn provider="XML" location="PMSWebApp-jazn-data.xml" default-realm="jazn.com"/>
+    <data-sources path="PMSWebApp-data-sources.xml"/>
+</orion-application>

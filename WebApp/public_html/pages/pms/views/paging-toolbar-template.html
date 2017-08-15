@@ -1,0 +1,32 @@
+<!-- Paging Toolbar -->
+      
+<div class="paging-toolbar clearfix">
+  <div class="pull-right">
+    <div class="pull-right">
+      <strong class="text-muted">{{start}}-{{pageLength}}</strong>
+       of 
+      <strong class="text-muted">{{total}}</strong>
+      <div class="btn-group">
+        <button type="button" name="button" class="btn btn-default" ng-click="backPageMyStaff()">
+          <span class="fa fa-chevron-left"></span>
+        </button>
+         
+        <button type="button" name="button" class="btn btn-default" ng-click="nextPageMyStaff()">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+      </div>
+    </div>
+    <div class="page-length pull-left">
+      <label for="" class=" control-label col-xs-4">Show</label>
+      <div class="col-xs-8">
+        <select id="displayLength" class="displayLengths form-control ng-pristine ng-valid" name=""
+                ng-model="displayLength"
+                ng-options="value for value in displayLenghtList"
+                ng-change="changeDisplayLength(value)">
+                    
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Paging Toolbar -->

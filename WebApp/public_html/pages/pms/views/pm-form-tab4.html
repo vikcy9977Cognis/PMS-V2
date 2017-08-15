@@ -1,0 +1,122 @@
+<!--Performance Progress Review -->
+
+<div ng-controller="pmformTab4Controller" class="pmform-content-body">
+  <div class="panel">
+    <div class="panel-heading">
+      
+      <div class="panel-control">
+        <button type="button" name="button" class="btn btn-default"
+                data-target="#af-panel-collapse-4a" data-toggle="collapse"
+                aria-expanded="true">
+          <i class="fa fa-chevron-down"></i>
+        </button>
+      </div>
+      <h4 class="panel-title">Performance Progress Review ONLY</h4>
+    </div>
+    <div id="af-panel-collapse-4a" class="collapse in" aria-expanded="true">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <span>Review the objectives that you set earlier in the year. To
+                  what extent have you achieved them? Are there barriers or
+                  obstacles in the way of reaching your goals. </span><br/>
+
+            <span> If so, what must be done to enable you to reach your goals?
+                  Is there any need to revise the goals because of such
+                  constraints? </span>
+          </div>
+        </div>
+        <!-- ./row -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <label class="control-label">1. Please state reason(s) if
+                                               objective(s) set earlier in the
+                                               year is/are not met</label>
+
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" ng-model="formData.performanceProgress.reason"></textarea>
+                </div>
+              </li>
+ 
+              <li>
+                <div class="form-group">
+                  <label class="control-label">2. Barriers and steps/resources
+                                               needed to overcome barriers</label>
+
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" ng-model="formData.performanceProgress.barriers"></textarea>
+                </div>
+              </li>
+
+              <li>
+                <div class="form-group">
+                  <label class="control-label">3. Please indicate learning &amp;
+                                               support plan for the next 6-month
+                                               to help in achieving in your
+                                               objectives</label>
+
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" ng-model="formData.performanceProgress.indicate_learning"></textarea>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./row -->
+        <div class="row">
+          <div class="col-md-12">
+            <span class="bold-text">Appraisee's Comments</span><br/>
+
+            <span>After appraisal is completed, the appraisee may state his/her
+                  comments in terms of how constructive the appraisal was done ;
+                  and any disagreements ,<br/>
+               if any in the space below.</span>
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="form-group">
+                  <textarea name="name" rows="3" cols="50" class="form-control"
+                            style="width:80%" ng-model="formData.performanceProgress.appraisee_comment"></textarea>
+                </div>
+              </li>
+
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./row -->
+     
+        <div class="row" ng-show="isAppriseeSubmitPMForm()">
+          <div class="col-md-3 col-md-offset-1">
+             <p>
+              Comfirm by Appraisee
+              </p>
+              <strong>Wutiporn K.</strong>
+
+          </div>
+                <div class="col-md-3 col-md-offset-2">
+                <p>Date:</p>
+                <span>01/01/2016</span>
+
+
+          </div>
+
+        </div>
+      
+        
+        
+        <div class="row">
+         <div class="col-md-1 col-md-offset-9">
+            <button class="btn btn-primary" ng-hide="isWizardMode()">Submit</button>
+         </div>
+        </div> <!-- ./row -->
+      </div>
+
+      <!-- ./panel-body -->
+    </div>
+    <!-- ./collapse -->
+  </div>
+  <!-- ./panel -->
+</div>

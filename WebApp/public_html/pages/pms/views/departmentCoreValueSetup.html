@@ -1,0 +1,38 @@
+<div class="status-view">
+  <div class="panel panel-custom">
+    <div class="panel-heading">
+        <span class="panel-title">Department Core Values Setup</span>
+    </div>
+    <div class="panel-body">
+  
+      <table class="table toggle-circle department-core-value-table" data-paging="false" data-sorting="false">
+        <thead>
+          <tr>
+            <th data-toggle="true">#</th>
+            <th>Department Core Value</th>
+            <th>Description</th>
+            <th>Weightage</th>
+            <th>Action Icon</th>
+            <th>Active</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr><!-- ng-repeat="item in coreValuesList" -->
+            <td>{{$index + 1}}</td>
+            <td><input class="form-control" type="text" name="txtDeptCoreValNm" disabled="disabled">{{item.coreValueNm}}</input></td>
+            <td><textarea rows="5"  cols="30" class="form-control" disabled="disabled" name="txtDeptCoreValDesc">{{item.coreValueDesc}}</textarea></td>
+            <td align="center"  style="width:150px;"><input class="form-control" type="text" name="txtDeptWeightage"  disabled="disabled">{{item.weightage}}</input></td>
+            <td align="center"> 
+                <button class="btn btn-circle" name="btnDeptEditCoreValue"><i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i></button>  
+                <button class="btn btn-circle" name="btnDeptSaveCoreValue"><i class="fa fa-save fa-3x" aria-hidden="true"></i></button>
+                <button class="btn btn-circle" name="btnDeptDeleteCoreValue"><i class="fa fa-trash-o fa-3x" aria-hidden="true"></i></button>
+            </td>
+            <td align="center"><button class="fa fa-check-circle-o" style="font-size:48px;color:green" onclick="toggleDeptActiveButton();" disabled="disabled"></button></td>
+            <!-- <td  ng-if="item.activeFlag=='FALSE'"><button class="fa fa-check-circle-o" style="font-size:48px;color:red"></button></td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div><!-- END Table View -->

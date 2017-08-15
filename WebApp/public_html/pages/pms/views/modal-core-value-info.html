@@ -1,0 +1,26 @@
+<div class="modal-header" style="text-align: center  !important">
+    <h3 class="modal-title">Information</h3>
+</div>
+<div class="modal-body">
+    <div id="overlay-info" class="" ng-show="loading">
+        <div class="loading-middle">
+            <i class="fa fa-spinner fa-spin"></i>
+        </div>
+    </div>
+    <div  ng-hide="loading">
+        <h4>{{titleInfo}}</h4>
+        <div >
+            <p><strong>Definition</strong></p>
+            <p>{{dtlInd.definition}}</p>
+        </div>
+        <div>
+            <p><strong>Description</strong></p>
+            <p ng-if="dtlInd.description1">{{dtlInd.description1}}</p>
+            <p ng-if="dtlInd.description2">{{dtlInd.description2}}</p>
+            <p ng-if="dtlInd.description3">{{dtlInd.description3}}</p>
+        </div>
+    </div>
+</div>
+<div class="modal-footer" style="text-align: center  !important">
+    <button class="btn btn-primary" ng-click="$dismiss(cancel)">OK</button>
+</div>

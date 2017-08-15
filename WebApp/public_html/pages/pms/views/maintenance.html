@@ -1,0 +1,627 @@
+
+<!--Default Tabs (Left Aligned)-->
+<div class="tab-base" id="pmTabs" >
+  
+  <!--Nav Tabs-->
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a data-target="#demo-lft-tab-1"  data-toggle="tab">My PM</a>
+    </li>
+     
+    <li id="barMystaff" >
+      <a data-target="#demo-lft-tab-2"   data-toggle="tab">My Staff</a>
+    </li>
+     
+  </ul>  
+<!-- END Nav Tabs-->
+
+  <!--Tabs Content-->
+ 
+  <div class="tab-content">
+    <div id="demo-lft-tab-1" class="tab-pane fade active in" ng-controller="PMListController">
+      <div class="individual-pm-toolbar">
+       <!-- Toolbar -->
+  <div class="panel panel-default row">
+    <div class="panel-body">
+      <div class="col-sm-9">
+        <form class="form-horizontal" name="formSearchMyPm" ng-controller="validationCtrlMyPm" ng-submit="submit($event)"  >
+            <label for="" class="col-md-1 control-label">
+              <strong>Year</strong>
+            </label>
+             <div class="col-md-2">
+             <select class="form-control"    name="selectedYear"   id="selectedYearMyPm" >
+                   <option ng-if="item.value !='All'"  ng-repeat="item in listYear.data" ng-value="item.value">{{item.des}}</option>
+              </select>
+         </div>
+           <label for="" class="col-md-1 control-label">
+              <strong>Period</strong>
+            </label>
+         <div class="col-md-2">
+          <div class="btn-group">
+           <button type="button" name="button1H" id="periodIdMyPm1H"   ng-click="periodMyPm1H()"  class="btn btn-purple">1H</button>
+    
+            <button type="button" name="button2H" id="periodIdMyPm2H"  ng-click="periodMyPm2H()" class="btn btn-default">2H</button>
+            
+            
+          </div>
+          </div>
+          <!--
+          <div class="input-group col-sm-5">
+           
+            <input type="text" class="form-control"
+                   placeholder="Find by name, position,..."
+                   ng-model="searchInputText"></input>
+             
+            <span class="input-group-btn"> 
+              <button type="button" name="button" class="btn btn-primary">
+                <i class="fa fa-search"></i>
+              </button>
+               </span>
+          </div>
+          -->
+           <div class="input-group col-sm-1 col-xs-1 col-md-2"></div>
+           
+           <div class="col-md-4">
+          <!-- Reset Button -->
+          <button type="button" name="button" data-target="#page-content"
+                  class="btn btn-default pms-overlay-btn" autocomplete="off"
+                  ng-click="refreshMyPmList()">
+            <i class="fa fa-refresh"></i>
+          </button>
+          <!-- View Button -->
+          <div class="btn-group">
+            <button type="button" name="button"
+                    class="btn btn-default dropdown-toggle dropdown-toggle-icon"
+                    data-toggle="dropdown">
+              <i class="fa fa-th-large"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a ng-click="changeView('status')">Status</a>
+              </li>
+               
+              <li>
+                <a ng-click="changeView('table')">Table</a>
+              </li>
+            </ul>
+          </div>
+          <!-- New PM Form Button -->
+           
+          <a href="#/noticeNewPM" id='addNewPm' class="btn btn-purple btn-labeled fa fa-plus">New
+                                                                                PM
+                                                                                Form</a>
+        </div>
+        </form>
+      </div>
+     
+    </div>
+    <!-- END Panel Body -->
+  </div>
+  <!-- END Toolbar -->
+      </div>
+      
+      <div class="individual-status-view" ng-show="viewMode == 'status'">
+        <div class="col-md-6 individual-status-view-content" style=" padding-right: 1px;
+    padding-left: 5px;">                    
+          <!-- Status View -->          
+         <div ng-repeat="item in data.pmlist | filter: nameFilterFn">
+             <div class="individual-status-view-item" pm-status-item item="item"></div>
+         </div>
+        </div>
+        <div class="col-md-6 individual-status-view-content">
+           <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Latest PM Activities History</h3>
+                </div>
+                <div class="panel-body">
+                  <!-- Timeline -->
+                  <!--===================================================-->
+                  <div class="timeline">
+          
+                    <!-- Timeline header -->
+                    <div class="timeline-header">
+                      <div class="timeline-header-title bg-info">Now</div>
+                    </div>
+           
+                    <div class="timeline-entry" ng-repeat="act in data.lastActivityList">
+                      <div class="timeline-stat">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-time">{{act.actionDate}}</div>
+                      </div>
+                      <div class="timeline-label">
+                        <p class="mar-no pad-btm"><span class="text-semibold">{{act.actionBy}}</span>  <span>{{act.action}}</span>
+                        </p>
+                        
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <!--===================================================-->
+                  <!-- End Timeline -->
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="individual-table-view"  ng-hide="viewMode == 'status'">
+        <!-- Table View -->
+        <div ng-controller="PMListController" > 
+                 
+                      <div   class="status-view">
+                        <div class="panel panel-custom">
+                          <div class="panel-heading">
+                              <span class="panel-title">List of PM</span>
+                          </div>
+                          <div class="panel-body">
+                           <div class="paging-toolbar clearfix">
+                        <div class="pull-right">
+                          <div class="pull-right">
+                            <strong class="text-muted">{{tablePM.start}}-{{tablePM.pageLength}}</strong>
+                             of 
+                            <strong class="text-muted">{{tablePM.total}}</strong>
+                            <div class="btn-group">
+                              <button type="button" name="button" class="btn btn-default" ng-click="backPagePm()">
+                                <span class="fa fa-chevron-left"></span>
+                              </button>
+                               
+                              <button type="button" name="button" class="btn btn-default" ng-click="nextPagePm()">
+                                <span class="fa fa-chevron-right"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="page-length pull-left">
+                            <label for="" class=" control-label col-xs-4">Show</label>
+                            <div class="col-xs-8">
+                              <select class="form-control ng-pristine ng-valid" name=""
+                                      ng-model="displayLengthPm"
+                                      ng-options="value for value in displayLenghtListPm"
+                                      ng-change="changeDisplayLengthPm(value)">
+                                          
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- END Paging Toolbar -->
+                            <table class="table toggle-circle pm-list-table" data-paging="false" data-sorting="false">
+                              <thead>
+                                <tr>
+                                  <th data-toggle="true">#</th>
+                                  <th>Year</th>
+                                  <th>1H/2H</th>
+                                  <th style="width:120px;">Status</th>
+                                  <th ng-hide="individual == 'true'">Employee Name</th>
+                                  <th>Designation</th>
+                                  <th>Job Grade</th>
+                                   <th>Job Band</th>
+                                    <th>Department</th>
+                                  
+                                  <th>Supervisor Sign</th>
+                                  <th>Counter Supervisor Sign</th>  
+                                  <th data-sortable="false" data-sorted="false"></th>
+                                </tr> 
+                              </thead>
+                              <tbody>
+                                <tr ng-repeat="item in data.pmlist">
+                                
+                                 <td>{{item.rowNo}}</td>
+                                  <td>{{item.pmYear}}</td>
+                                  <td>{{item.pmPeriod}}</td>
+                                  <td><span class="label label-table" ng-class="getStausClass(item)">{{getStausShow(item.pmstatus)}}</span></td>
+                                  <td  ng-hide="individual == 'true' ">
+                                  <a  ng-hide="{{item.pmstatus =='N'}} " href="#/editPMForm?emp_seqno={{item.fkempseqno}}&pmhdr_seqno={{item.pkhdrseqno}}">{{item.empname}}</a><a  ng-hide="{{item.pmstatus !='N'}} " href="#maintenance">{{item.empname}}</a>&nbsp;<a  href="javascript:void(0)" 
+                                  ng-click="loadChangeTabSubMystaff(item.fkempseqno,item.empname,$event,true)"
+                                  ng-show="item.mystaffcount > 0"><span class="badge badge-purple">{{item.mystaffcount}}</span></a></td>
+                                  <td>{{item.designation}}</td>
+                                  <td>{{item.jobgradename}}</td>
+                                  <td>{{item.jobbrandname}}</td>
+                                   <td>{{item.comname}} / {{item.divname}} / {{item.depname}} / {{item.secname}}</td>
+                                  <td class="text-center">{{item.supervisor_sign}}</td>
+                                  <td class="text-center">{{item.counter_supervisor_sign}}</td>
+                                  <td>
+                                  
+                                   <a  ng-hide="{{item.pmstatus =='N'}} " href="#/editPMForm?emp_seqno={{item.fkempseqno}}&pmhdr_seqno={{item.pkhdrseqno}}" class="label label-default"><i class="fa fa-pencil-square-o fa-1x"></i></a>
+                                   <a  ng-hide="{{item.pmstatus !='N'}} " href="#maintenance" class="label label-default"><i class="fa fa-pencil-square-o fa-1x"></i></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                      
+                        </div>
+                      </div><!-- END Table View -->
+                      </div>
+      </div>
+    </div>
+    <div   id="demo-lft-tab-2" class="tab-pane fade" ng-controller="PMListController">
+      <div class="staff-pm-toolbar">
+       <!-- Toolbar -->
+  <div class="panel panel-default row">
+    <div class="panel-body">
+      <div class="col-lg-11 col-md-13 col-sm-13">
+        <form id ='formStaff' class="form-horizontal" name="formSearch" ng-controller="validationCtrl" ng-submit="submit($event)"  >
+       <input type="reset" id="validationCtrlReset" value="Reset" style="display:none;">
+        <div class="row" style="padding-top: 1px;">
+            <label for="" class="col-md-1">
+              <strong>Year</strong>
+            </label>
+             <div class="col-md-2">
+              <select class="form-control"   name="selectedYear"    id="selectedYearMyStaff" >
+             
+                   <option ng-if="item.value !='All'"  ng-repeat="item in listYears.data" ng-value="item.value">{{item.des}}</option>
+                     
+                       
+              </select>
+              
+              
+           </div>
+          <label for="" class="col-md-1">
+              <strong>Period</strong>
+            </label>
+          <div class="col-md-2">
+            <div class="btn-group">
+            <button type="button" name="button1H" id="periodIdMyStaff1H"   ng-click="periodMyStaff1H()"  class="btn btn-purple">1H</button>
+    
+            <button type="button" name="button2H" id="periodIdMyStaff2H"  ng-click="periodMyStaff2H()" class="btn btn-default">2H</button>
+            
+           
+            </div>
+          </div>
+          
+           <label for="selectedStatus" class="col-md-1">
+              <strong>Status</strong>
+            </label>
+             <div class="col-md-2">
+            <select class="form-control" name="selectedStatus" id="selectedStatusMystaff" ng-model="formData.selectedStatus"  >              
+              <option value="">All</option>   
+               <option  ng-repeat="item in data.pmStatusList" ng-value="item.status">{{item.description}}</option>
+            </select>
+           </div>
+        
+           <label for="" class="col-md-1">
+              <strong>Name</strong>
+            </label>
+             <div class="col-md-2">
+            <input type="text" class="form-control" name="findName" id="staffName"  ng-model="formData.findName"  placeholder="Find by staff name"></input>
+           </div>
+          
+                                                                        
+            </div> <!-- ./row -->
+            
+       <div class="row" style="padding-top: 1px;">
+          <label for="" class="col-md-1">
+              <strong>Company   </strong>
+            </label>
+           <div class="col-md-2">
+        
+            <select class="form-control"  ng-model="company" ng-selected="" name="company"  ng-change="selectedItemCompany()"   id="companyMystaff" >
+                   <option      ng-repeat="item in data.listCompany.data" ng-value="item.des2">{{item.value}}</option>
+              </select>
+            
+           </div>
+            <label for="" class="col-md-1">
+              <strong>Division</strong>
+            </label>
+             <div class="col-md-2">
+             <select class="form-control"  ng-model="division"  name="division"  ng-change="selectedItemDivision()"   id="divisionMystaff" >
+                   <option ng-if="item.des !=''"   ng-repeat="item in data.listDivision.data" ng-value="item.value">{{item.des}}</option>
+              </select>
+           </div>
+           
+           <label for="" class="col-md-1">
+              <strong>Department</strong>
+            </label>
+             <div class="col-md-2">
+            <select class="form-control"  ng-model="department"  name="department"  ng-change="selectedItemDepartment()"   id="departmentMystaff" >
+                   <option  ng-repeat="item in data.listDepartment.data" ng-value="item.value">{{item.des}}</option>
+              </select>
+           
+           </div>
+           <label for="" class="col-md-1">
+              <strong>Section</strong>
+            </label>
+             <div class="col-md-2">
+             
+            
+             <select class="form-control"  ng-model="section"  name="section"  ng-change="selectedItemSection()"   id="sectionMystaff" >
+                   <option  ng-repeat="item in data.listSection.data" ng-value="item.value">{{item.des}}</option>
+              </select>
+             
+           </div>
+        </div> <!-- ./row -->
+        <div class="row" style="padding-top: 1px;">
+        <label for="" class="col-md-1">
+      
+              <strong>Job Grade</strong>
+            </label>
+             <div class="col-md-2">
+             
+            <select class="form-control" name="jobGrade" id="jobGradeStaff"  >
+          
+           
+                   <option  ng-repeat="item in listJobGrade.data" ng-value="item.value">{{item.des}}</option>
+                     
+            
+            </select>
+           </div>
+           <label for="" class="col-md-1">
+              <strong>Job Band</strong>
+            </label>
+             <div class="col-md-2">
+              <select class="form-control" name="jobBrand" id="jobBrandStaff" >
+          
+            
+            
+                   <option ng-if="item.value !='All'"  ng-repeat="item in listJobBrand.data" ng-value="item.value">{{item.des}}</option>
+                 
+            
+            </select>
+           </div>
+           <label for="" class="col-md-1">
+              <strong>Designation</strong>
+            </label>
+             <div class="col-md-2">
+            <input type="text" class="form-control" id="designationMystaff"  name="findDesignation"  ng-model="formData.findDesignation"   placeholder="Find by designation"></input>
+           </div>
+           </div> <!-- ./row -->
+           <div class="row">
+           <div class="col-md-6">
+           <!-- Search button -->
+            
+           <button class="btn btn-primary" type="submit" id="staffsubmit">Search</button>
+        <!-- Reset Button -->
+        <button id="loadrefreshMystaffId" type="button" name="button" data-target="#page-content"
+                class="btn btn-default pms-overlay-btn" autocomplete="off"
+                >
+          <i class="fa fa-refresh"></i>
+        </button>
+        <!-- View Button -->
+        <div class="btn-group">
+          <button type="button" name="button"
+                  class="btn btn-default dropdown-toggle dropdown-toggle-icon"
+                  data-toggle="dropdown">
+            <i class="fa fa-th-large"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a ng-click="changeView('status')">Status</a>
+            </li>
+             
+            <li>
+              <a ng-click="changeView('table')">Table</a>
+            </li>
+          </ul>
+        </div>
+       
+        <button class="btn btn-default" type="button"  ng-click="loadResetAllMyStaff($event)" id="staffReset">Reset</button>
+        <button class="btn btn-success" type="button"  ng-click="doExportExcel($event)" id="exportExcel">Export Excel</button>
+          </div>   
+        </div> <!-- ./row -->
+        </form>
+        <script>
+//This is controller
+//appModule.controller("summaryReportController", function($scope, $timeout) {
+//  $scope.data = {};
+//  $scope.initPmListDatePicker = function () {
+//    $('.input-group.date').datepicker({ format: "dd-mm-yyyy",autoclose:true});
+//  };   
+//  $scope.reloadGrid = function () {
+//         $scope.$broadcast ('reloadGridEvent');
+//  };
+//  $scope.initialReport = function() {
+// 
+//  }
+//  // Initialize report
+//  $scope.initialReport();
+//  $scope.initPmListDatePicker();
+//  
+//});
+//var app = angular.module('submitApp', []);
+//app.controller('validationCtrl', function($scope) {
+//    $scope.formData = {};
+//
+//    $scope.submit = function() {   
+//        console.log(this.formData);
+//    };
+//   
+//});
+</script>
+      </div>
+     
+    </div>
+    <!-- END Panel Body -->
+  </div>
+  <!-- END Toolbar -->
+      </div>
+      
+<ol id='divlistHeaderMystaff' class="breadcrumb" ng-controller="PMListController" >
+
+  <li><a href="#" ng-click="loadResetSubMystaff($event)">All</a></li>
+ 
+  
+  
+ <li ng-class="{active: $last}" ng-switch="$last">
+               <a ng-switch-when="true" href="javascript:void(0)" class="active" ng-click="loadSubMystaff( selectedManager.mngId 
+                ,selectedManager.empName,$event,selectedManager.company
+                , selectedManager.division, selectedManager.department
+                ,selectedManager.section)">{{item}}</a>
+                <span   ng-switch-default>{{item}}</span>
+  
+</ol>
+ <!-- Status View -->          
+         <div  class="staff-pm-status-view"  ng-show="viewMode == 'status'">
+           <div pm-paging-toolbar></div>
+      <div class="status-view" ng-show="viewMode == 'status'">
+  <div class="row">
+  <!-- New Status -->
+  <div id="statusListPanel" class="panel col-md-15 col-sm-3" style="background-color: transparent; box-shadow:  0 0px 0 rgba(0,0,0,0.05);" ng-repeat="statusTmp in data.pmStatusList">
+    <div class="panel-heading" style="bottom: 5px;">
+    <span class="panel-title"><strong>{{statusTmp.description}}</strong></span>
+    </div>
+    <!-- BEGIN status-content-box -->
+    <ul class="status-content-box">
+     
+      <li ng-repeat="item in data.pmstafflist | filter:{ pmstatus : statusTmp.status }">
+    
+     <div class="panel  text-left">
+      <div class="panel-body pad5">
+        <div class="clearfix box-title">
+          <span class="icon-wrap icon-wrap-sm icon-circle bg-info pull-left">
+                  <i class="fa fa-user fa-2x"></i>
+          </span>
+          
+        <h5> 
+         
+         <a ng-hide="{{item.pmstatus =='N'}} " href="#/editPMForm?emp_seqno={{item.fkempseqno}}&pmhdr_seqno={{item.pkhdrseqno}}">&nbsp;{{item.empname}}  </a>
+         <a ng-hide="{{item.pmstatus !='N'}} " href="">&nbsp;{{item.empname}}  </a>
+         &nbsp;<a href="#/maintenance"  ng-click="loadSubMystaff(item.fkempseqno,item.empname,$event,item.comname,item.divname,item.depname,item.secname)" ng-show="item.mystaffcount > 0"><span class="badge badge-purple">{{item.mystaffcount}}</span></a>
+        </h5>  
+        </div>
+         <p><span class="bold-text">Designation:</span>&nbsp;{{item.designation}}</p>
+          <p><span class="bold-text">Job Grade:</span>&nbsp;{{item.jobgradename}}</p>
+           <p><span class="bold-text">Job Band:</span>&nbsp;{{item.jobbrandname}}</p>
+        <p><span class="bold-text">Department:</span>&nbsp;{{item.comname}} / {{item.divname}} / {{item.depname}} / {{item.secname}} </p>
+      
+        <p><span class="bold-text">Year:</span>&nbsp;{{item.pmYear}}</p>
+        <p><span class="bold-text">Status:</span>&nbsp;{{getStausShow(item.pmstatus)}}</p>
+      </div>
+      <div>
+
+        <!--<div class="pad-btm text-center">
+          <button type="button" name="button" class="btn btn-primary">Action1</button>
+            <button type="button" name="button" class="btn btn-success">Action2</button>
+        </div>-->
+      </div>
+    </div>   <!-- ./panel -->
+   
+  </li>
+  </ul><!-- END status-content-box -->
+  </div>   <!-- END New Status -->
+    </div> <!-- ./row -->
+</div> <!-- END Status View -->
+      </div>
+      <div class="staff-pm-table-view"  ng-hide="viewMode == 'status'">
+      <div     individual="false">
+      <div class="status-view">
+  <div class="panel panel-custom">
+    <div class="panel-heading">
+        <span class="panel-title">List of PM</span>
+    </div>
+    <div class="panel-body">
+  <div class="paging-toolbar clearfix">
+  <div class="pull-right">
+    <div class="pull-right">
+      <strong class="text-muted">{{start}}-{{pageLength}}</strong>
+       of 
+      <strong class="text-muted">{{total}}</strong>
+      <div class="btn-group">
+        <button type="button" name="button" class="btn btn-default" ng-click="backPageMyStaff()">
+          <span class="fa fa-chevron-left"></span>
+        </button>
+         
+        <button type="button" name="button" class="btn btn-default" ng-click="nextPageMyStaff()">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+      </div>
+    </div>
+    <div class="page-length pull-left">
+      <label for="" class=" control-label col-xs-4">Show</label>
+      <div class="col-xs-8">
+        <select id="displayLength" class="displayLengths form-control ng-pristine ng-valid" name=""
+                ng-model="displayLength"
+                ng-options="value for value in displayLenghtList"
+                ng-change="changeDisplayLengthT(value)">
+                    
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+      <table id='pmstaff' class="table toggle-circle " data-page-size="200" data-paging="false" >
+        <thead>
+          <tr>
+            <th data-toggle="true" data-sortable="false">#</th>
+            <th>Year</th>
+            <th>1H/2H</th>
+            <th style="width:120px;">Status</th>
+            <th ng-hide="individual == 'true'">Employee Name</th>
+            <th>Designation</th>
+            <th>Job Grade</th>
+             <th>Job Band</th>
+              <th>Department</th>
+            
+            <th>Supervisor Sign</th>
+            <th>Counter Supervisor Sign</th>  
+            <th data-sortable="false" data-sorted="false"></th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in data.pmstafflist">
+            <td>{{item.rowNo}}</td>
+            <td>{{item.pmYear}}</td>
+            <td>{{item.pmPeriod}}</td>
+            <td><span class="label label-table" ng-class="getStausClass(item)" >  {{getStausShow(item.pmstatus)}} </span></td>
+            <td  ng-hide="individual == 'true'"> 
+            <a ng-hide="{{item.pmstatus =='N'}} " href="#/editPMForm?emp_seqno={{item.fkempseqno}}&pmhdr_seqno={{item.pkhdrseqno}}">{{item.empname}}  </a>
+            <a ng-hide="{{item.pmstatus !='N'}} " href="">{{item.empname}}  </a>
+            
+            &nbsp;<a href="#/maintenance"  ng-click="loadSubMystaff(item.fkempseqno,item.empname,$event,item.comname,item.divname,item.depname,item.secname)" ng-show="item.mystaffcount > 0"><span class="badge badge-purple">{{item.mystaffcount}}</span></a></td>
+            <td>{{item.designation}}</td>
+            <td>{{item.jobgradename}}</td>
+            <td>{{item.jobbrandname}}</td>
+             <td>{{item.comname}} / {{item.divname}} / {{item.depname}} / {{item.secname}}</td>
+            <td class="text-center">{{item.supervisor_sign}}</td>
+            <td class="text-center">{{item.counter_supervisor_sign}}</td>
+            <td>
+             <a ng-hide="{{item.pmstatus =='N'}} " href="#/editPMForm?emp_seqno={{item.fkempseqno}}&pmhdr_seqno={{item.pkhdrseqno}}" class="label label-default"><i class="fa fa-pencil-square-o fa-1x"></i></a>
+            <a ng-hide="{{item.pmstatus !='N'}} " href="#maintenance" class="label label-default"><i class="fa fa-pencil-square-o fa-1x"></i></a>
+            
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <input type="hidden" name="userLevelId" id="userLevelId"  ng-model="formData.userLevelId" value="">
+    
+     <input type="hidden" name="pualStart" id="pualStart"  ng-model="formData.pualStart" value="">
+    
+     <input type="hidden" name="forceReload" id="forceReloadData"  ng-model="formData.forceReloadData" value="">
+    <input type="hidden" name="pmperiodData" id="pmperiodData"  ng-model="formData.pmperiod" value="1">
+     <input type="hidden" name="pmperiod" id="pmperiodMyStaff"  ng-model="formData.pmperiodMyStaff" value="1">
+  <input type="hidden" name="mngId" id="mngId"  ng-model="formData.mngId" value="">
+  <input type="hidden" name="oldmngId" id="mngIdOld"  ng-model="formData.mngIdOld" value="">
+ <input type="hidden" id="empidClick" />
+ <input type="hidden" id="reloadempidClick" />
+  <input type=hidden name="startLoadMystaff" id="startLoadMystaff"  value="" />
+  <!-- reset value-->
+   <input type="hidden" id="loadEmpName" value='-1' />
+  <input type="hidden" id="loadDivision" value='-1' />
+  <input type="hidden" id="loadCompany"  value='-1' />
+  <input type="hidden" id="loadDepartment"  value='-1' />
+  <input type="hidden" id="loadSection"  value='-1' />
+  <input type="hidden" id="loadStaffYeart"  value='-1' />
+  <input type="hidden" id="loadStaffPeriod"  value='-1' />
+  <!-- set value-->
+  <input type="hidden" id="setDataParamGrid" value='-1' />
+  <input type="hidden" id="setDataEmpName" value='-1' />
+  <input type="hidden" id="setDataDivision" value='-1' />
+  <input type="hidden" id="setDataCompany"  value='-1' />
+  <input type="hidden" id="setDataDepartment"  value='-1' />
+  <input type="hidden" id="setDataSection"  value='-1' />
+  <input type="hidden" id="setDataStaffYeart"  value='-1' />
+  <input type="hidden" id="setDataStaffPeriod"  value='-1' />
+    <input type="hidden" id="loadWithoutSearch" value='-1' />
+  </div>
+</div><!-- END Table View -->
+      
+      </div>
+      
+      </div>
+      
+      
+    </div>
+  </div>
+ 
+</div>
+<!--End Default Tabs (Left Aligned)-->

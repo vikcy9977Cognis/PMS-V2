@@ -1,0 +1,50 @@
+A.number:link {
+	COLOR: #000000; 
+	TEXT-DECORATION: none
+}
+A.number:visited {
+	COLOR: #000000; 
+	TEXT-DECORATION: none
+}
+A.number:active {
+	COLOR: #000000
+}
+A.number:hover {
+	COLOR: #0000ff; 
+	BACKGROUND: #97C8E7
+}
+.CalendarTableLeftTextCalHead {
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 60%;
+	BACKGROUND: #3E71CC;
+	VERTICAL-ALIGN: middle;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+	HEIGHT: 20px;
+	TEXT-ALIGN: left;
+}
+
+.CalendarTableLeftTextCalBody {
+	PADDING-LEFT: 2px; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 80%; 
+	BACKGROUND: #ffffff; 
+	VERTICAL-ALIGN: middle; 
+	COLOR: #000000; 
+	FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	HEIGHT: 20px; TEXT-ALIGN: Right
+}
+
+.CalendarTitle {
+	BORDER-TOP: #3C3EA2 1px solid; 
+	PADDING-LEFT: 2px; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 90%; 
+	BACKGROUND: #3C3EA2; 
+	VERTICAL-ALIGN: middle; COLOR: #ffffff; 
+	BORDER-BOTTOM: #3C3EA2 0px solid; 
+	FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	HEIGHT: 20px; TEXT-ALIGN: left; 
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#9935ADFF');
+}

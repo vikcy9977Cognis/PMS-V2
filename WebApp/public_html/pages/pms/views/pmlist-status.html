@@ -1,0 +1,19 @@
+<div class="status-view" ng-show="viewMode == 'status'">
+  <div class="row">
+  <!-- New Status -->
+  <div id="statusListPanel" class="panel col-md-15 col-sm-3" style="background-color: transparent; box-shadow:  0 0px 0 rgba(0,0,0,0.05);" ng-repeat="statusTmp in data.pmStatusList">
+    <div class="panel-heading" style="bottom: 5px;">
+    <span class="panel-title"><strong>{{statusTmp.description}}</strong></span>
+    </div>
+    <!-- BEGIN status-content-box -->
+    <ul class="status-content-box">
+     
+      <li ng-repeat="item in data.pmstafflist | filter:{ pmstatus : statusTmp.status }">
+    
+     <div pm-status-item item="item"></div>
+   
+  </li>
+  </ul><!-- END status-content-box -->
+  </div>   <!-- END New Status -->
+    </div> <!-- ./row -->
+</div> <!-- END Status View -->

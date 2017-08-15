@@ -1,0 +1,101 @@
+ï»¿<?xml version='1.0' encoding='utf-8' ?>
+<!-- saved from url=(0014)about:internet -->
+<glossarydata>
+ <entry name="Area" value="The 3rd level of the geographical hierarchy of RCL. The levels are Line, Region, Area, Control Zone, Zone, and Inland Point. All reporting and control should be consistent along this hierarchy. Examples for Areas are: Thailand, South PRC." />
+ <entry name="B/L Types" value="See the following explanations: Master B/L, Hinchment B/L, Memo B/L, Through B/L." />
+ <entry name="BAF" value="Abbreviation for &quot;Bunker Adjustment Factor&quot;. A port surcharge type applicable in quotation." />
+ <entry name="BAPLIE" value="Provides the bay plan/stowage plan occupied and empty locations message (BAPLIE) to be used in Electronic Data Interchange (EDI) between trading  partners involved in administration, commerce and transport." />
+ <entry name="Blank Booking" value="Is an empty booking where all details need to be entered. The rates are drawn from MRG and are not changeable." />
+ <entry name="Booking from Booking" value="Copy from another actual booking, rate would be based on the rate source of previous booking." />
+ <entry name="Booking from Quotation" value="Actual booking bases on quotation and draws the details from it." />
+ <entry name="Booking Types" value="See the following explanations:  * Blank Booking  * Booking from Booking  * Booking from Quotation  * Express Booking  * Master Booking  * Partner Booking  * Template Booking" />
+ <entry name="CCA" value="Abbreviation for â€œCommon Carrier Agreementâ€?." />
+ <entry name="CEDEX" value="Container Equipment Data Exchange. This International Standard specifies general communication codes for container equipment data exchange. Normative References: 	 * ISO 3166:1993, Codes for the representation of names of countries.  * ISO 6346:1995, Freight containers - Coding, identification and marking.  See also UCIRC" />
+ <entry name="CIM" value="Waybill for international rail transports. (Derived from: 'Convention Internationale concernat le transport des Marchandises par chemin de fer')" />
+ <entry name="CM" value="Abbreviation for â€œContribution Marginâ€?; equals total revenue minus total variable costs." />
+ <entry name="CMR" value="Waybill for international truck transports. (Derived from:'Convention relative au contrat de transport International de Marchandises par Route')" />
+ <entry name="CO" value="Abbreviation for â€œCustomer Orderâ€?." />
+ <entry name="Combo DnD" value="Liner charge for stay of container between discharge full and empty return at depot." />
+ <entry name="Consignee" value="The person or firm named in a freight contract to whom goods have been shipped or turned over for care." />
+ <entry name="Copy of RCL" value="Abbreviation for â€œRegional Container Lines Public Company Limited.â€?" />
+ <entry name="CS" value="Abbreviation for â€œCustomer Service Departmentâ€?." />
+ <entry name="Delete Port" value="Remove the particular port from the vessel schedule." />
+ <entry name="DG" value="Dangerous Goods" />
+ <entry name="DND" value="Abbreviation for â€œDetention and Demurrageâ€?." />
+ <entry name="DO" value="Abbreviation for â€œDelivery Orderâ€?." />
+ <entry name="Door ajar" value="A container who is moved laden with the door completely open and secured in order to provide fresh air to the cargo (e.g. onions)" />
+ <entry name="Door open" value="A container that moved laden with doors removed in order to provide fresh air to the cargo (e.g. onions)" />
+ <entry name="DPP" value="Abbreviation for â€œDamage Protection Planâ€?." />
+ <entry name="Effective date" value="First date at which a certain detail (e.g. rate, contract) is available for usage." />
+ <entry name="Expiry date" value="Last date at which a certain detail (e.g. rate, contract) is available for usage." />
+ <entry name="Express Booking" value="A screen in Dolphin to quickly capture a booking." />
+ <entry name="FAC" value="Abbreviation for â€œForwarding Agents Commissionâ€?. The recognition paid by the carrier to a freight forwarder based on a percentage of the freight charges for the Forwarders participation to the carrierâ€™s sales." />
+ <entry name="Feeder Cargo Booking" value="Actual booking by partners based on Slot Agreement. Billing is done through Slot Agreement. Synonym for partner booking" />
+ <entry name="Freight Collect" value="Freight/Surcharge payment to be made after shipping the container - usually at POD but could be done at any other location (elsewhere)." />
+ <entry name="Freight Pre-Paid" value="Freight/Surcharge payment to be made before shipping the container - usually at POL but could be done at any other location (elsewhere)." />
+ <entry name="Freight Tax" value="The income tax is levied on freight earned when cargoes are out from a particular country." />
+ <entry name="FSC" value="Abbreviation for â€œFunctional Support Centreâ€?. An FSC is an office of RCL or itâ€™s agents." />
+ <entry name="Fumigation" value="To expose certain spaces to the action of fumes in order to disinfect or kill vermin. For containers, it is done in line with the national legislation." />
+ <entry name="Gross Cargo Weight" value="The weight of cargo and packaging, excluded the container tare weight." />
+ <entry name="Gross Container Weight" value="Gross Container Weight = Gross Cargo Weight + Tare Weight." />
+ <entry name="Ground Rent" value="Ground rent has to be paid to Indian terminals as terminal Demurrage. This is normally included into demurrage, but in case the customer gets more free days and therefore will not pay demurrage, the line has still to pay this to the terminal. Indian practice is that the customer even during the free days will still pay the demurrage amount covering the ground rent to the line." />
+ <entry name="GST" value="Abbreviation for â€œGoods and Services Taxâ€? is a tax on the supply of goods and services consumed, sold or provided in the country. Some countries are using the term Value Added Tax (VAT)." />
+ <entry name="Haulage Location" value="A subdivision of an Inland Point for the purpose of establishing rates for intermodal transportation." />
+ <entry name="ICD" value="Abbreviation for â€œInland Container Depotâ€?." />
+ <entry name="IICL" value="Abbreviation for â€œInstitute of International Container Lessorsâ€?. IICLâ€™s membership engages in leasing marine cargo containers to ship operators and others on a broad international basis. IICL is active in governmental, regulatory, customs, tax, educational, technological and environmental fields." />
+ <entry name="Imperial Unit" value="The imperial units (or the imperial system) are a collection of English units, first defined in the Weights &amp; Measures Act of 1824, later refined (until 1959) &amp; reduced. The units were introduced in the United Kingdom &amp; its colonies, including Commonwealth countries (though most Commonwealth countries are now fully metricated), but excluding the then already independent United States. Systems of Imperial units are sometimes referred to as foot-pound-second, after the base units of length, mass &amp; time." />
+ <entry name="Job order" value="Job order means a purchase order for logistics services e.g. barge, rail or truck transports as well other value added services (see VAS)." />
+ <entry name="Load List" value="Expression used for both list of containers loaded on to a vessel (see Onboard List) or used for the order to the terminal for loading containers on board a certain vessel (see Pre Loading List)." />
+ <entry name="LoB" value="Abbreviation for â€œLines of Businessâ€? are SOC and COC" />
+ <entry name="LSX" value="Abbreviation for â€œLogistic Service Executionâ€? enfolds Logistic Service Planning, Supplier Booking Handling and Supplier Order Fulfilment." />
+ <entry name="M&amp;N" value="Marks and Numbers. The purpose of the marks and numbers is to identify the cargo, not the consignee. The marks and numbers on the master export packs must be consistent with the marks and numbers on the shipping documents." />
+ <entry name="M&amp;R" value="See MNR" />
+ <entry name="Manifest" value="Document containing a full list of a ship's cargo that is extracted from the bill of lading. A copy, known as the outward manifest is kept with the Customs authorities at the port of loading. Another copy, known as the inward manifest is kept at the discharge port." />
+ <entry name="Memo B/L" value="Used for empty repositioning, used for partner shipments, returned shipments, RCL company goods." />
+ <entry name="Metric" value="A decimal unit of measurement of the metric system (based on meters &amp; kilograms &amp; seconds)." />
+ <entry name="MLO" value="Abbreviation for â€œMain Line Operatorâ€?. These are the customers of SOC LoB" />
+ <entry name="MOVINS" value="Provides stowage instruction message (MOVINS) to be used in Electronic Data Interchange (EDI) between trading partners involved in administration, commerce and transport." />
+ <entry name="MT" value="Abbreviation used in day-to-day business for empty containers." />
+ <entry name="Multipart B/L" value="Consignee may request to separate a particular B/L into multiple B/Ls so that the cargo may be split and sold to multiple consignees. In turn, these multiple consignees may apply for multiple LCs, different packing list, multiple invoices. This is mainly to satisfy the trading nature at the POD by the consignee. See also Part of B/L &amp; Split B/L." />
+ <entry name="Net Cargo Weight" value="The actual cargo weight, exclude packaging and container tare weight." />
+ <entry name="Non operative Reefer" value="A reefer container loaded with cargo, whose aggregate is not used, so that the temperature is not controlled. Reefer containers are used to transport non reefer cargo, in order to bring the equipment back to areas, where there is a demand for reefer containers." />
+ <entry name="NVOCC" value="Abbreviation for â€œNon Vessel Operating Common Carrierâ€?." />
+ <entry name="Off-Dock Depot" value="A depot connected to a terminal but with separate yard space and potentially operator" />
+ <entry name="Omit Port" value="Intend to call but last minute changes so omitted." />
+ <entry name="On-Dock Depot" value="The terminal which provides the normal depotâ€™s activities such as storage on the same yard space" />
+ <entry name="Onboard List" value="Report from terminal to vessel operator stating the entire containers loaded onboard vessel, including cell positioning, bay-bay shifting via land and on ship." />
+ <entry name="One-off Quotation" value="A quotation against which only one booking can be made. Once the first booking is placed based upon such a quotation, no more bookings can take advantage of this quotation" />
+ <entry name="OOG" value="Abbreviation for â€œOut Of Gaugeâ€?, containerised cargo with over width, over height or heavy weight." />
+ <entry name="Part of B/L" value="Combination of Multipart B/L and Split B/L." />
+ <entry name="PLD" value="Abbreviation for â€œPlace of Destinationâ€?, sometimes also called final destination - of the cargo." />
+ <entry name="PO" value="Abbreviation for â€œPurchase Orderâ€?. An order from RCL to a vendor or a customer to RCL asking for the delivery of goods or services. Orders from RCL to vendors could be Pro Forma POs." />
+ <entry name="POD" value="Abbreviation for â€œPort of Dischargeâ€?." />
+ <entry name="Point" value="see Inland Point" />
+ <entry name="POL" value="Abbreviation for â€œPort Of Loadingâ€?." />
+ <entry name="PoO" value="Abbreviation for â€œPlace of Originâ€?. This may be an inland location where the cargo is loaded to a barge, train or truck." />
+ <entry name="Port" value="In the Dolphin Carrier System this means any port where RCL is loading or discharging containers either on own or partner vessels or barges." />
+ <entry name="Port Surcharge" value="A Port Surcharge is any revenue or rebate other than the freight, which is billed to customers according to the business rules of RCL and independent from individual customers. The applicability of Port Surcharges depends on the routing of the shipment and further other details like Equipment Type, Shipment Type. Changes to Port Surcharges are solely at the discretion of RCL" />
+ <entry name="Pre-loading list" value="Advice from vessel operator to the terminal which container are to be loaded on a certain vessel." />
+ <entry name="Proforma PO" value="An artificial order from RCL to a vendor asking for the delivery of certain goods or services, which is never actually dispatched to the vendor but used within RCL to control the delivery and payment. It is applied, when standing agreements with a vendor (e.g. leasing company, terminal) ask for regular delivery at certain periods (e.g. leasing of containers) or upon verbal or other instruction of RCL operative staff (e.g. for terminal operations)" />
+ <entry name="PTI" value="Abbreviation for â€œPre Trip Inspectionâ€? for reefer containers." />
+ <entry name="PuDo" value="Abbreviation for â€œPick up/Drop offâ€?. Artificial cost/benefits to indicate the positive/negative impact on the equipment imbalance situation, if a box is moved from one location to another location." />
+ <entry name="Quotation" value="Itâ€™s an official offer consisting of rate, service details, payment port, valid dates and other conditions applied. Quotation is always required by customer as a confirmation and for a reference." />
+ <entry name="RCF" value="Abbreviation for â€œRCL Feeder Pte. Ltd.â€? - one of RCL's subsidiary companies." />
+ <entry name="Remittance Tax" value="The tax is levied on the remittance from PRC locations to overseas. The rates vary from provinces." />
+ <entry name="RMF" value="Abbreviation for â€œRegional Merchants International Freight Forwarding Company, Ltd.â€? - one of RCL's subsidiary companies located in China." />
+ <entry name="RMM" value="Abbreviation for â€œRegional Merchants Maritime Limitedâ€? - one of RCL's subsidiary companies, which is both principal and customer." />
+ <entry name="ROE" value="Abbreviation for â€œRate of Exchangeâ€? the price at which the money of one country can be exchanged for the money of another country." />
+ <entry name="Tare weight" value="The weight of an empty container." />
+ <entry name="Template Booking" value="A prepared booking for regular customer, which can be re-used to create actual bookings, to save manual data entry" />
+ <entry name="Terminal" value="A facility in a port where RCL- and partner vessels are berthing. Terminals in the same port are considered different terminals, if their operators run them commercially as separate units. This is usually the case, when haulage between these terminals needs to be ordered and paid." />
+ <entry name="THC" value="Abbreviation for â€œTerminal Handling Chargesâ€?. THC are Port Surcharges for lifting/moving a container e.g. from vessel to depot." />
+ <entry name="Through B/L" value="A Bill of Lading that covers transportation by more than one carrier from the point of issue to the final destination." />
+ <entry name="Transhipment" value="See Local/Transhipment." />
+ <entry name="VAS" value="Abbreviation for â€œValue added serviceâ€? - Additional services provided by RCL to customer other than main sea or Intermodal (truck / rail / barge) transportation." />
+ <entry name="VAT" value="Abbreviation for â€œValue Added Taxâ€? see also GST" />
+ <entry name="Vessel Operator" value="Carrier who operates the vessel by being the Vessel Owner, or acting as Agent for the Vessel Owner, or being the Vessel Charterer" />
+ <entry name="VOC" value="Abbreviation for â€œVessel Operating Costâ€?." />
+ <entry name="VSA" value="Abbreviation for â€œVessel Sharing Agreementâ€?. Agreement between two or more vessel operating carriers to share slots on each others carriers." />
+ <entry name="Withholding Tax" value="A non-resident is liable to pay income tax. Under the law, a person has a legal obligation to withhold a percentage of the payment, when he makes payments of a specified nature, to a non-resident. The withheld amount has to be remitted to the income tax authority." />
+
+</glossarydata>

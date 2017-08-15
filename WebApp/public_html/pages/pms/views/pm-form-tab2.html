@@ -1,0 +1,147 @@
+<!-- Apprisee Focus -->
+<div ng-controller="pmformTab2Controller" class="pmform-content-body">
+<div class="panel">
+  <div class="panel-heading">
+    <div class="panel-control">
+      <button type="button" name="button" class="btn btn-default"
+              data-target="#af-panel-collapse-2a" data-toggle="collapse"
+              aria-expanded="true">
+        <i class="fa fa-chevron-down"></i>
+      </button>
+    </div>
+    <h4 class="panel-title">Competency Profile</h4>
+  </div>
+  <div id="af-panel-collapse-2a" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="row">
+        
+
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                    <th width="3%">No.</th>
+                    <th width="35%">Company Core Value</th>
+                    <th>Supervisor's Appraisals Comment</th>
+                    <th width="10%">Weightage<br/>{{formData.completecyProfile.total_company_weightage}}%</th>
+                    <th width="8%">Self Rating</th>
+                    <th width="8%">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-class-odd="'odd'" ng-repeat="item in formData.completecyProfile.companyCoreValue">
+                  <td>{{$index + 1}}</td>
+                  <td class="text-left">{{item.core_value}}
+
+                         <a href="javascript:void(0)" ng-click="showCoreValueInfo('c',$index);">
+                           <i class="fa fa-info-circle icon-info"/>
+                         </a>
+                  </td>
+                  <td class="text-left">
+                    <!--<input type="text" name="" value="" class="form-control input-sm" 
+                        ng-model="item.supervisor_comment" disabled="disabled"/>-->
+                    <textarea cols="5" rows="1" class="form-control input-sm" disabled="disabled">{{item.supervisor_comment}}</textarea>
+                  </td>
+                  <td class="text-right">{{item.weightage}}%</td>
+                  <td>
+                     <select class="form-control input-sm" name="" ng-model="item.self_rating" ng-change="changeCompanySelfRating($index)">
+                      <option ng-repeat="o in formData.ratingValues" ng-selected="{{o == item.self_rating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                  </td>
+                  <td class="text-center">                  
+                   <!--<select class="form-control input-sm" name="" ng-model="item.rating" disabled="disabled">
+                      <option ng-repeat="o in formData.ratingValues" ng-selected="{{o == item.rating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>-->
+                    {{formData.completecyProfile.companyCoreValue[$index].total_rating | number: 1}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-purple btn-labeled fa fa-plus" 
+                ng-click="addDepartmentCore()" ng-disabled="formData.completecyProfile.departmentCoreValue.length>=3" 
+                style="margin-bottom:3px" >Add Department Core Value</button>
+            <table class="table">
+              <thead>
+                <tr>
+                    <th width="3%">No.</th>
+                    <th width="35%">Department Core Value</th>
+                    <th>Supervisor's Appraisals Comment</th>
+                    <th width="10%">Weightage<br/>{{formData.completecyProfile.total_department_weightage}}%</th>
+                    <th width="8%">Self Rating</th>
+                    <th width="8%">Rating</th>
+                     <th width="4%"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-class-odd="'odd'" ng-repeat="item in formData.completecyProfile.departmentCoreValue">
+                  <td>{{$index + 1}}</td>
+                  <td class="text-left">
+                    <div class="col-md-12">
+                      <div class="col-md-10">
+                      <select class="form-control" name="" ng-model="item.core_value" ng-change="departmentChange()">
+                        <option  ng-repeat="option  in formData.departmentCoreValues" ng-selected="{{option.id == item.core_value}}" value="{{option.id}}">{{option.value}}</option>
+                      </select>
+                    </div>
+                       <div class="col-md-2">
+                       <a href="javascript:void(0)" ng-click="showCoreValueInfo('d',$index)" >
+                         <i class="fa fa-info-circle icon-info"/>
+                       </a>
+                       </div>
+                    </div> 
+                  </td>
+                  <td class="text-left">
+                    <!--<input type="text" name="" value="" class="form-control input-sm" 
+                        ng-model="item.supervisor_comment" disabled="disabled"/>-->
+                    <textarea cols="5" rows="1" class="form-control input-sm" disabled="disabled">{{item.supervisor_comment}}</textarea>
+                  </td>
+                  <td class="text-right">
+                      <div style="position: relative;">
+                        <input type="text" class="form-control" 
+                            style="position: absolute; left: 0px; text-align: right; width: 80% !important; height: 26px !important; " 
+                            ng-model="item.weightage" numuriconly>
+                          <span style="position: absolute; right: 0px; top: 5px">%</span>
+                    </div>
+                    </td>
+                  <td>
+                    <select class="form-control input-sm" name="" ng-model="item.self_rating" ng-change="changeDepartmentSelfRating($index)">
+                      <option ng-repeat="o in formData.ratingValues" ng-selected="{{o == item.self_rating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                  </td>
+                  <td class="text-center">
+                    <!--<select class="form-control input-sm" name="" ng-model="item.item.rating" disabled="disabled">
+                      <option ng-repeat="o in formData.ratingValues" ng-selected="{{o == item.self_rating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>-->
+                    {{formData.completecyProfile.departmentCoreValue[$index].total_rating | number: 1}}
+                    </select>
+                  </td>
+                  <td>
+              
+                  <a class="label label-icon" href="javascript:void(0)" ng-click="removeDepartmentCore($index)"><i class="fa fa-trash fa-1x"></i><!--IE fix--></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="text-right"></td>
+                  <td class="text-right"><span class="label label-success label-summary">{{overallCoreValueWeightage() | number:2}}%</span></td>
+                  <td class="text-right"><strong>Weighted Rating</strong></td>
+                  <td class="text-right"><span class="label label-success label-summary">{{overallCoreValueRate() | number:1}}</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="summaryCompetency" class="pull-right clearfix">
+                <strong>Part I : "Competency Profile" Overall Weighted Rating = (Weighted Rating x 100%) / 5  = 
+                    <span class="label label-success label-summary"> {{overallRate() | number:2}}%</span></strong>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+</div>
+
+</div>

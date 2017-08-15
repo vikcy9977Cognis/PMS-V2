@@ -1,0 +1,29 @@
+<script>
+//    $(function(){
+//        $("#exportPdf").click(function() {
+//        });
+//    });
+</script>
+<div ng-cloak class="ng-cloak pm-form-detail" ng-controller="pmFormMaintenanceController">
+  <form class="form-horizontal export-pdf" name="editForm">
+    <div ng-model="wizardMode" ng-value="wizardMode=false"></div>
+    <div id="page1">
+        <ng-include src="getEditContent(1)"></ng-include>
+        <ng-include src="getEditContent(2)"></ng-include>
+    </div>
+    <ng-include src="getEditContent(3)"></ng-include>
+    <div id="page4">
+        <ng-include src="getEditContent(4)"></ng-include>
+        <ng-include src="getEditContent(5)"></ng-include>
+        <ng-include src="getEditContent(6)"></ng-include>
+    </div>
+  </form>
+</div>
+<!-- ./pm-form-detail -->
+
+<!-- modal -->
+<div id="agreementModal" style="display: none">
+</div> <!-- ./agreementModal -->
+<div id="errorViewFlagModal" style="display: none">
+  <h2 class="iplicensing-h2 text-danger">You don't have authorize on this PM form</h2>
+</div><!-- ./errorViewFlagModal -->

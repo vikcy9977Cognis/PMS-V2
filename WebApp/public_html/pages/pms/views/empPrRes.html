@@ -1,0 +1,181 @@
+
+<div class="panel panel-default row" >
+    <div class="panel-body">
+        <div class="col-lg-11 col-md-13 col-sm-13">
+            
+            <form class="form-horizontal" name="formSearchEmpPerf" ng-controller="validationCtrlEmpPerfRes" ng-submit="submit($event)"  >
+                <input type="reset" id="validationCtrlEmpPerfReset" value="Reset" style="display:none;">
+                
+                <div class="row" style="padding-top: 1px">
+                    
+                    <label for="" class="col-md-1">
+                        <strong>Year</strong>
+                    </label>
+                    <div class="col-md-2">
+                        <select class="form-control" name="selectedYear" id="selectedYearEmpPerfRes" >
+                            <option ng-if="item.value !='All'"  ng-repeat="item in listYears.data" ng-value="item.value">{{item.des}}</option>
+                        </select>   
+                   </div>
+                   
+                   <label for="" class="col-md-1">
+                      <strong>Period</strong>
+                   </label>
+                   <div class="col-md-2">
+                        <div class="btn-group" id="Group">
+                            <button type="button" name="button1H" id="periodIdEmpPerfRes1H"   ng-click="periodEmpPerfRes1H()"  class="btn btn-purple">1H</button>
+                            <button type="button" name="button2H" id="periodIdEmpPerfRes2H"  ng-click="periodEmpPerfRes2H()" class="btn btn-purple">2H</button>
+                        </div>
+                   </div>
+                  
+                   <label for="selectedStatus" class="col-md-1">
+                      <strong>Status</strong>
+                   </label>
+                   <div class="col-md-2">
+                        <input class="form-control" type="text" value="completed" readonly="readonly"/>
+                   </div>
+                </div><!-- ./row -->
+                
+                <div class="row" style="padding-top: 1px;">
+                    <label for="" class="col-md-1">
+                        <strong>Company   </strong>
+                    </label>
+                    <div class="col-md-2">
+                        <select class="form-control"   name="company" id="companyEmpPerfRes" >
+                            <option value=-1>All</option>
+                            <option ng-if="item.value !='All'" ng-repeat="item in listCompany.data" ng-value="item.des2">{{item.value}}</option>
+                        </select>
+                    </div>
+                    
+                    <label for="" class="col-md-1">
+                        <strong>Department</strong>
+                    </label>
+                    <div class="col-md-2">
+                        <select class="form-control" name="department"  id="departmentEmpPerfRes" >
+                         <option value=-1>All</option>
+                            <option ng-if="item.value !=''"  ng-repeat="item in listDepartment.data" ng-value="item.value">{{item.des}}</option>
+                        </select>
+                    </div>
+           
+                    <label for="" class="col-md-1">
+                        <strong>Job Band</strong>
+                    </label>
+                    <div class="col-md-2">
+                        <select class="form-control" name="jobBrand" id="jobBrandEmpPerfRes" >
+                             <option value="">All</option>
+                              <option ng-if="item.value !=''"  ng-repeat="item in listJobBrand.data" ng-value="item.value">{{item.des}}</option>
+                        </select>
+                    </div>
+           
+                </div> <!-- ./row -->
+                
+                <div class="row" style="padding-top: 1px;">
+        
+                    <label for="" class="col-md-1">
+                        <strong>Result by Competency</strong>
+                    </label>
+                    <div class="col-md-2">
+                        <select class="form-control" name="resByCompetency" id="resultByCompetency"  >
+                           <option value="All">All</option>
+                              <option value="Outstanding">Outstanding</option>
+                              <option value="Very Good">Very Good</option>
+                              <option value="Good">Good</option>
+                              <option value="Fair">Fair</option>
+                              <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+                    
+                    <label for="" class="col-md-1">
+                        <strong>Result by Individual KPIs</strong>
+                    </label>
+                    <div class="col-md-2">
+                        <select class="form-control" name="resByIndKPIs" id="resultByIndKPIs" >
+                              <option value="All">All</option>
+                              <option value="Outstanding">Outstanding</option>
+                              <option value="Very Good">Very Good</option>
+                              <option value="Good">Good</option>
+                              <option value="Fair">Fair</option>
+                              <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+                
+                </div> <!-- ./row -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Search button -->
+                        <button class="btn btn-primary" type="submit" id="EmpPerfResSubmit">Search</button>
+                        <button class="btn btn-default" type="button"  ng-click="loadResetAllEmpPerfRes($event)" id="EmpPerfResReset">Reset</button>
+                        <button class="btn btn-success" type="button"  ng-click="exportToExcel('#tblEmpPerfRes')" id="exportExcel">Export Excel</button>
+                    </div>   
+                </div> <!-- ./row -->
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<input type="hidden" id="loadCompany"  value='-1' />
+<input type="hidden" id="loadDepartment"  value='-1' />
+<input type="hidden" id="loadStaffPeriod"  value='-1' />
+<input type="hidden" name="pmperiod" id="pmperiodEmpPerfRes"  ng-model="formData.pmperiodEmpPerfRes" value="0">
+<input type="hidden" id="setDataCompany"  value='-1' />
+<input type="hidden" id="setDataDepartment"  value='-1' />
+<input type="hidden" id="loadWithoutSearch" value='-1' />
+
+<table border="1" class="table table-striped table-bordered" name ="tblEmpPerfRes"  id ="tblEmpPerfRes" style="display:none">
+    <col>
+  <colgroup span="4"></colgroup>
+  <colgroup span="4"></colgroup>
+  <tr>
+    <th scope="col" colspan="3"></th>
+    <th colspan="6" scope="colgroup">Competency Profile</th>
+    <th colspan="6" scope="colgroup">Individual KPIs</th>
+  </tr>
+  <tr>
+    <th scope="col" rowspan="2">Employee Id</th>
+    <th scope="col" rowspan="2">Employee Name</th>
+    <th scope="col" rowspan="2">Job Band</th>
+    <th scope="colgroup" colspan="3">Performance</th>
+    <th scope="colgroup" colspan="3">Result</th>
+    <th scope="colgroup" colspan="3">Performance</th>
+    <th scope="colgroup" colspan="3">Result</th>
+  </tr>
+  <tr>
+    <th id="perfComp1H">1H</th>
+    <th id="perfComp2H">2H</th>
+    <th>Average</th>
+    <th id="resComp1H">1H</th>
+    <th id="resComp2H">2H</th>
+    <th>Average</th>
+    <th id="perfInd1H">1H</th>
+    <th id="perfInd2H">2H</th>
+    <th>Average</th>
+    <th id="resInd1H">1H</th>
+    <th id="resInd2H">2H</th>
+    <th>Average</th>
+  </tr>
+ <tbody>
+ <tr ng-repeat="item in pmsempperflist.data">
+    <td>{{item.empId}}</td>
+    <td>{{item.empName}}</td>
+    <td>{{item.jobBand}}</td>
+    <td ng-if="item.competencyPercent1H=='-'">{{item.competencyPercent1H}}</td>
+    <td ng-if="item.competencyPercent1H!='-'">{{item.competencyPercent1H}}%</td>
+    <td ng-if="item.competencyPercent2H=='-'">{{item.competencyPercent2H}}</td>
+    <td ng-if="item.competencyPercent2H!='-'">{{item.competencyPercent2H}}%</td>
+    <td>{{item.averageCompetencyPercent}}%</td>
+    <td>{{item.resComp1H}}</td>
+    <td>{{item.resComp2H}}</td>
+    <td>{{item.resCompAvg}}</td>
+    
+    <td ng-if="item.indKPIPercent1H=='-'">{{item.indKPIPercent1H}}</td>
+    <td ng-if="item.indKPIPercent1H!='-'">{{item.indKPIPercent1H}}%</td>
+    <td ng-if="item.indKPIPercent2H=='-'">{{item.indKPIPercent2H}}</td>
+    <td ng-if="item.indKPIPercent2H!='-'">{{item.indKPIPercent2H}}%</td>
+    <td>{{item.averageIndKPIPercent}}%</td>
+    <td>{{item.resIndKPI1H}}</td>
+    <td>{{item.resIndKPI2H}}</td>
+    <td>{{item.resIndKPIAvg}}</td>
+  </tr>
+  </tbody>
+</table>

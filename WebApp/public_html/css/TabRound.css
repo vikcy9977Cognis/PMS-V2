@@ -1,0 +1,114 @@
+A.tab:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.tab:visited {
+	COLOR: #f4f4f4; TEXT-DECORATION: none
+}
+A.tab:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f4f4f4
+}
+A.tab:hover {
+	COLOR: #ff0000
+}
+.box {
+	WIDTH: 100%; COLOR: #000000; POSITION: relative; HEIGHT: 20px; BACKGROUND-COLOR: #7a99cc
+}
+.box P {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 1px; COLOR: #000000; PADDING-TOP: 4px
+}
+.x {
+	COLOR: #7a99cc
+}
+.box DIV {
+	FONT-SIZE: 160px; OVERFLOW: hidden; WIDTH: 5px; LINE-HEIGHT: 40px; FONT-FAMILY: Times, Times New Roman; POSITION: absolute; HEIGHT: 5px; BACKGROUND-COLOR: #efefeb
+}
+.box SPAN {
+	POSITION: absolute; content: "?"
+}
+.boxsel {
+	WIDTH: 100%; COLOR: #000000; POSITION: relative; HEIGHT: 20px; BACKGROUND-COLOR: #3d77cb
+}
+.boxsel P {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 1px; COLOR: #ffffff; PADDING-TOP: 4px
+}
+.y {
+	COLOR: #3d77cb
+}
+.boxsel DIV {
+	FONT-SIZE: 160px; OVERFLOW: hidden; WIDTH: 5px; LINE-HEIGHT: 40px; FONT-FAMILY: Times, Times New Roman; POSITION: absolute; HEIGHT: 5px; BACKGROUND-COLOR: #efefeb
+}
+.boxsel SPAN {
+	POSITION: absolute; content: "?"
+}
+.topleft {
+	LEFT: 0px; TOP: 0px
+}
+.topleft SPAN {
+	LEFT: -15px; TOP: -1px
+}
+.topright {
+	RIGHT: 0px; TOP: 0px
+}
+.topright SPAN {
+	RIGHT: -16px; TOP: -1px
+}
+.topleftline {
+	LEFT: 0px; TOP: 0px
+}
+.topleftline SPAN {
+	LEFT: -15px; TOP: -1px
+}
+.toprightline {
+	RIGHT: -1px; TOP: 0px;
+}
+.toprightline SPAN {
+	RIGHT: -16px; TOP: -1px
+}
+.TabBarCellSel {
+	color:#C8C8C8; 
+	BORDER-RIGHT: #efefeb 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 70%; 
+	BACKGROUND: #3d77cb; 
+	VERTICAL-ALIGN: middle; 
+	COLOR: #ffffff; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	TEXT-ALIGN: center;
+	text-decoration: none	
+}
+.TabBarCellSel A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.TabBarCellSel A:visited {
+	COLOR: #f4f4f4; TEXT-DECORATION: none
+}
+.TabBarCellSel A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f4f4f4
+}
+.TabBarCellSel A:hover {
+	COLOR: #ff0000
+}
+.TabBarCellNonSel {
+	BORDER-RIGHT: #efefeb 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 70%; 
+	BACKGROUND: #3d77cb; 
+	VERTICAL-ALIGN: middle; 
+	COLOR: #ffffff; 
+	BORDER-BOTTOM: #efefeb 1px solid; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	TEXT-ALIGN: center;
+	text-decoration: none
+}
+.TabBarCellNonSel A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.TabBarCellNonSel A:visited {
+	COLOR: #f4f4f4; TEXT-DECORATION: none
+}
+.TabBarCellNonSel A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f4f4f4
+}
+.TabBarCellNonSel A:hover {
+	COLOR: #ff0000
+}

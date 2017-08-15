@@ -1,0 +1,294 @@
+/* ------------------------------------------------
+* General Styles.
+* -------------------------------------------------*/
+body {
+   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 13px;
+   color: #383636;
+   font-weight: bold;
+}
+.table th {
+    vertical-align: top;
+    text-align: center;
+}
+.bold-text {
+   font-weight: bold;
+}
+.pad5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+   .status-content-box {
+    margin-top: 2px;
+    list-style: none;
+    padding-left: 0px;
+   /* font-style: italic; */
+  /*  color: rgba(145, 94, 138, 1); */
+}
+.status-content-box .box-title {
+    font-style: normal;
+}
+   .status-content-box .bold-text{
+    font-style: normal;
+    color: #003e75;
+    
+    }
+.status-content-box .panel {
+    margin-bottom: 5px;
+}
+
+.pmform-content-body table thead tr th{
+  /* background-color: #23659F; */
+  background-color: #406586;
+  color: #fff;
+}
+.pmform-content-body table thead tr th.separate, .pmform-content-body table tbody tr td.separate {
+    background-color: #fff;
+    color: #fff;
+    border-bottom: 2px solid #fff !important;
+     border-top: 2px solid #fff;
+}
+
+.pmform-content-body .label-summary {
+    font-weight: bold;
+    font-size: 13px;
+}
+#page-content {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.pmform-content-body .label-icon {
+    font-weight: bold;
+    font-size: 14px;
+    color: #6d5c5c;
+}
+.pmform-content-body .label-icon:hover {
+    color: #95a0ef;
+}
+.pmform-content-body .icon-info {
+    font-size: 14px;
+    padding-left: 10px;
+} 
+.pm-form-detail .panel-title, .pm-form-wizard .panel-title {
+    font-weight: bold;
+}
+.pm-page-header {
+    font-weight: bold;
+    font-size: 17px;
+    font-style: italic;
+    padding-left: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 5px;
+    padding-top:5px;
+    color:rgb(0,107,165);
+}
+/*
+.left-content-body .highlight{
+    background-color: #F2F2F2;
+}*/
+.pmform-content-body .border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+#overallPerformance {
+    font-weight: bold;
+}
+#approveReject tr > td{
+    padding: 5px;
+}
+tr.odd {
+ background-color: #f0f3f7;
+}
+.individual-pm-toolbar, .staff-pm-toolbar {
+  
+    background-color:#fff;
+}
+.individual-status-view-content {
+    background-color: #e7ebee;
+}
+.individual-status-view-content .bold-text {
+    font-style: normal;
+    color: #003e75;
+}
+.individual-status-view-item {
+   /* font-style:italic; */
+}
+.individual-status-view-item .box-title {
+    font-style:normal;
+}
+.staff-pm-status-view{
+     background-color: #e7ebee;     
+    margin-left: 10px;
+
+}
+/* Added  style header grid **/
+.panel-custom  table thead tr th{
+     background-color: #406586;
+     color: #fff;
+}
+/* Added  style footer grid **/
+.panel-custom  table tfoot{
+     background-color: #406586!important;
+     color: #fff;
+}
+ 
+ /* Added new style to support 5 columns in Bootstrap **/
+/* http://www.wearesicc.com/quick-tips-5-column-layout-with-twitter-bootstrap/ */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+/* -------------- */
+
+/* ------------------------------------------------
+* Customize Nifty Style
+* ------------------------------------------------ */
+  div#page-content {
+    padding-top: 1px;
+  }
+  .badge-header {
+    top: inherit;
+    }
+  #container .table th {
+      vertical-align: top;
+  }
+#container .table-striped>tbody>tr:nth-child(2n+1) {
+    background-color: #f0f3f7;
+}
+.timeline-stat {
+padding-bottom: 1px;
+}
+.tab-base .tab-content {
+    
+     box-shadow: none;
+     padding-top:1px;
+     padding-right: 2px;
+     
+    padding-left: 1px;
+
+     background-color: #ece9f2;
+}
+.breadcrumb li, .breadcrumb li a {
+    font-size: 13px;
+    color: #9e9e9e;
+}
+/* ------------------------------------------------
+* Customize Bootstrap Style
+* ------------------------------------------------ */
+.form-group {
+    margin-bottom: 8px;
+}
+.panel {
+    margin-bottom: 5px
+}
+.panel-body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-horizontal .control-label {
+    font-weight: bold;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pms-backdrop-ext{
+    height: 100%;
+}
+.form-control {
+     border: 1px solid #ddd;
+     color: #383636;
+ }
+#overlay-info {
+    /*position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    height: 100%;
+    width: 100%;
+    z-index : 10000;*/
+    /*position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index:1070; 
+    background-color: rgba(255,255,255,0.7);*/
+    background-color: rgba(255, 255, 255, 0.7);
+    display: table;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1070;
+}
+#overlay-info .loading-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+#overlay-info i {
+    /*display: table-cell;*/
+    /*font-size: 4em;*/
+    /*text-align: center;
+    vertical-align: middle;*/
+    /*z-index: 19000;*/
+    /*position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;*/
+    /*margin: auto;*/
+    font-size: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+textarea{
+    font-size: 13px !important;
+}
+.textarea-minsize{
+    min-height: 135px !important;
+}
+.textarea-largesize{
+    min-height: 650px !important;
+}

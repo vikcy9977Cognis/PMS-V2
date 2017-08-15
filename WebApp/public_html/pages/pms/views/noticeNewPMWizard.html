@@ -1,0 +1,91 @@
+<div class="panel" ng-controller="pmWizardController">
+  <div class="panel-header">
+    <h4 class="panel-title">Notice New PM Form</h4>
+  </div> 
+  <div class="pm-form-wizard" >
+    	<ul class="row wz-steps wz-icon-bw wz-nav-off mar-top" style="padding-bottom: 5px;">
+        <li class="col-xs-2" ng-class="{'active': currentTab == 1}">
+          <a data-toggle="tab">
+                <span class="icon-wrap icon-wrap-xs bg-danger"><i class="fa fa-info"></i></span>
+                <p class="text-thin">Appraisee's Detail &amp Focus</p>
+            </a>
+        </li>
+
+        <li class="col-xs-2" ng-class="{'active': currentTab == 2}">
+          <a data-toggle="tab">
+                <span class="icon-wrap icon-wrap-xs bg-danger"><i class="fa fa-group"></i></span>
+                <p class="text-thin">Part I: Competency Profile</p>
+          </a>
+        </li>
+        <li class="col-xs-2"  ng-class="{'active': currentTab == 3}">
+          <a data-toggle="tab">
+                <span class="icon-wrap icon-wrap-xs bg-danger"><i class="fa fa-user"></i></span>
+                <p class="text-thin">Part II: President Directive &amp Individual KPIs</p>
+          </a>
+        </li>
+        <li class="col-xs-2"  ng-class="{'active': currentTab == 4}">
+          <a data-toggle="tab">
+                <span class="icon-wrap icon-wrap-xs bg-danger"><i class="fa fa-list"></i></span>
+                <p class="text-thin">Part III: Performance Progress Review ONLY</p>
+          </a>
+        </li>
+        <li class="col-xs-2"  ng-class="{'active': currentTab == 5}">
+          <a data-toggle="tab">
+                <span class="icon-wrap icon-wrap-xs bg-danger"><i class="fa fa-bar-chart"></i></span>
+                <p class="text-thin">Part IV: Overall Performance</p>
+          </a>
+        </li>
+        <li class="col-xs-2"  ng-class="{'active': currentTab == 6}">
+          <a data-toggle="tab">
+                <span class="icon-wrap icon-wrap-xs bg-danger"><i class="fa fa-comments"></i></span>
+                <p class="text-thin">Part V: Counter-Signing Supervisor's Comments</p>
+          </a>
+        </li>
+      </ul>
+      <!--progress bar-->
+              <div class="progress progress-xs">
+                <div class="progress-bar progress-bar-primary" ng-style="{'width':width+'%', 'left':left+ '%', 'position':'relative', 'transition':'all .5s'}"></div>
+              </div>
+
+    <!-- form -->
+    <form class="form-horizontal">
+      <div ng-model="wizardMode" ng-init="wizardMode=true"></div>   
+      <div class="pm-form-tab-list">
+        <div id="pm-form-tab" class="tab-pane">
+         
+          <!--<ng-include src="getCurrentTabContent()" onload="checkDisplayAgreement()"></ng-include>-->
+          
+          <ng-include src="getCurrentTabContent()"></ng-include>
+        </div>
+
+    </div>
+  <!-- Footer buttons -->
+			<div class="pull-right pad-all" style="margin-right:4%">
+				<button type="button" class="previous btn btn-primary" ng-click="gotoPreviousTab()" ng-disabled="currentTab == 1">Previous</button>
+				<button type="button" class="next btn btn-primary" ng-click="gotoNextTab()" ng-disabled="currentTab == tabCount">Next</button>
+				<button type="button" class="finish btn btn-success" ng-disabled="currentTab != tabCount" ng-show="currentTab == tabCount" ng-click="savePMForm()">Save</button>
+                                <button type="button" class="finish btn btn-purple" ng-disabled="currentTab != tabCount" ng-show="currentTab == tabCount" ng-click="submitPMForm()">Submit</button>
+			</div>
+    </form>
+ 
+  </div>
+  
+  <div id="agreementModal" style="display: none">
+    <h2 class="iplicensing-h2">Description of Services</h2>
+    <p>Through its network of Web properties, Microsoft provides you with access to a variety of resources, including developer
+				tools, download areas, communication forums and product information (collectively "Services"). The Services, including
+				any updates, enhancements, new features, and/or the addition of any new Web properties, are subject to the TOU.</p>
+     <h2 class="iplicensing-h2">Description of Services</h2>
+    <p>Through its network of Web properties, Microsoft provides you with access to a variety of resources, including developer
+				tools, download areas, communication forums and product information (collectively "Services"). The Services, including
+				any updates, enhancements, new features, and/or the addition of any new Web properties, are subject to the TOU.</p>
+     <h2 class="iplicensing-h2">Description of Services</h2>
+    <p>Through its network of Web properties, Microsoft provides you with access to a variety of resources, including developer
+				tools, download areas, communication forums and product information (collectively "Services"). The Services, including
+				any updates, enhancements, new features, and/or the addition of any new Web properties, are subject to the TOU.</p>
+     <h2 class="iplicensing-h2">Description of Services</h2>
+    <p>Through its network of Web properties, Microsoft provides you with access to a variety of resources, including developer
+				tools, download areas, communication forums and product information (collectively "Services"). The Services, including
+				any updates, enhancements, new features, and/or the addition of any new Web properties, are subject to the TOU.</p>
+  </div> <!-- ./agreementModal -->
+</div>

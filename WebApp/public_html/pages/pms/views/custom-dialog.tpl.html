@@ -1,0 +1,41 @@
+<!--<form id="fileupload" name="uploadForm"  enctype="multipart/form-data">  -->
+<div class="row">
+    <div class="col-md-5">
+        <label class="btn btn-purple btn-labeled fa fa-upload" ng-hide="authorize.editFlag == 'N'">
+            <input id="fileupload" type="file" name="file"  class="form-control" ng-click="addAttachFileClick();" style="display:none;" /> 
+            <!--<input type="file" ng-disabled="uploading" name="file" class="form-control" file-model="uploadFile"  accept="application/pdf,.xlsx,.docx,.doc,.xls" style="display:none;" /> -->
+            <i ng-if="uploading" class="fa fa-spinner fa-spin"></i> Upload File
+        </label>
+         <p ng-show="uploadFile.valid == false" class="help-block text-danger">{{uploadFile.err}}</p>
+    </div>
+</div>
+<!--</form>-->
+<hr>
+<div style="max-width: 870px;overflow-x: auto;">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>File Name</th>
+                <th>File Size</th>
+                <th>Last Modify</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in formData.attachFile">
+                <th>{{$index+1}}</th>
+                <td>{{item.fileName}}</td>
+                <td>{{item.fileSizeKB}} KB</td>
+                <td>{{item.recordChangeDate}}</td>
+                <td class="text-right">
+                    <div class="btn-group pull-right">
+                        <button ng-show="item.uploadDTLSeqNo > 0" type="button" class="btn btn-default" ng-click="downloadFileClick($index);"><i class="fa fa-download" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" ng-click="deleteFileClick($index);" ng-hide="authorize.editFlag == 'N'"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--<button class="btn btn-primary" ng-click="buttonClick()">A button</button>-->
+</div>

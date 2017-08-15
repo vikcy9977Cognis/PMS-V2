@@ -1,0 +1,347 @@
+<style>
+    /*textarea{
+        font-size: 13px !important;
+    }
+    .textarea-minsize{
+        min-height: 135px;
+    }
+    .textarea-largesize{
+        min-height: 650px;
+    }*/
+</style>
+
+<!-- Individual KPIs -->
+<div ng-controller="pmformTab3Controller" class="pmform-content-body">
+<div class="panel">
+  <div class="panel-heading">
+    <div class="panel-control">
+      <button type="button" name="button" class="btn btn-default"
+              data-target="#af-panel-collapse-3a" data-toggle="collapse"
+              aria-expanded="true">
+        <i class="fa fa-chevron-down"></i>
+      </button>
+    </div>
+    <h4 class="panel-title">President Directive</h4>
+  </div>
+  <div id="af-panel-collapse-3a" class="collapse in" aria-expanded="true">
+    <div class="panel-body">
+      <div class="row">
+
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                    <th rowspan="2" width="3%">No.</th>
+                    <th rowspan="2" width="5%">BSC Perspective</th>
+                    <th rowspan="2" width="20%">President Directive (Company Goal)</th>
+                    <!--<th colspan="6" rowspan="1">Target &amp; Rating </th>-->
+                    <th rowspan="1">Target</th>
+                    <th rowspan="2" width="30%">Description</th>
+                    <th rowspan="2" width="10%">Weightage (%)</th>
+                    <th rowspan="2" width="10%">Result</th>
+                    <th rowspan="2"  width="10%">Rating</th>
+                </tr>
+                <tr>
+                    <th>Rating</th>
+                    <!--<th>Rating 1</th>
+                    <th>Rating 2</th>
+                    <th>Rating 3</th>
+                    <th>Rating 4</th>
+                    <th>Rating 5</th>-->
+                </tr>
+              </thead>
+              <tbody ng-repeat="item in formData.presidentDirective.presidentDirective">
+                <tr ng-class-odd="'odd'">
+                  <td rowspan="7">{{$index + 1}}</td>
+                  <td class="text-left" rowspan="7">{{item.bsc_perspective}}</td>
+                  <td class="text-left" rowspan="7">{{item.company_goal}}</td>
+                  <!--<td class="text-right">{{item.rating_0}}</td>
+                  <td class="text-right">{{item.rating_1}}</td>
+                  <td class="text-right">{{item.rating_2}}</td>
+                  <td class="text-right">{{item.rating_3}}</td>
+                  <td class="text-right">{{item.rating_4}}</td>
+                  <td class="text-right">{{item.rating_5}}</td>-->
+                  <td>Target</td>
+                  <td>{{item.rating_3}}</td>
+                  <td class="text-right" rowspan="7">{{item.weightage}}%</td>
+                   <td class="text-right" rowspan="7">{{item.result}}</td>
+                  <td class="text-right" rowspan="7">{{item.rating| number: 1}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 0</td>
+                    <td>{{item.rating_0}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 1</td>
+                    <td>{{item.rating_1}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 2</td>
+                    <td>{{item.rating_2}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 3</td>
+                    <td>{{item.rating_3}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 4</td>
+                    <td>{{item.rating_4}}</td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 5</td>
+                    <td>{{item.rating_5}}</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                    <td  class="text-right" colspan="5"><strong>Total Weight</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">
+                        {{formData.presidentDirective.total_president_weightage | number: 2}}%</span>
+                    </td>
+                    <td  class="text-right"><strong>Weighted Rating</strong></td>
+                    <td  class="text-right">
+                        <span class="label label-success label-summary">
+                            {{formData.presidentDirective.total_president_rate | number: 1}}
+                        </span>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div id="summaryCompetency" class="pull-right clearfix">
+                <strong>Part II : "President Directive" Overall Weighted Rating = (Weighted Rating x 100%) / 5  =  
+                    <span class="label label-success label-summary"> 
+                        {{overallPresidentRate() | number: 2}}%
+                    </span>
+                </strong>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="panel">
+  <div class="panel-heading">
+    <div class="panel-control">
+
+      <button type="button" name="button" class="btn btn-default"
+              data-target="#af-panel-collapse-3b" data-toggle="collapse"
+              aria-expanded="true">
+        <i class="fa fa-chevron-down"></i>
+      </button>
+    </div>
+    <h4 class="panel-title">Individual KPIs</h4>
+  </div>
+  <div id="af-panel-collapse-3b" class="collapse in" aria-expanded="true">
+    <div class="panel-body" style="overflow: scroll !important; max-width: 100%">
+      <div class="row">
+
+
+          <div class="col-md-12">
+            <button type="button" class="btn btn-purple btn-labeled fa fa-plus" ng-click="addIndividualKPIs()"  style="margin-bottom:3px" >Add Individual KPIs</button>
+            
+            <table class="table" width="100%" ng-show="showAllRate">
+              <thead>
+                <tr>
+                    <th rowspan="2" width="3%">No.</th>
+                    <th rowspan="2" width="10%">BSC Perspective</th>
+                    <th rowspan="2" width="15%">KPIs ( Individual Goal)</th>
+                    <!--<th colspan="6" rowspan="1">Target &amp; Rating &nbsp;&nbsp;&nbsp;<input type="checkbox" ng-model="showAllRate"/>Show All</th>-->
+                    <th rowspan="1">Target&nbsp;<input type="checkbox" ng-model="showAllRate"/>Show All</th>
+                    <th rowspan="2" width="25%">Description</th>
+                    <th rowspan="2" width="10%">Weightage (%)</th>
+                    <th rowspan="2" width="15%">Result</th>
+                    <th rowspan="2"  width="10%">Rating</th>
+                     <th rowspan="2"  width="3%"></th>
+                </tr>
+                <tr>
+                    <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody ng-repeat="item in formData.presidentDirective.individualKPIs">
+                <tr ng-class-odd="'odd'">
+                  <td rowspan="7">{{$index + 1}}</td>
+                  <td class="text-left" rowspan="7">
+                    <select class="form-control input-sm" name="" ng-model="item.bsc_perspective">
+                       <option  ng-repeat="option  in formData.presidentDirective.bscPerspective" ng-selected="{{option.id == item.bsc_perspective}}" value="{{option.id}}">{{option.value}}</option>
+                    </select>
+                  </td>
+                  <td class="text-left" rowspan="7">
+                    <!--<input type="text" name="" value="" class="form-control input-sm" ng-model="item.individual_goal">-->
+                    <textarea cols="5" maxlength="250" class="form-control input-sm textarea-largesize" ng-model="item.individual_goal"></textarea>
+                  </td>
+                  <td>Target</td>
+                  <td>{{item.rating_3}}</td>
+                  <td class="text-right" rowspan="7">
+                      <div style="position: relative;">
+                        <input type="text" class="form-control" 
+                            style="position: absolute; left: 0px; text-align: right; width: 80% !important; height: 26px !important; " 
+                            ng-model="item.weightage" numuriconly>
+                          <span style="position: absolute; right: 0px; top: 5px">%</span>
+                    </div>
+                    </td>
+                   <td class="text-right" rowspan="7">
+                    <!--<input type="text" name="" value="" class="form-control input-sm" ng-model="item.result">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm textarea-largesize" ng-model="item.result"></textarea>
+                   </td>
+                  <td class="text-right" rowspan="7">
+                    <select class="form-control input-sm" name="" ng-model="item.rating" ng-change="changeIndividalRating()">
+                      <option ng-repeat="o in formData.ratingValues" ng-selected="{{o == item.rating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                  </td>
+                  <td rowspan="7">
+                  <a class="label label-icon" href="javascript:void(0)" ng-click="removeIndividualKPIs($index)"><i class="fa fa-trash fa-1x"></i><!--IE fix--></a>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 0</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_0">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_0"></textarea>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 1</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_1">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_1"></textarea>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 2</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_2">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_2"></textarea>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 3</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_3">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_3"></textarea>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 4</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_4">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_4"></textarea>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Rating 5</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_5">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_5"></textarea>
+                  </td> 
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                    <td  class="text-right" colspan="5"><strong>Total Weight</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">
+                        {{overallIndividalWeightage() | number: 2}}%</span>
+                    </td>
+                    <td  class="text-right"><strong>Total Rating</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">
+                        {{individualRate() | number: 1}}</span>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+            </table>
+<table class="table" width="100%" ng-hide="showAllRate">
+              <thead>
+                <tr>
+                    <th rowspan="2" width="3%">No.</th>
+                    <th rowspan="2" width="10%">BSC Perspective</th>
+                    <th rowspan="2" width="15%">KPIs ( Individual Goal)</th>
+                    <!--<th colspan="6" rowspan="1">Target &amp; Rating &nbsp;&nbsp;&nbsp;<input type="checkbox" ng-model="showAllRate"/>Show All</th>-->
+                    <th rowspan="1">Target&nbsp;<input type="checkbox" ng-model="showAllRate"/>Show All</th>
+                    <th rowspan="2" width="25%">Description</th>
+                    <th rowspan="2" width="10%">Weightage (%)</th>
+                    <th rowspan="2" width="15%">Result</th>
+                    <th rowspan="2"  width="10%">Rating</th>
+                     <th rowspan="2"  width="3%"></th>
+                </tr>
+                <tr>
+                    <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody ng-repeat="item in formData.presidentDirective.individualKPIs">
+                <tr ng-class-odd="'odd'">
+                  <td rowspan="2">{{$index + 1}}</td>
+                  <td class="text-left" rowspan="2">
+                    <select class="form-control input-sm" name="" ng-model="item.bsc_perspective">
+                       <option value="" disabled>--Please select BSC Perspective--</option>
+                       <option  ng-repeat="option  in formData.presidentDirective.bscPerspective" ng-selected="{{option.id == item.bsc_perspective}}" value="{{option.id}}">{{option.value}}</option>
+                    </select>
+                  </td>
+                  <td class="text-left" rowspan="2">
+                    <!--<input type="text" name="" value="" class="form-control input-sm" ng-model="item.individual_goal">-->
+                    <textarea cols="5" maxlength="250" class="form-control input-sm textarea-minsize" ng-model="item.individual_goal"></textarea>
+                  </td>
+                  <td>Target</td>
+                  <td>{{item.rating_3}}</td>
+                  
+                  <td class="text-right" rowspan="2">
+                      <div style="position: relative;">
+                        <input type="text" class="form-control" 
+                            style="position: absolute; left: 0px; text-align: right; width: 80% !important; height: 26px !important; " 
+                            ng-model="item.weightage" numuriconly>
+                          <span style="position: absolute; right: 0px; top: 5px">%</span>
+                    </div>
+                </td>
+                   <td class="text-right" rowspan="2">
+                    <!--<input type="text" name="" value="" class="form-control input-sm" ng-model="item.result">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm textarea-minsize" ng-model="item.result"></textarea>
+                   </td>
+                  <td class="text-right" rowspan="2">
+                    <select class="form-control input-sm" name="" ng-model="item.rating" ng-change="changeIndividalRating()">
+                      <option ng-repeat="o in formData.ratingValues" ng-selected="{{o == item.rating}}" value="{{o}}">
+                        {{o | number: 1}}
+                    </option>
+                    </select>
+                  </td>
+                  <td rowspan="2">
+              
+                  <a class="label label-icon" href="javascript:void(0)" ng-click="removeIndividualKPIs($index)"><i class="fa fa-trash fa-1x"></i><!--IE fix--></a>
+                  </td>
+                </tr>
+                <tr ng-class-odd="'odd'">
+                    <td>Raging 3</td>
+                  <td class="text-right">
+                    <!--<input type="text" name="" value="" class="form-control input-sm text-right" ng-model="item.rating_3">-->
+                    <textarea cols="5" maxlength="500" class="form-control input-sm" ng-model="item.rating_3"></textarea>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                    <td  class="text-right" colspan="5"><strong>Total Weight</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">
+                        {{overallIndividalWeightage() | number: 2}}%</span>
+                    </td>
+                    <td  class="text-right"><strong>Total Rating</strong></td>
+                    <td  class="text-right"><span class="label label-success label-summary">
+                        {{individualRate() | number: 1}}</span>
+                    <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="summaryCompetency" class="pull-right clearfix">
+                <strong>Part II : Individual KPIs" Overall Weighted Rating = (Weighted Rating x 100%) / 5  =   
+                    <span class="label label-success label-summary"> {{overallIndividalRate() | number: 2}}%</span>
+                </strong>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
